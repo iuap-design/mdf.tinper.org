@@ -1,0 +1,48 @@
+{
+  "name": "ucf.tinper.org",
+  "version": "1.0.0",
+  "description": "ucf.tinper.org",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node --inspect app/app.js",
+    "start": "node app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/ucf.tinper.org.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend",
+    "tinper",
+    "tinper-bee",
+    "bee"
+  ],
+  "author": "iuap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iuap-design/ucf.tinper.org/issues"
+  },
+  "homepage": "https://github.com/iuap-design/ucf.tinper.org#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "0.0.16",
+    "koa-ejs": "^4.2.0",
+    "koa-less": "0.0.3",
+    "koa-nunjucks-2": "^3.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^3.0.6",
+    "marked": "^0.6.1",
+    "moment": "^2.24.0",
+    "nunjucks": "^3.1.6"
+  }
+}

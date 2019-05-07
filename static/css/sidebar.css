@@ -1,0 +1,23 @@
+.sidebar .menu-components li a{
+    color: #424242;
+    text-decoration: none;
+    outline: none;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+}
+/* 一级 */
+.sidebar .menu-components .menu-group a{
+    padding-left: 50px;
+}
+
+/* 二级 */
+.sidebar .menu-components .menu-group2 a{
+    padding-left: 60px;
+}
+
+/* 三级 */
+.sidebar .menu-components .menu-group3 a{
+    padding-left: 70px;
+}
