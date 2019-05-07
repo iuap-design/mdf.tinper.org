@@ -6,6 +6,29 @@
     line-height: 40px;
     display: inline-block;
     width: 100%;
+    padding-right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebar .menu-components li a.icon-open::before{
+    position: absolute;
+    right: 0;
+    font-family: "uf" !important;
+    box-sizing: border-box;
+    content: "\e636";
+    margin-right: 20px;
+}
+.sidebar .menu-components li a.icon-close::before{
+    position: absolute;
+    right: 0;
+    font-family: "uf" !important;
+    box-sizing: border-box;
+    content: "\e608";
+    margin-right: 20px;
+}
+.sidebar .menu-components li a.icon-close + ul{
+    display: none;
 }
 /* 一级 */
 .sidebar .menu-components .menu-group a{
@@ -20,4 +43,23 @@
 /* 三级 */
 .sidebar .menu-components .menu-group3 a{
     padding-left: 70px;
+}
+
+
+/* 滚动槽 */
+
+.sidebar::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #DFDFDF;
+    border-radius: 10px;
+}
+/* 失去焦点颜色 */
+.sidebar::-webkit-scrollbar-thumb:window-inactive {
+    background: #DFDFDF;
 }

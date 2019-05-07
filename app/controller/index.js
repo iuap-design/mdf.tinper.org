@@ -3,6 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const render = require('koa-ejs');
 const sidebar = require('../../static/sidebar.json');
+const menu = require('../../static/menu.json');
 const renderer = new marked.Renderer();
 
 renderer.heading = function (text, level) {
@@ -38,12 +39,10 @@ marked.setOptions({
 module.exports = {
   index: async (ctx, next) => {
     let component = ctx.params.component || 'gs';
-    let data = '';
-    let filePath = '';
-    let rightMenus = {}; //右侧菜单
-    changeLog = [];
-    filePath = path.join(__dirname, `../../docs/${component}.md`);
-    data = await fs.readFileSync(filePath, 'utf-8');
+    let rightMenu = [];
+    if(menu[component])rightMenu=menu[component];
+    let filePath = path.join(__dirname, `../../docs/${component}.md`);
+    let data = await fs.readFileSync(filePath, 'utf-8');
     data = marked(data);
     data = data
       .replace(/\<table/gi, '<div class="table-container">\n<table')
@@ -53,7 +52,7 @@ module.exports = {
       sidebar: sidebar,
       docs: data,
       active: component,
-      rightMenus: rightMenus,
+      rightMenu: rightMenu,
       latestVersion:'2.0.7'
     });
   }

@@ -2,28 +2,37 @@
     <ul class="menu-components">
        <% sidebar.forEach(item=>{  %>
             <li class="menu-group">
-                <a href="<%= item.key %>">
-                    <%= item.name %>
-                </a>
+                
                 <% if(item.children){ var two = item.children; %>
+                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item icon-open">
+                        <%= item.name %>
+                    </a>
                     <ul class='menu-components-2'>
                         <% two.forEach(item2=>{ %>
                             <li class="menu-group2">
-                                <a href="<%= item2.key %>">
-                                    <%= item2.name %>
-                                </a>
                                 <% if(item2.children){ var three = item2.children; %>
+                                    <a href="<%= item2.key %>" name="<%= item2.key %>" class="menu-item icon-open">
+                                        <%= item2.name %>
+                                    </a>
                                     <ul class='menu-components-3'>
                                         <% three.forEach(item3=>{ %>
                                             <li class="menu-group3">
-                                                <a href="<%= item3.key %>"><%= item3.name %></a>
+                                                <a href="<%= item3.key %>" class="menu-item name="<%= item3.key %>"><%= item3.name %></a>
                                             </li>
                                         <% }) %>
                                     </ul>
+                                <% } else { %>
+                                    <a href="<%= item2.key %>" >
+                                        <%= item2.name %>
+                                    </a>
                                 <% } %>
                             </li>
                         <% }) %>
                     </ul>
+                <% }else { %>
+                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item">
+                        <%= item.name %>
+                    </a>
                 <% } %>
             </li>
         <% }) %>
@@ -32,7 +41,29 @@
 
 
 <script>
-   
+
+    // 展开关闭事件
+    let nodeList = document.querySelectorAll('.menu-item.icon-open');
+    nodeList.forEach((item, index) => {
+        let name = item.getAttribute('name');
+        item.onclick = (e) => {
+            let cls = item.getAttribute('class');
+            if (cls.indexOf('icon-open') != -1) { //打开状态
+                item.setAttribute('class', 'menu-item icon-close');
+                sessionStorage.setItem(`${name}Open`, 'false');
+            } else { //关闭状态
+                item.setAttribute('class', 'menu-item icon-open');
+                sessionStorage.setItem(`${name}Open`, 'true');
+            }
+        }
+    })
+    //初始化展开关闭
+    nodeList.forEach((item,index)=>{
+        let name = item.getAttribute('name');
+        if(sessionStorage.getItem(`${name}Open`)=='false')item.setAttribute('class', 'menu-item icon-close');
+    })
+
+
     //左侧滚动条定位
     let sidebar = document.querySelector('#sidebar');
     sidebar.onscroll = function () {
