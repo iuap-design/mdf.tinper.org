@@ -11,35 +11,16 @@
 
 .nav .nav-left .nav-logo {
     display: inline-block;
+    min-width: 245px;
 }
 .nav .nav-left .nav-logo a{
     color: #424242;
-}
-
-.nav .nav-left .nav-logo a .version{
-    margin-left: 10px;
-    position: relative;
-    top: 3px;
-}
-.nav .nav-left .nav-logo img {
-    height: 24px;
-    vertical-align: middle;
-}
-
-.nav .nav-left .nav-logo i {
-    padding: 0;
-    height: 0;
     display: inline-block;
-}
-
-.nav .nav-left .nav-logo .uf-iuapdesign-col:before {
-    font-size: 100px;
-    display: inline-block;
-}
-
-.nav .nav-left .nav-split {
-    color: #ccc;
-    margin: 0 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
 }
 
 .nav .nav-left .nav-search {
@@ -73,115 +54,6 @@
 .nav .nav-left .nav-search .u-form-control-affix-wrapper .u-form-control-suffix {
     right: auto;
     left: 0;
-}
-
-.nav .nav-right .nav-options {
-    float: right;
-}
-
-
-.nav .nav-right .nav-options li {
-    float: left;
-    margin-right: 38px;
-}
-.nav .nav-right .nav-options li.language {
-    color: #ccc;
-    cursor: not-allowed;
-}
-.nav .nav-right .nav-options li .u-select {
-    min-width: 100px;
-    font-size: 14px;
-    color: #444;
-}
-
-.nav .nav-right .nav-options li .u-select .u-select-arrow {
-    margin-top: -8px;
-    font-size: 14px;
-}
-
-.nav .nav-right .nav-options li .u-select .u-select-selection {
-    border: none;
-}
-
-.nav .nav-right .nav-options li a {
-    color: #444;
-}
-
-.nav .nav-right .nav-options li a:hover {
-    color: #E14C46;
-}
-
-.mob-nav {
-    width: 100%;
-    height: 65px;
-    line-height: 65px;
-    border-bottom: 1px solid #DFDFDF;
-    font-size: 14px;
-    display: inline-block;
-    text-align: center;
-}
-.mob-nav a{
-    color: #424242;
-}
-.mob-nav a .version{
-    margin-left: 10px;
-    position: relative;
-    top: 3px;
-}
-.mob-nav img {
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.mob-nav .nav-content {
-    float: right;
-    right: 3px;
-    position: fixed;
-    z-index: 999;
-}
-
-.mob-nav ul li{
-    height:42px;
-    line-height:42px;
-}
-
-.mob-nav .uf-navmenu {
-    position:absolute;
-    right:32px;
-}
-
-.mob-nav .nav-content .u-button {
-    background: transparent;
-}
-
-.mob-nav a {
-    color: #424242;
-}
-
-
-.nav-lang-select .u-select-dropdown-menu-item-selected,
-.nav-lang-select .u-select-dropdown-menu-item-selected:hover,
-.nav-lang-select .u-select-dropdown-menu-item-active {
-    color: #E14C46 !important;
-    background: #fff !important;
-    font-weight: 0 !important;
-}
-
-.algolia-autocomplete {
-    line-height: normal;
-}
-
-.aa-dropdown-menu {
-    width: 100%;
-    border-color: #999;
-    font-size: 0.9rem;
-}
-
-@media (min-width: 768px) {
-    .aa-dropdown-menu {
-        min-width: 515px;
-    }
 }
 
 .algolia-docsearch-suggestion {
@@ -231,57 +103,4 @@ input::-webkit-input-placeholder {
     .mob-nav {
         display: none;
     }
-}
-
-
-/* 适配 */
-#navbar h3,
-#navbar p,
-#navbar .u-panel-footer,
-#navbar .u-panel-collapse {
-    display: none;
-}
-#navbar {
-    background: #fff;
-}
-#navbar>.u-row>.u-col-md-12>.u-panel-bordered {
-   border: none;
-   box-shadow: none;
-}
-#navbar>.u-row>.u-col-md-12>.u-panel-bordered>.u-panel-heading {
-    background: #fff;
-    border: none;
-}
-.nav{
-    top: 0;
-    left: 0;
-}
-#navbar .nav-options a[href="#"]{
-    color: #E14C46;
-}
-#navbar .nav-options a[href=""]{
-    color: #ccc;
-    cursor: not-allowed;
-}
-#navbar .nav .nav-left .nav-logo{
-    margin-left: 40px;
-    margin-right: 20px;
-}
-#selectList.select-list{
-    display: none;
-}
-#selectList.select-list.open{
-    display: block;
-}
-.nav .nav-right .nav-options li.lang-select{
-    position: relative;
-}
-#selectList.select-list .u-select-dropdown{
-    top: 52px;
-    left: 0;
-}
-#selectList.select-list .u-select-dropdown .u-select-dropdown-menu-item{
-    padding: 0 16px;
-    height: 30px;
-    line-height: 30px;
 }
