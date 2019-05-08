@@ -4,25 +4,25 @@
             <li class="menu-group">
                 
                 <% if(item.children){ var two = item.children; %>
-                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item icon-open">
+                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item icon-open <%= active==item.key?'active':''%>">
                         <%= item.name %>
                     </a>
                     <ul class='menu-components-2'>
                         <% two.forEach(item2=>{ %>
                             <li class="menu-group2">
                                 <% if(item2.children){ var three = item2.children; %>
-                                    <a href="<%= item2.key %>" name="<%= item2.key %>" class="menu-item icon-open">
+                                    <a href="<%= item2.key %>" name="<%= item2.key %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
                                         <%= item2.name %>
                                     </a>
                                     <ul class='menu-components-3'>
                                         <% three.forEach(item3=>{ %>
                                             <li class="menu-group3">
-                                                <a href="<%= item3.key %>" class="menu-item name="<%= item3.key %>"><%= item3.name %></a>
+                                                <a href="<%= item3.key %>" class="menu-item <%= active==item3.key?'active':''%>" name="<%= item3.key %>"><%= item3.name %></a>
                                             </li>
                                         <% }) %>
                                     </ul>
                                 <% } else { %>
-                                    <a href="<%= item2.key %>" >
+                                    <a href="<%= item2.key %>" class="menu-item <%= active==item2.key?'active':''%> ">
                                         <%= item2.name %>
                                     </a>
                                 <% } %>
@@ -30,7 +30,7 @@
                         <% }) %>
                     </ul>
                 <% }else { %>
-                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item">
+                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item <%= active==item.key?'active':''%>">
                         <%= item.name %>
                     </a>
                 <% } %>
@@ -49,18 +49,20 @@
         item.onclick = (e) => {
             let cls = item.getAttribute('class');
             if (cls.indexOf('icon-open') != -1) { //打开状态
-                item.setAttribute('class', 'menu-item icon-close');
+                cls=cls.replace('icon-open','icon-close');
                 sessionStorage.setItem(`${name}Open`, 'false');
             } else { //关闭状态
-                item.setAttribute('class', 'menu-item icon-open');
+                cls=cls.replace('icon-close','icon-open');
                 sessionStorage.setItem(`${name}Open`, 'true');
             }
+            item.setAttribute('class', cls);
         }
     })
     //初始化展开关闭
     nodeList.forEach((item,index)=>{
         let name = item.getAttribute('name');
-        if(sessionStorage.getItem(`${name}Open`)=='false')item.setAttribute('class', 'menu-item icon-close');
+        let cls = item.getAttribute('class');
+        if(sessionStorage.getItem(`${name}Open`)=='false')item.setAttribute('class', cls.replace('icon-open','icon-close'));
     })
 
 

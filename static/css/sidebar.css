@@ -11,6 +11,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.sidebar .menu-components li a.menu-item.active {
+    background: #FDF6F6;
+    border-right: 1px solid #E14C46;
+}
 .sidebar .menu-components li a.icon-open::before{
     position: absolute;
     right: 0;
