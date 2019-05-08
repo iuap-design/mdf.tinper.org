@@ -38,7 +38,7 @@ marked.setOptions({
 
 module.exports = {
   index: async (ctx, next) => {
-    let component = ctx.params.component || 'gs';
+    let component = ctx.params.component || 'gs-bj';
     let rightMenu = [];
     if(menu[component])rightMenu=menu[component];
     let filePath = path.join(__dirname, `../../docs/${component}.md`);
