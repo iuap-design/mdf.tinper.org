@@ -7,10 +7,12 @@ React 使用 JSX 来替代常规的 JavaScript。JSX 是一个看起来很像 XM
 ```javascript
 const element = <h1>Hello, world!</h1>;
 ```
-<br />
+
+
 <a name="1GE7j"></a>
 ### 1.1将元素渲染到 DOM 中
-首先我们在一个 HTML 页面中添加一个 **id="example"** 的 **<div>**:<br />在此 div 中的所有内容都将由 React DOM 来管理，所以我们将其称之为 "根" DOM 节点。<br />要将React元素渲染到根DOM节点中，我们通过把它们都传递给 **ReactDOM.render()** 的方法来将其渲染到页面上：
+首先我们在一个 HTML 页面中添加一个 `id="example"` 的 `<div>`
+<br />在此 div 中的所有内容都将由 React DOM 来管理，所以我们将其称之为 "根" DOM 节点。<br />要将React元素渲染到根DOM节点中，我们通过把它们都传递给 **ReactDOM.render()** 的方法来将其渲染到页面上：
 
 ```javascript
 var myDivElement = <div className="foo" />;
@@ -35,9 +37,7 @@ ReactDOM.render(
 ```
 
 在
-JSX 中不能使用 **if
-else** 语句，但可以使用 **conditional
-(****三元运算)** 表达式来替代。以下实例中如果变量 **i** 等于 **1** 浏览器将输出 **true**, 如果修改 i 的值，则会输出 **false。**
+JSX 中不能使用 `if else` 语句，但可以使用 `conditional(三元运算)` 表达式来替代。以下实例中如果变量 **i** 等于 **1** 浏览器将输出 **true**, 如果修改 i 的值，则会输出 **false。**
 
 ```javascript
 ReactDOM.render(
@@ -603,9 +603,8 @@ class LoggingButton extends React.Component {
 
 <a name="tqzYR"></a>
 ### 7.3 表单以及表单事件
-       HTML
-表单元素与 React 中的其他 DOM 元素有所不同,因为表单元素生来就保留一些内部状态。<br />在 HTML 当中，像 <input>, <textarea>, 和
-<select> 这类表单元素会维持自身状态，并根据用户输入进行更新。但在React中，可变的状态通常保存在组件的状态属性中，并且只能用 setState() 方法进行更新。<br /> <br />下面实例中我们设置了输入框
+HTML表单元素与 React 中的其他 DOM 元素有所不同,因为表单元素生来就保留一些内部状态。<br />在 HTML 当中，像 `<input>`, `<textarea>`, 和
+`<select>` 这类表单元素会维持自身状态，并根据用户输入进行更新。但在React中，可变的状态通常保存在组件的状态属性中，并且只能用 setState() 方法进行更新。<br /> <br />下面实例中我们设置了输入框
 input 值 **value =
 {this.state.data}**。在输入框值发生变化时我们可以更新 state。我们可以使用 **onChange** 事件来监听 input 的变化，并修改 state。
 
