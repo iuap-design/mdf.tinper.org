@@ -16,6 +16,7 @@ body {
 .docs .doc-content{
     margin-right: 200px;
     padding-top: 30px;
+    min-height: 500px;
 }
 .docs .doc-content h1, .docs .doc-content h2, .docs .doc-content h3, .docs .doc-content h4, .docs .doc-content h5, .docs .doc-content h6 {
     color: rgba(66,66,66,1);
