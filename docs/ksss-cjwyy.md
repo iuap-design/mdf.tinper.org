@@ -46,6 +46,3 @@ bootList:true
 ```bash
 npm start
 ```
-
-<a name="d41d8cd9"></a>
-## 

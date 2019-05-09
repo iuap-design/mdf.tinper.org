@@ -18,9 +18,11 @@
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
+    padding-left:80px; 
+}
+.nav .nav-left .nav-logo a img{
+    height: 30px;
+
 }
 
 .nav .nav-left .nav-search {

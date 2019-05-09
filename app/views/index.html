@@ -56,10 +56,8 @@
     //解决:hover伪类在移动端二次点击的问题
     document.body.addEventListener('touchstart', function(){ });
 
-    // hljs.initHighlightingOnLoad();
-    document.querySelectorAll('.drawer-body code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
+    hljs.initHighlightingOnLoad();
+
     docsearch({ 
             apiKey: 'd388a4977faabf821db64112c8abdcf7', 
             indexName: 'bee_tinper', 

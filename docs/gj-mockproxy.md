@@ -73,7 +73,3 @@ proxy: [
 | 本地访问 | 远端访问 |
 | --- | --- |
 | http://127.0.0.1:3000/mock/326/getMasterList | https://mock.yonyoucloud.com/mock/326/getMasterList |
-
-<a name="d41d8cd9"></a>
-## 
-

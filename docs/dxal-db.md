@@ -58,8 +58,8 @@ ucf new app
 ```
 
 1. 输入我们的微应用名称`org-app ` 回车，选择 `singleApp`模板，回车确定创建。
-1. 把新创建的微应用添加到启动器中，找到 `ucf.config.js` 文件，修改字段 `bootList`
-1. <br />
+2. 把新创建的微应用添加到启动器中，找到 `ucf.config.js` 文件，修改字段 `bootList`
+3. 
 ```javascript
 // 注释原有的两个示例，添加我们自己的
 bootList: [

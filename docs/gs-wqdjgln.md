@@ -82,8 +82,6 @@ _--- By 《_[_ThoughtWorks 2017技术雷达_](https://www.cnblogs.com/Wolfmanlq/
 - 微应用的开发和构建需要遵循一致的规范
 - 微应用的开发可以选择不同的前端框架
 
-<a name="d41d8cd9"></a>
-## 
 <a name="d17a0f0b"></a>
 ## 参考
 

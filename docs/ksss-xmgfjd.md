@@ -101,8 +101,7 @@ SPA
 10 directories, 20 files
 ```
 
-<a name="d41d8cd9"></a>
-### 
+
 <a name="d5a6cbdf"></a>
 ## 详细说明
 

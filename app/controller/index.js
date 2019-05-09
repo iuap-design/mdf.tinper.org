@@ -15,6 +15,9 @@ renderer.heading = function (text, level,c,slugger) {
   }
 }
 
+renderer.image = function(href,title,text){
+  return `<div class="img-out-div"><img src="${href}" alt="${text}" title="${title}" /></div>`
+}
 renderer.link = function (href, title, text) {
   var target = '';
   if (href) {

@@ -10,9 +10,9 @@ ucf-web 微前端工程主要是通过 `[ucf-scripts](https://github.com/iuap-d
 
 UCF微前端工程核心配置文件只有一个 `ucf.config.js` ，下面对配置文件具体说明。
 
-> **文件中部分不使用的配置属性可以将其删除。**
+> 文件中部分不使用的配置属性可以将其删除。
 
-**
+
 ```javascript
 module.exports = () => {
     return {
