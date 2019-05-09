@@ -52,8 +52,7 @@ module.exports = {
       sidebar: sidebar,
       docs: data,
       active: component,
-      rightMenu: rightMenu,
-      latestVersion:'2.0.7'
+      rightMenu: rightMenu
     });
   }
 }
