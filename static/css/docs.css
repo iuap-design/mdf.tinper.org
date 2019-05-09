@@ -19,8 +19,8 @@ body {
 }
 .docs .doc-content h1, .docs .doc-content h2, .docs .doc-content h3, .docs .doc-content h4, .docs .doc-content h5, .docs .doc-content h6 {
     color: rgba(66,66,66,1);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     white-space: normal;
     word-spacing: 1px;
     font-weight: 700;
