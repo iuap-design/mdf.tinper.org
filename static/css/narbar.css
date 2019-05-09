@@ -95,14 +95,22 @@ input::-webkit-input-placeholder {
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-}
 
-@media screen and (min-width: 769px) {
-    .mob-nav {
+@media screen and (max-width: 768px) {
+    .nav-split{
+         display: none;
+    }
+    .nav-search{
         display: none;
     }
-}
+    .nav-logo {
+     width: 100%;
+     text-align: center;
+    }
+    .nav .nav-left .nav-logo a{
+        padding-left: 0;
+    }
+    .docs .doc-content{
+        margin-right: 0!important;
+    }
+ }
