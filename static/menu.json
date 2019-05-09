@@ -319,7 +319,16 @@
             "name": "现象"
         },
         {
-            "name": "解决"
+            "name": "MacOS",
+            "children":[
+                "ucf","uba"
+            ]
+        },
+        {
+            "name": "Windows",
+            "children":[
+                "ucf","uba"
+            ]
         }
     ],
     "qdkfgf": [{

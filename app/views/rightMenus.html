@@ -1,13 +1,13 @@
 <div id="rightMenusId">
     <ul class="rm-list">
-        <% rightMenu.forEach(item=>{ %>
+        <% var h = 0; rightMenu.forEach(item=>{ var id ='h-'+(++h)+item.name  %>
             <li class="rm-list-item" name="#<%= item.name %>"> 
-                <a class="rm-list-item-a" href="#<%= item.name %>" title="<%= item.name %>"><%= item.name %></a></li>
+                <a class="rm-list-item-a" href="#<%= id %>" title="<%= item.name %>"><%= item.name %></a></li>
                 <% if(item.children){ %>  
                     <ul class="rm-child-list">
-                        <% item.children.forEach(it=>{ %>
+                        <% item.children.forEach((it,index)=>{ var id ='h-'+(++h)+it %>
                             <li class="rm-list-item" name="#<%= it %>"> 
-                                <a class="rm-list-item-a" href="#<%= it %>" title="<%= it %>"><%= it %> </a>
+                                <a class="rm-list-item-a" href="#<%= id %>" title="<%= it %>"><%= it %> </a>
                             </li>
                         <% }) %>
                     </ul>

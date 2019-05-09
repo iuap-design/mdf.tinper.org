@@ -3,7 +3,7 @@
 <a name="856fc714"></a>
 ## 案例一：找不到 npm 命令导致无法 install
 <a name="629d2cbc"></a>
-### 场景描述：
+### 场景描述
 执行`npm install` 提示 npm 命令不存在，再执行 `node -v` 也提示失败，导致 npm install 安装包失败。
 <a name="094c47ac"></a>
 ### 问题分析
@@ -11,8 +11,7 @@
 <a name="de842a6c"></a>
 ### 解决方案
 1、最快的方式是卸载 Node，重新安装 Node，安装的时候不要做任何修改，一路默认安装；<br />2、新增 node 的全局环境变量配置。
-<a name="d41d8cd9"></a>
-## 
+
 <a name="69992ab6"></a>
 ## 案例二：由于安装时的权限问题导致install失败
 <a name="4c07b53d"></a>
@@ -25,8 +24,7 @@
 <a name="de842a6c-1"></a>
 ### 解决方案
 右击目录，选择属性-》选择安全，加上当前用户对目录的写权限和读权限等
-<a name="d41d8cd9-1"></a>
-## 
+
 <a name="7d8ceb54"></a>
 ## 案例三：由于网络问题无法install
 <a name="4c07b53d-1"></a>
@@ -88,7 +86,7 @@ const proxyConfig = [
 <a name="2c055218"></a>
 ## 案例五：由于cache缓存导致的安装失败
 <a name="629d2cbc-1"></a>
-### 场景描述：
+### 场景描述
 
 - 当使用npm进行安装的时候，如果出现：cb() nerver called 的报错，
 - npm install安装包很快，但是报Error信息了，这时可能是之前的缓存有问题，清楚缓存即可

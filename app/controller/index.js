@@ -6,9 +6,10 @@ const sidebar = require('../../static/sidebar.json');
 const menu = require('../../static/menu.json');
 const renderer = new marked.Renderer();
 
-renderer.heading = function (text, level) {
+renderer.heading = function (text, level,c,slugger) {
+  let h = slugger.slug('h') 
   if (level > 1) {
-    return `<h${level} id="${text}">${text}</h${level}/>`
+    return `<h${level} id="${h+text}">${text}</h${level}/>`
   } else {
     return `<h${level}>${text}</h${level}/>`
   }
