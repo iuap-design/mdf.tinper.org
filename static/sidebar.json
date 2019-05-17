@@ -43,10 +43,7 @@
     {
         "key": "wyy",
         "name": "微应用开发进阶",
-        "children": [{
-                "key": "wyy-kshztdz",
-                "name": "可视化主题定制"
-            },
+        "children": [
             {
                 "key": "wyy-xmpzsm",
                 "name": "项目配置说明"
@@ -112,6 +109,10 @@
         "key": "gj",
         "name": "高级",
         "children": [{
+            "key": "gj-kshztdz",
+            "name": "可视化主题定制"
+            },
+            {
                 "key": "gj-ucfcli",
                 "name": "ucf-cli 命令行说明"
             },
@@ -176,6 +177,10 @@
             {
                 "key": "cjwt-gjncyc",
                 "name": "构建内存溢出"
+            },
+            {
+                "key": "cjwt-nodeversion",
+                "name": "不同node版本构建影响因素对比"
             }
         ]
     },

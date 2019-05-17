@@ -92,7 +92,7 @@
             "name": "修改配置并启动"
         }
     ],
-    "wyy-kshztdz": [{
+    "gj-kshztdz": [{
             "name": "1.主题定制三部曲"
         },
         {
@@ -313,6 +313,22 @@
             "children": [
                 "2.1、文档更加系统化", "2.2、更加友好：支持快速创建标准的模板节点", "2.3、调试更加方便"
             ]
+        }
+    ],
+    "cjwt-nodeversion": [{
+            "name": "node 10.15.1(MacOS 10.14.2)"
+        },
+        {
+            "name": "node 10.15.1(Windows10 SSD)"
+        },
+        {
+            "name": "node 12.2.0(MacOS 10.14.2)"
+        },
+        {
+            "name": "node 12.2.0(Windows10 SSD)"
+        },
+        {
+            "name": "各个版本优化对比图"
         }
     ],
     "cjwt-gjncyc": [{

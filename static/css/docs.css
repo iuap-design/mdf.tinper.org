@@ -137,6 +137,12 @@ body {
     border: none;
 }
 
+.docs .doc-content .waring{
+    color: #E14C46;
+    font-size: 24px;
+    margin: 10px 0;
+    display: block;
+}
 
 
 
