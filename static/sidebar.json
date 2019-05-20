@@ -1,7 +1,9 @@
-[{
+[
+    {
         "key": "gs",
         "name": "概述",
-        "children": [{
+        "children": [
+            {
                 "key": "gs-bj",
                 "name": "背景"
             },
@@ -22,7 +24,8 @@
     {
         "key": "ksss",
         "name": "快速上手",
-        "children": [{
+        "children": [
+            {
                 "key": "ksss-hjzb",
                 "name": "环境准备"
             },
@@ -51,7 +54,8 @@
             {
                 "key": "wyy-MPA",
                 "name": "MPA 多页型微应用",
-                "children": [{
+                "children": [
+                    {
                         "key": "wyy-smsMPA",
                         "name": "什么是 MPA"
                     },
@@ -72,7 +76,8 @@
             {
                 "key": "wyy-SPA",
                 "name": "SPA 单页型微应用",
-                "children": [{
+                "children": [
+                    {
                         "key": "wyy-smsSPA",
                         "name": "什么是 SPA"
                     },
@@ -89,7 +94,8 @@
             {
                 "key": "wyy-MDD",
                 "name": "MDD 模型驱动型微应用",
-                "children": [{
+                "children": [
+                    {
                         "key": "wyy-smsMDD",
                         "name": "什么是 MDD"
                     },
@@ -108,9 +114,10 @@
     {
         "key": "gj",
         "name": "高级",
-        "children": [{
-            "key": "gj-kshztdz",
-            "name": "可视化主题定制"
+        "children": [
+            {
+                "key": "gj-kshztdz",
+                "name": "可视化主题定制"
             },
             {
                 "key": "gj-ucfcli",
@@ -135,7 +142,8 @@
             {
                 "key": "gj-sxqhdbsyjc",
                 "name": "实现前后端部署与集成",
-                "children": [{
+                "children": [
+                    {
                         "key": "gj-GPaas",
                         "name": "基于GPaaS平台的集成和部署"
                     },
@@ -158,15 +166,18 @@
     {
         "key": "dxal",
         "name": "典型案例开发教程",
-        "children": [{
-            "key": "dxal-db",
-            "name": "实现单表查询页面功能"
-        }]
+        "children": [
+            {
+                "key": "dxal-db",
+                "name": "实现单表查询页面功能"
+            }
+        ]
     },
     {
         "key": "cjwt",
         "name": "常见问题",
-        "children": [{
+        "children": [
+            {
                 "key": "cjwt-npm",
                 "name": "npm install 异常处理"
             },
@@ -195,7 +206,8 @@
     {
         "key": "fl",
         "name": "附录",
-        "children": [{
+        "children": [
+            {
                 "key": "fl-zjbbhgz",
                 "name": "组件版本号规则"
             },
@@ -218,6 +230,20 @@
             {
                 "key": "fl-redux",
                 "name": "如何理解 Redux"
+            }
+        ]
+    },
+    {
+        "key": "xmzjsz",
+        "name": "项目最佳实践",
+        "children":[
+            {
+                "key":"xmzjsz-ucfscript",
+                "name":"ucf-script实战"
+            },
+            {
+                "key":"xmzjsz-gjqdgc",
+                "name":"构建前端工程"
             }
         ]
     }
