@@ -1,249 +1,395 @@
 [
     {
-        "key": "gs",
-        "name": "概述",
+        "key": "",
+        "name": "模型定义",
         "children": [
             {
-                "key": "gs-bj",
-                "name": "背景"
+                "key": "0101-doc-category-definition",
+                "name": "单据类别定义"
             },
             {
-                "key": "gs-wqdjgln",
-                "name": "微前端架构理念"
+                "key": "0102-model-definition-vm",
+                "name": "模型定义viewmodel"
             },
             {
-                "key": "gs-ucfwebztjs",
-                "name": "ucf-web 整体介绍"
+                "key": "0103-model-definition-va",
+                "name": "模型定义viewApplication"
             },
             {
-                "key": "gs-jszsm",
-                "name": "技术栈说明"
+                "key": "0104-data-dictionary",
+                "name": "数据字典"
             }
         ]
     },
     {
-        "key": "ksss",
-        "name": "快速上手",
+        "key": "",
+        "name": "MDF前端框架-入门指导",
         "children": [
             {
-                "key": "ksss-hjzb",
-                "name": "环境准备"
+                "key": "0201-definition-of-public-concept",
+                "name": "公共概念释义"
             },
             {
-                "key": "ksss-kscsh",
-                "name": "快速初始化"
+                "key": "0202-web-tech-stack-desc",
+                "name": "Web技术栈说明"
             },
             {
-                "key": "ksss-xmgfjd",
-                "name": "项目规范解读"
+                "key": "0203-quick-start",
+                "name": "快速上手"
             },
             {
-                "key": "ksss-cjwyy",
-                "name": "创建微应用"
+                "key": "0204-scaffolding-specification",
+                "name": "脚手架规范说明"
+            },
+            {
+                "key": "0205-frame-operation",
+                "name": "框架运行过程及原理浅析"
+            },
+            {
+                "key": "0206-business-dev-process",
+                "name": "初试业务开发全流程"
             }
         ]
     },
     {
         "key": "wyy",
-        "name": "微应用开发进阶",
+        "name": "MDF前端框架-整体说明",
         "children": [
             {
-                "key": "wyy-xmpzsm",
-                "name": "项目配置说明"
+                "key": "0301-MDD-framework-architecture",
+                "name": "MDD框架整体架构"
             },
             {
-                "key": "wyy-MPA",
-                "name": "MPA 多页型微应用",
+                "key": "0302-node-server",
+                "name": "Node Server端整体架构"
+            },
+            {
+                "key": "0303-temp-Relation-desc",
+                "name": "Excel、DB、UI模板关系说明"
+            },
+            {
+                "key": "0304-modular-standard",
+                "name": "模块化规范说明"
+            },
+            {
+                "key": "0305-cube-api",
+                "name": "Cube API清单"
+            },
+            {
+                "key": "0306-runtime-temp",
+                "name": "运行时模板加载过程",
                 "children": [
                     {
-                        "key": "wyy-smsMPA",
-                        "name": "什么是 MPA"
-                    },
-                    {
-                        "key": "wyy-MPAwyygf",
-                        "name": "MPA 微应用规范"
-                    },
-                    {
-                        "key": "wyy-MPAmodel",
-                        "name": "model 定义"
-                    },
-                    {
-                        "key": "wyy-MPAservice",
-                        "name": "service 规范化"
+                        "key": "0307-voucherList",
+                        "name": "VoucherList加载过程"
                     }
                 ]
             },
             {
-                "key": "wyy-SPA",
-                "name": "SPA 单页型微应用",
+                "key": "0308-runtime-component",
+                "name": "运行时组件解析过程"
+            },
+            {
+                "key": "0309-code-call-procedure-analysis",
+                "name": "代码调用过程分析"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF前端框架-Node服务",
+        "children": []
+    },
+    {
+        "key": "",
+        "name": "MDF前端框架-开发指导",
+        "children": [
+            {
+                "key": "0501-extend-dev-print",
+                "name": "扩展开发-打印"
+            },
+            {
+                "key": "0502-yxy-web-is-managed-by-outsourcing",
+                "name": "yxyweb以发包形式管理"
+            },
+            {
+                "key": "0503-diff-dimensions-of-landing",
+                "name": "如何落地不同维度的扩展方式"
+            },
+            {
+                "key": "0504-extend-cascade-refer-dev",
+                "name": "扩展开发-级联参照开发"
+            },
+            {
+                "key": "0505-toolbar-status-preset-desc",
+                "name": "工具栏、状态预置说明"
+            },
+            {
+                "key": "0506-typical-scenario-dev-guide",
+                "name": "典型场景开发指导"
+            },
+            {
+                "key": "0507-read-only-editable-scenario",
+                "name": "只读可编辑各种场景汇总指南"
+            },
+            {
+                "key": "0508-temp-level-extension-dev",
+                "name": "模板级扩展开发"
+            },
+            {
+                "key": "0509-freeView-extension",
+                "name": "FreeView扩展"
+            },
+            {
+                "key": "0510-main-displays-sub-fieldData",
+                "name": "主表显示子表字段数据"
+            },
+            {
+                "key": "0511-tree-card",
+                "name": "树卡支持浏览态、卡片子表编辑"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF前端框架-参照组件",
+        "children": [
+            {
+                "key": "0601-refer-design-instructions",
+                "name": "参照设计说明"
+            },
+            {
+                "key": "",
+                "name": "基础参照（refer）",
                 "children": [
                     {
-                        "key": "wyy-smsSPA",
-                        "name": "什么是 SPA"
+                        "key": "0602-treetable-refer",
+                        "name": "左树右表（treetable）参照的使用"
                     },
                     {
-                        "key": "wyy-SPAwyygf",
-                        "name": "SPA 微应用规范"
+                        "key": "0603-table-refer",
+                        "name": "表(table)参照的使用"
                     },
                     {
-                        "key": "wyy-SPAly",
-                        "name": "路由"
+                        "key": "0604-tree-refer",
+                        "name": "树(tree)参照的使用"
                     }
                 ]
             },
             {
-                "key": "wyy-MDD",
-                "name": "MDD 模型驱动型微应用",
+                "key": "0605-non-yxy-framework",
+                "name": "非营销云框架使用方式"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF前端框架-MetaUI组件",
+        "children": [
+            {
+                "key": "0701-parsing-comp-flow",
+                "name": "解析组件流程"
+            },
+            {
+                "key": "0702-standardize-components",
+                "name": "如何规范化整理组件"
+            },
+            {
+                "key": "0703-referControl",
+                "name": "ReferControl（表单参照）",
                 "children": [
                     {
-                        "key": "wyy-smsMDD",
-                        "name": "什么是 MDD"
+                        "key": "0704-ReferModal",
+                        "name": "ReferModal(参照Modal)"
+                    }
+                ]
+            },
+            {
+                "key": "0705-tableContainer",
+                "name": "TableContainer",
+                "children": [
+                    {
+                        "key": "0706-table",
+                        "name": "Table"
+                    }
+                ]
+            },
+            {
+                "key": "0707-ButtonControl",
+                "name": "ButtonControl",
+                "children": []
+            },
+            {
+                "key": "0708-portal-comp",
+                "name": "Portal 层组件"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF前端框架-ViewModel模型",
+        "children": [
+            {
+                "key": "0801-concept-and-design-idea-of-VM",
+                "name": "ViewModel 的概念及其设计思路"
+            },
+            {
+                "key": "0802-basic-use-and-extension-of-VM",
+                "name": "ViewModel 的基本使用及扩展"
+            },
+            {
+                "key": "",
+                "name": "事件汇总",
+                "children": [
+                    {
+                        "key": "0803-baseModel-base-class",
+                        "name": "BaseModel 基类"
                     },
                     {
-                        "key": "wyy-MDDwyygf",
-                        "name": "MDD 微应用规范"
+                        "key": "0804-containerModel-base-class",
+                        "name": "ContainerModel 基类"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "模块级ViewModel",
+                "children": [
+                    {
+                        "key": "0805-simpleModel",
+                        "name": "SimpleModel"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "容器级ViewModel",
+                "children": [
+                    {
+                        "key": "0806-referViewModel",
+                        "name": "ReferViewModel"
                     },
                     {
-                        "key": "wyy-mtlweb",
-                        "name": "mtl-web模型驱动开发框架"
+                        "key": "0807-code-generation-voucher",
+                        "name": "代码生成-voucher 单据"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "FilterVIewModel",
+                "children": [
+                    {
+                        "key": "0808-filterviewmodel",
+                        "name": "FIlterVIewModel代码分析"
                     }
                 ]
             }
         ]
     },
     {
-        "key": "gj",
-        "name": "高级",
+        "key": "",
+        "name": "MDF前端框架-UI设计器",
         "children": [
             {
-                "key": "gj-kshztdz",
-                "name": "可视化主题定制"
+                "key": "0901-template-designer",
+                "name": "模板设计器"
             },
             {
-                "key": "gj-ucfcli",
-                "name": "ucf-cli 命令行说明"
+                "key": "0902-fe-framework-desc",
+                "name": "设计器-前端框架说明"
             },
             {
-                "key": "gj-ucfrequest",
-                "name": "ucf-request 说明文档"
+                "key": "0903-control-definition",
+                "name": "设计器-控件定义"
             },
             {
-                "key": "gj-mockproxy",
-                "name": "数据 mock 和 proxy"
+                "key": "0904-extension-mechanism",
+                "name": "设计器-扩展机制"
             },
             {
-                "key": "gj-ucfscripts",
-                "name": "ucf-scripts 设计理念"
-            },
-            {
-                "key": "gj-kftsjyhjq",
-                "name": "开发调试经验和技巧"
-            },
-            {
-                "key": "gj-sxqhdbsyjc",
-                "name": "实现前后端部署与集成",
-                "children": [
-                    {
-                        "key": "gj-GPaas",
-                        "name": "基于GPaaS平台的集成和部署"
-                    },
-                    {
-                        "key": "gj-war",
-                        "name": "采用war包的方式部署到Tomcat服务器"
-                    },
-                    {
-                        "key": "gj-nginx",
-                        "name": "基于Nginx的进行部署"
-                    },
-                    {
-                        "key": "gj-cdn",
-                        "name": "部署到CDN"
-                    }
-                ]
+                "key": "0905-control-added",
+                "name": "设计器-控件新增"
             }
         ]
     },
     {
-        "key": "dxal",
-        "name": "典型案例开发教程",
-        "children": [
-            {
-                "key": "dxal-db",
-                "name": "实现单表查询页面功能"
-            }
-        ]
-    },
-    {
-        "key": "cjwt",
-        "name": "常见问题",
-        "children": [
-            {
-                "key": "cjwt-npm",
-                "name": "npm install 异常处理"
-            },
-            {
-                "key": "cjwt-ucfweb",
-                "name": "为什么要升级到 ucf-web"
-            },
-            {
-                "key": "cjwt-gjncyc",
-                "name": "构建内存溢出"
-            },
-            {
-                "key": "cjwt-nodeversion",
-                "name": "不同node版本构建影响因素对比"
-            }
-        ]
-    },
-    {
-        "key": "qdkfgf",
-        "name": "前端开发规范"
-    },
-    {
-        "key": "ucfwebmigrate",
-        "name": "迁移升级工具 ucf-web-migrate"
-    },
-    {
-        "key": "fl",
-        "name": "附录",
-        "children": [
-            {
-                "key": "fl-zjbbhgz",
-                "name": "组件版本号规则"
-            },
-            {
-                "key": "fl-tinperbee",
-                "name": "使用 tinper-bee 组件库"
-            },
-            {
-                "key": "fl-react",
-                "name": "React基础"
-            },
-            {
-                "key": "fl-es6",
-                "name": "ES6新特性"
-            },
-            {
-                "key": "fl-mirror",
-                "name": "关于 mirror"
-            },
-            {
-                "key": "fl-redux",
-                "name": "如何理解 Redux"
-            }
-        ]
-    },
-    {
-        "key": "xmzjsz",
-        "name": "项目最佳实践",
+        "key": "",
+        "name": "MDF前端框架-典型场景开发教程",
         "children":[
             {
-                "key":"xmzjsz-ucfscript",
-                "name":"ucf-script实战"
+                "key":"1101-common_VM",
+                "name":"common_VM.Extend.js"
             },
             {
-                "key":"xmzjsz-gjqdgc",
-                "name":"构建前端工程"
+                "key":"",
+                "name":"零售-店存出库列表",
+                "children": [
+                    {
+                        "key":"1102-VM-source-code",
+                        "name":"VM源代码"
+                    },
+                    {
+                        "key":"1103-VM-extend-source-code",
+                        "name":"VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key":"",
+                "name":"零售-店存出库单",
+                "children": [
+                    {
+                        "key":"1104-VM-source-code",
+                        "name":"VM源代码"
+                    },
+                    {
+                        "key":"1105-VM-extend-source-code",
+                        "name":"VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key":"",
+                "name":"零售-店存入库列表",
+                "children": [
+                    {
+                        "key":"1106-VM-source-code",
+                        "name":"VM源代码"
+                    },
+                    {
+                        "key":"1107-VM-extend-source-code",
+                        "name":"VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key":"",
+                "name":"零售-店存入库单",
+                "children": [
+                    {
+                        "key":"1108-VM-source-code",
+                        "name":"VM源代码"
+                    },
+                    {
+                        "key":"1109-VM-extend-source-code",
+                        "name":"VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key":"",
+                "name":"业务参数",
+                "children": [
+                    {
+                        "key":"1110-VM-source-code",
+                        "name":"VM源代码"
+                    },
+                    {
+                        "key":"1111-VM-extend-source-code",
+                        "name":"VM.extend源代码"
+                    }
+                ]
             }
         ]
     }
