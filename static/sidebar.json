@@ -52,7 +52,7 @@
         ]
     },
     {
-        "key": "wyy",
+        "key": "",
         "name": "MDF前端框架-整体说明",
         "children": [
             {
@@ -97,13 +97,7 @@
     },
     {
         "key": "",
-        "name": "MDF前端框架-Node服务",
-        "children": []
-    },
-    {
-        "key": "1201-MDFV1.0迁移手册",
-        "name": "MDF V1.0迁移手册",
-        "children": []
+        "name": "MDF前端框架-Node服务"
     },
     {
         "key": "",
@@ -221,8 +215,7 @@
             },
             {
                 "key": "0707-ButtonControl",
-                "name": "ButtonControl",
-                "children": []
+                "name": "ButtonControl"
             },
             {
                 "key": "0708-portal-comp",
@@ -399,8 +392,11 @@
         ]
     },
     {
+        "key": "1201-MDFV1.0迁移手册",
+        "name": "MDF V1.0迁移手册"
+    },
+    {
         "key": "1301-MDF视频专栏",
-        "name": "MDF视频专栏",
-        "children": []
+        "name": "MDF视频专栏"
     }
 ]
