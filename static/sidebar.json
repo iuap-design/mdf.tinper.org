@@ -1,7 +1,7 @@
 [
     {
         "key": "",
-        "name": "模型定义",
+        "name": "多端协议与元数据",
         "children": [
             {
                 "key": "0101-doc-category-definition",
@@ -98,6 +98,11 @@
     {
         "key": "",
         "name": "MDF前端框架-Node服务",
+        "children": []
+    },
+    {
+        "key": "1201-MDFV1.0迁移手册",
+        "name": "MDF V1.0迁移手册",
         "children": []
     },
     {
@@ -392,5 +397,10 @@
                 ]
             }
         ]
+    },
+    {
+        "key": "1301-MDF视频专栏",
+        "name": "MDF视频专栏",
+        "children": []
     }
 ]
