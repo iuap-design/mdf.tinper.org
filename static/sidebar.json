@@ -14,10 +14,6 @@
             {
                 "key": "0103-model-definition-va",
                 "name": "模型定义viewApplication"
-            },
-            {
-                "key": "0104-data-dictionary",
-                "name": "数据字典"
             }
         ]
     },
@@ -103,6 +99,10 @@
         "key": "",
         "name": "MDF前端框架-开发指导",
         "children": [
+            {
+                "key": "0512-theme主题开发及使用",
+                "name": "theme - 主题开发及使用"
+            },
             {
                 "key": "0501-extend-dev-print",
                 "name": "扩展开发-打印"
