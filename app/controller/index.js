@@ -42,7 +42,7 @@ marked.setOptions({
 
 module.exports = {
   index: async (ctx, next) => {
-    let component = ctx.params.component || '0101-doc-category-definition';
+    let component = ctx.params.component || (sidebar[0].children && sidebar[0].children[0] ? sidebar[0].children[0].key : sidebar[0].key)
     let rightMenu = [];
     if(menu[component])rightMenu=menu[component];
     let filePath = path.join(__dirname, `../../docs/${component}.md`);
