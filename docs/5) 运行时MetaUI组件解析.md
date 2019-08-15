@@ -83,5 +83,3 @@ if (container.containers) {
         </Row>
       );
 ```
-
-

@@ -37,4 +37,3 @@ table: new cb.models.GridModel({
 ## 优化点
 
 - 在左树右表中，multiple属性共用一份儿数据，这样表格和树要么都是多选要么都是单选，不灵活
-

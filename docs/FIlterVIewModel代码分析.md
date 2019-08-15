@@ -61,4 +61,3 @@ cb.loader.initMetaCommonViewModel = function (name, path, params, parent, events
   return vm;
 };
 ```
-

@@ -479,4 +479,3 @@ function (rows) {});
            说明：根据属性名获取TreeModel<br />       入参：propertyName：子model属性名  <br />                     如propertyName不传则默认取基类model中第一个TreeModel<br />       例：viewmodel.getTreeModel(propertyName)<br /> 
 <a name="OvL1M"></a>
 ### 事件
-

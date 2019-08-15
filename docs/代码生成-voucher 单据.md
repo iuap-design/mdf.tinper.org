@@ -1,4 +1,3 @@
-
 ```javascript
 console.info('%c <%=vmName%> js init', 'color:green');
     cb.viewmodels.register('<%=vmName%>', function (modelType) {
@@ -109,4 +108,3 @@ console.info('%c <%=vmName%> js init', 'color:green');
     return model;
   });
 ```
-

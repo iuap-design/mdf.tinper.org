@@ -114,6 +114,3 @@
 | 多选 | bBatchOperate | showCheckBox | 默认showCheckBox为true，即都包含多选功能 |
 | 右上角columnSetting | groupSchemaId | showColumnSetting | 默认都为true，当groupSchemaId为true，showColumnSetting为false，此时不显示 |
 | 分页 |  | isPagination | 默认为true，特殊场景子表、树表为false |
-
-
-

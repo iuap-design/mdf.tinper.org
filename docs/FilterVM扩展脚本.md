@@ -1,4 +1,3 @@
-
 ```javascript
 cb.define(['common/common_VM.Extend.js'], function (common) {
   var ST_st_storecheckpreparelist_filterVM_Extend = {
@@ -82,4 +81,3 @@ cb.define(['common/common_VM.Extend.js'], function (common) {
 });
 
 ```
-

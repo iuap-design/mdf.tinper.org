@@ -286,5 +286,3 @@
 | authid | authid | varchar(50) |  |
 | 　 | pubts | timestamp | 　 |
 | 　 | tenant_id | bigint(20) | 　 |
-
-

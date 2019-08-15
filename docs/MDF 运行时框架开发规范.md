@@ -1,4 +1,3 @@
-
 <a name="vNcYF"></a>
 ## 运行时框架目录规范
 
@@ -65,7 +64,3 @@ packages/mdf-app
 
 45 directories, 50 files
 ```
-
-
-
-

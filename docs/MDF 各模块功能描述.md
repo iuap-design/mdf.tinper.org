@@ -13,5 +13,3 @@ MDF 模型驱动开发框架 V2.0 采用分层分包的插件化架构进行管�
 |  [mdf-theme-default](http://git.yonyou.com/yonyou-mdf/yonyou-mdf-framework/tree/master/packages/mdf-theme-default) | 主题包：默认U8X主题 |  |
 |  [mdf-theme-ncc](http://git.yonyou.com/yonyou-mdf/yonyou-mdf-framework/tree/master/packages/mdf-theme-ncc) | 主题包：NCC风格 |  |
 | ~~mdf-conf~~ | ~~环境变量配置？暂无，配置项目前在运行时框架的脚手架工程中~~ |  |
-
-
