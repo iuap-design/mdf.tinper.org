@@ -1,5 +1,3 @@
-
-
 <a name="fc74e653"></a>
 # 单据模型定义
 
@@ -559,19 +557,19 @@ Toolbar子控件取值范围（即cControlType取值）
 **1、结构图**
 
 
-![](https://cdn.nlark.com/yuque/0/2019/png/271336/1564628702655-55386d6f-8f87-4498-a2d5-3135efeef16c.png)
-**2、渲染图**<br />**<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271337/1552028496763-a23b2d06-aed7-4ef5-945a-edab23790c14.png#align=left&display=inline&height=572&name=image.png&originHeight=572&originWidth=1480&size=137743&status=done&width=1480)**<br />**
+![](http://design.yonyoucloud.com/static/yuque/0/2019/png/271336/1564628702655-55386d6f-8f87-4498-a2d5-3135efeef16c.png)
+**2、渲染图**<br />**<br />![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271337/1552028496763-a23b2d06-aed7-4ef5-945a-edab23790c14.png#align=left&display=inline&height=572&name=image.png&originHeight=572&originWidth=1480&size=137743&status=done&width=1480)**<br />**
 <a name="9711b2a7"></a>
 ### 店存出库单 （**st_storeout**）
 **1、结构图**
-![](https://cdn.nlark.com/yuque/0/2019/png/271336/1564628702836-66c8f161-233f-4e97-bf95-642ad1015598.png)**2、渲染图**<br />**![image.png](https://cdn.nlark.com/yuque/0/2019/png/271337/1552027897822-f3217a3a-7ac6-4f2b-ac36-cc08fe7a4146.png#align=left&display=inline&height=428&name=image.png&originHeight=850&originWidth=1482&size=78859&status=done&width=746)<br />**
+![](http://design.yonyoucloud.com/static/yuque/0/2019/png/271336/1564628702836-66c8f161-233f-4e97-bf95-642ad1015598.png)**2、渲染图**<br />**![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271337/1552027897822-f3217a3a-7ac6-4f2b-ac36-cc08fe7a4146.png#align=left&display=inline&height=428&name=image.png&originHeight=850&originWidth=1482&size=78859&status=done&width=746)<br />**
 
 <a name="4a41324c"></a>
 ### **门店等级（****aa_storelevel****）**
 **1、结构图**
 
-![](https://cdn.nlark.com/yuque/0/2019/png/271336/1564628702871-8c8d2a34-46d0-4d6e-9d46-b074bc70647d.png)
-**2、渲染图**<br />**<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/271337/1552099739051-502fe592-81cc-4edd-87f2-6f4b00d525fe.png#align=left&display=inline&height=296&name=image.png&originHeight=296&originWidth=689&size=20972&status=done&width=689)**
+![](http://design.yonyoucloud.com/static/yuque/0/2019/png/271336/1564628702871-8c8d2a34-46d0-4d6e-9d46-b074bc70647d.png)
+**2、渲染图**<br />**<br />![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271337/1552099739051-502fe592-81cc-4edd-87f2-6f4b00d525fe.png#align=left&display=inline&height=296&name=image.png&originHeight=296&originWidth=689&size=20972&status=done&width=689)**
 <a name="8dee006e"></a>
 ### **收款单（**rm_gatheringvouch**）**
 **
@@ -623,5 +621,3 @@ Toolbar子控件取值范围（即cControlType取值）
 - 2、bHidden是否隐藏 和 bShowIt是否显示 的区别？
 - 3、Button和PrimaryButton的区别？
 - 4、key和parentKey含义？
-
-

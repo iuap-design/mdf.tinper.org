@@ -71,5 +71,3 @@
 | cShowCaption |  | 按钮显示的title |
 | cControlType |  | 该值为button时，为按钮组件<br />primarybutton时，为红色按钮组件 |
 | cItemName |  | 属性名称，该值与viewModel中allActions中的cItemName匹配按钮的事件 |
-
-

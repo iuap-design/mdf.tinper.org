@@ -1,4 +1,3 @@
-
 ```javascript
 cb.define([], function () {
 	var ST_st_storeoutlist_VM_Extend = {
@@ -130,4 +129,3 @@ cb.define([], function () {
 // WEBPACK FOOTER //
 // ./src/client/business/ST/ST_st_storeoutlist_VM.Extend.js
 ```
-

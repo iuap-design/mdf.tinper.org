@@ -49,9 +49,7 @@
 # 3. Excel对应的UI图层关系
 
 
-![adminOrg.png](https://cdn.nlark.com/yuque/0/2019/png/271336/1554107925145-7ae19921-831c-4fbe-af4d-e354ae1d0b65.png#align=left&display=inline&height=757&name=adminOrg.png&originHeight=1158&originWidth=1141&size=145001&status=done&width=746)
+![adminOrg.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271336/1554107925145-7ae19921-831c-4fbe-af4d-e354ae1d0b65.png#align=left&display=inline&height=757&name=adminOrg.png&originHeight=1158&originWidth=1141&size=145001&status=done&width=746)
 
 <a name="rZZpM"></a>
 # 4. 返讲视频
-
-

@@ -91,16 +91,16 @@
     * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
     * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
   * 零售-店存出库单
-    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
-    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
+    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%812.md>)
+    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%812.md>)
   * 零售-店存入库列表
-    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
-    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
+    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%813.md>)
+    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%813.md>)
   * 零售-店存入库单
-    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
-    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
+    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%814.md>)
+    * [VM.extend源代码](<VM.extend%E6%BA%90%E4%BB%A3%E7%A0%814.md>)
   * 基础数据-组织节点
-    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
+    * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%815.md>)
     * [VM.Extend源代码](<VM.Extend%E6%BA%90%E4%BB%A3%E7%A0%81.md>)
   * [FreeView-采购管理-手工结算](<FreeView-%E9%87%87%E8%B4%AD%E7%AE%A1%E7%90%86-%E6%89%8B%E5%B7%A5%E7%BB%93%E7%AE%97.md>)
     * [源码](<%E6%BA%90%E7%A0%81.md>)

@@ -99,5 +99,3 @@
 | --- | --- | --- |
 | cShowCaption | String | 字段显示名称 |
 | cRefType | String | 初始化ReferModel的时候时需要用的的参数，存储在model实例中，用来在初始化referViewModel ，是referViewModel中调用 /ref/getRefMeta 接口的refCode参数 |
-
-

@@ -16,4 +16,4 @@ referViewMode.on('afterOkClick',(data)=>{
 
 - getRefMetaReady
 
- 说明：请求完参照的meta信息的回调事件<br /> 
+ 说明：请求完参照的meta信息的回调事件<br />

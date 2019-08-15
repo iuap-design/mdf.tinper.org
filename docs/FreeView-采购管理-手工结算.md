@@ -184,4 +184,3 @@ cb.define(['common/common_VM.Extend.js'], function(common) {
 // ./src/client/business/PU/PU_pu_pursettlemanualmenu_VM.Extend.js
 ```
 ```
-
