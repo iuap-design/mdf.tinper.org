@@ -4,20 +4,20 @@
             <li class="menu-group">
                 
                 <% if(item.children){ var two = item.children; %>
-                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item icon-open <%= active==item.key?'active':''%>">
+                    <a href="<%= item.key %>" name="<%= item.key || item.name %>" class="menu-item icon-open <%= active==item.key?'active':''%>">
                         <%= item.name %>
                     </a>
                     <ul class='menu-components-2'>
                         <% two.forEach(item2=>{ %>
                             <li class="menu-group2">
                                 <% if(item2.children){ var three = item2.children; %>
-                                    <a href="<%= item2.key %>" name="<%= item2.key %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
+                                    <a href="<%= item2.key %>" name="<%= item2.key || item2.name %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
                                         <%= item2.name %>
                                     </a>
                                     <ul class='menu-components-3'>
                                         <% three.forEach(item3=>{ %>
                                             <li class="menu-group3">
-                                                <a href="<%= item3.key %>" class="menu-item <%= active==item3.key?'active':''%>" name="<%= item3.key %>"><%= item3.name %></a>
+                                                <a href="<%= item3.key %>" class="menu-item <%= active==item3.key?'active':''%>" name="<%= item3.key || item3.name %>"><%= item3.name %></a>
                                             </li>
                                         <% }) %>
                                     </ul>
@@ -30,7 +30,7 @@
                         <% }) %>
                     </ul>
                 <% }else { %>
-                    <a href="<%= item.key %>" name="<%= item.key %>" class="menu-item <%= active==item.key?'active':''%>">
+                    <a href="<%= item.key %>" name="<%= item.key || item.name %>" class="menu-item <%= active==item.key?'active':''%>">
                         <%= item.name %>
                     </a>
                 <% } %>
