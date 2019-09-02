@@ -44,6 +44,7 @@ MDF提供了全局的模块级 VIewModel 注册方式，具体 API 信息如下�
 | func | function |  |
 
 
+
 <a name="khRGM"></a>
 ### 如何扩展（注册viewmodel）
 
@@ -72,7 +73,7 @@ hellWorld.say();// Say Hello World to zhangsan!
 <a name="b3K54"></a>
 ### 特别说明：ViewModel 保留字
 
-`BaseModel` 、SimpleModel、ListModel、ReferModel、TagModel、ReportModel、FilterModel、TreeModel、GridModel、ContainerModel`
+`BaseModel` 、SimpleModel、ListModel、ReferModel、TagModel、ReportModel、FilterModel、TreeModel、GridModel、ContainerModel
 
 以上关键字作为MDF的保留实现ViewModel，MDF提供了上述viewModel的实现，请开发这避免使用这些关键字。
 <a name="tahIZ"></a>
@@ -111,6 +112,7 @@ MDF提供了全局的模板级VIewModel注册方式，具体 API 信息如下：
 | --- | --- | --- |
 | modelType | string | 自定义的模块类型，如 "ReferModel" |
 | func | function |  |
+
 
 
 <a name="UbAzg"></a>
