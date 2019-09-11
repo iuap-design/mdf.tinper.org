@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "dev": "node --inspect app/app.js",
-    "start": "node app/app.js"
+    "start": "node app/app.js",
+    "sync": "yuque-sync -n 221784 -d ./docs && cp ./docs/sidebar.json ./static/"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/iuap-design/ucf.tinper.org#readme",
   "devDependencies": {},
   "dependencies": {
+    "@yonyou/yuque-sync": "^0.1.2",
     "fs-extra": "^7.0.1",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
