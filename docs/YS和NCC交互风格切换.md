@@ -1,0 +1,84 @@
+资源浏览
+
+**ncc风格字体库**
+
+原始字体<br />[http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ncc/font/demo_index.html](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ncc/font/demo_index.html)<br />新增字体<br />[http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ncc/font_ncc/demo_index.html](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ncc/font_ncc/demo_index.html)<br /> <br />**ys风格字体**
+
+新增字体<br />[http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ys/newfont/demo_index.html](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/ys/newfont/demo_index.html)
+
+
+<a name="P3tMg"></a>
+## 说明
+
+目前MDF2.0支持YonSuite交互风格和NCCloud交互风格，mdf-app在master分支上目前默认是NCCloud风格，如果切换到默认YonSuite风格，需要修改以下三个地方。
+
+
+<a name="n9Pf3"></a>
+## 修改一：更改对主题包的引用
+
+> 对应文件：`src/web/client/styles/default/index.less`
+
+
+```bash
+//ys风格
+@import '~@mdf/theme/theme-ncc/default/minxin-themeColors.less';
+@import '~@mdf/theme/theme-default/index.less';
+
+
+// ncc风格
+// @import '~@mdf/theme/theme-ncc/default/minxin-themeColors.less';
+// @import '~@mdf/theme/theme-ncc/index.less';
+
+```
+
+<a name="iuMdy"></a>
+## 修改二：修改对组件风格扩展配置
+> 对应文件：`src/web/common/config.comp.js`
+
+
+```javascript
+// ncc 配置
+// import  ConfigComp from '@mdf/metaui-web-ncc/lib/components/config.comp';
+// let extendConfig = Object.assign({},ConfigComp);
+
+
+// ys 默认配置
+let extendConfig = {};
+
+
+export default extendConfig;
+
+```
+
+
+<a name="a3Bm6"></a>
+## 修改三：修改对metaui组件的注入和扩展
+
+> 对应文件：src/web/common/registerMetaComp.js
+
+
+```javascript
+// ncc扩展
+// import  webNcc from '@mdf/metaui-web-ncc';
+// const {basic={},filter={},refer={}} = webNcc;
+// 扩展 cControlType
+// const extendComp = {
+    // 'basic': Object.assign({},{Input,Select,Refer,DatePicker,Filter,PageIcon,ReferToolbar,ReferModal,SearchTree}),
+//     'basic': Object.assign({},basic),
+//     'filter':Object.assign({},filter),
+//     'refer':Object.assign({},refer)
+    
+// }
+
+// ys扩展风格扩展 cControlType
+const extendComp = {
+    'basic': {},
+    'meta': {
+        NCCTreeRefer: ''
+     }
+}
+
+
+export default extendComp;
+
+```

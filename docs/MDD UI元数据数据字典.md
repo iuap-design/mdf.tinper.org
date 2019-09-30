@@ -1,6 +1,24 @@
 > 作者：姚磊；修改：勾成图
 
 
+<a name="txP4u"></a>
+### 字段名称命名规则
+
+<a name="xO71Q"></a>
+#### 命名分类说明
+| 命名分类 | 类型说明 | 示例 | 备注 |
+| --- | --- | --- | --- |
+| c开头 | varchar类型，普通字符串 | cBillNo | 单据编码 |
+| i开头 | init类型(init/biginit/tinyinit)，0~65553 | iDefPrnTplId | 0，1，2 |
+| b开头 | boolean类型，布尔值 | bMain | true/false，是否主表 |
+| 其他 |  | templateType、tenant_id |  |
+
+
+<a name="xfQf9"></a>
+#### 命名规范
+
+遵循小驼峰命名，极少部分采用“_”连接的命名方式。
+
 <a name="FrmFo"></a>
 ### [bill_base] 单据信息
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
@@ -101,36 +119,37 @@
 | 　 | sysid | bigint(20) | 　 |
 | 　 | tenant_id | bigint(20) | 　 |
 | 　 | templateType | varchar(20) | 模板类型，目前主要用于指定触屏模板类型；FilterList-过滤列表（主要用于触屏），BodyRefer-表体参照主要用于指定触屏，Modal-模态显示 |
+|  |  |  |  |
 
 
 <a name="dbfd741e"></a>
 ### [billtplgroup_base] 模板分组
-| **Excel中文描述** | **数据库字段** | **类型** | **描述** |
-| :---: | :---: | :---: | :---: |
-| 主键 | id | bigint(20) | 主键 |
-| 单据ID | iBillId | bigint(20) | 所属bill |
-| 单据实体ID | iBillEntityId | bigint(20) | 所属billentity |
-| 单据模板ID | iTplId | bigint(20) | 模版id |
-| 模板分组编码 | cCode | varchar(45) | group编码 |
-| 模板分组名称 | cName | varchar(100) | Group名称 |
-| 子产品ID | cSubId | varchar(45) | 子产品号 |
-| 排序 | iOrder | int(11) | 排序号，从高到低排 |
-| 数据源名称 | cDataSourceName | varchar(100) | 数据源名称，可能是一个表或者一个试图 |
-| 主键名称 | cPrimaryKey | varchar(100) | cDsName主键名称 |
-| 是否可以删除 | isDeleted | tinyint(1) | 逻辑删除标记 |
-| 是否系统定义 | iSystem | tinyint(1) | bit型，0代表系统定义，其他再细分客户／行业等 |
-| 是否主表 | bMain | tinyint(1) |  是否主表 |
-| 子表外键 | cForeignKey | varchar(100) | 如果是子表，则该字段代表该子表中存的主表主键 |
-| 主表数据源 | cParentDataSource | varchar(45) | 主表数据源名称，如果是子表填此项，否则为null |
-| 模板类型 | cType | varchar(45) | group标识类型，比如TabControl,Grid,Tree,Table等 |
-| 上级模板分组ID | iParentId | bigint(20) | 父级billtplgroupid |
-| 排列方式 | cAlign | varchar(45) | group的排列方式 |
-| 显示列数 | iCols | int(11) |  |
-| 排列方式 | cStyle | varchar(1000) |  |
-| 图片 | cImage | varchar(100) | 图标 |
-| 　 | pubts | timestamp | 时间戳 |
-| 　 | sysid | bigint(20) | 　 |
-| 　 | tenant_id | bigint(20) | 　 |
+| **Excel中文描述** | **数据库字段** | **类型** | **描述** | 值枚举 |
+| :---: | :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) | 主键 |  |
+| 单据ID | iBillId | bigint(20) | 所属bill |  |
+| 单据实体ID | iBillEntityId | bigint(20) | 所属billentity |  |
+| 单据模板ID | iTplId | bigint(20) | 模版id |  |
+| 模板分组编码 | cCode | varchar(45) | group编码 |  |
+| 模板分组名称 | cName | varchar(100) | Group名称 |  |
+| 子产品ID | cSubId | varchar(45) | 子产品号 |  |
+| 排序 | iOrder | int(11) | 排序号，从高到低排 |  |
+| 数据源名称 | cDataSourceName | varchar(100) | 数据源名称，可能是一个表或者一个试图 |  |
+| 主键名称 | cPrimaryKey | varchar(100) | cDsName主键名称 |  |
+| 是否可以删除 | isDeleted | tinyint(1) | 逻辑删除标记 |  |
+| 是否系统定义 | iSystem | tinyint(1) | bit型，0代表系统定义，其他再细分客户／行业等 |  |
+| 是否主表 | bMain | tinyint(1) |  是否主表 |  |
+| 子表外键 | cForeignKey | varchar(100) | 如果是子表，则该字段代表该子表中存的主表主键 |  |
+| 主表数据源 | cParentDataSource | varchar(45) | 主表数据源名称，如果是子表填此项，否则为null |  |
+| 模板类型 | cType | varchar(45) | group标识类型，比如TabControl,Grid,Tree,Table等 |  |
+| 上级模板分组ID | iParentId | bigint(20) | 父级billtplgroupid |  |
+| 排列方式 | cAlign | varchar(45) | group的排列方式 | top、left、center |
+| 显示列数 | iCols | int(11) |  |  |
+| 排列方式 | cStyle | varchar(1000) |  |  |
+| 图片 | cImage | varchar(100) | 图标 |  |
+| 　 | pubts | timestamp | 时间戳 |  |
+| 　 | sysid | bigint(20) | 　 |  |
+| 　 | tenant_id | bigint(20) | 　 |  |
 
 
 <a name="dab7dce0"></a>
@@ -175,7 +194,7 @@
 | 是否枚举 | bEnum | tinyint(1) | 是否枚举 |
 | 枚举信息 | cEnumString | varchar(45) | 枚举信息 |
 | 是否可以删除 | isDeleted | tinyint(1) | 逻辑删除标记 |
-| 是否必选 | bMustSelect | tinyint(1) | 是否必选 |
+| 是否必选 | bMustSelect | tinyint(1) | 在数据收集时无论是否为DirtyData，都需要进行收集。注：前提是needCollect、needClear都不能为false |
 | 是否隐藏 | bHidden | tinyint(1) | 是否隐藏 |
 | 参照类型 | cRefType | varchar(45) | 参照类型 |
 | 参照Id | cRefId | varchar(45) | 参照Id |

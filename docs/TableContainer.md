@@ -90,12 +90,15 @@
 # 字段说明
 
 - Table
+
 | 属性 | 说明 | 类型 | 备注 |
 | --- | --- | --- | --- |
 | cItemName | 数据data中的字段名 |  | viewmodel.get("cCode值")获取对应的GridModel |
 | iCols | 所占容器宽度，默认是100% | number | 宽度值=100%/iCols,1即为100% |
 
+
 - 列属性
+
 | 属性 | 说明 | 类型 | 备注 |
 | --- | --- | --- | --- |
 | cCode | 当前表格code值，可以根据此code值获取对应的Model。可以理解为这个表格的id |  | viewmodel.get("cCode值")获取对应的GridModel |
@@ -107,10 +110,16 @@
 | controlType | 字段类型，当值为vouchermoney时，为凭证金额 |  |  |
 | bFixed | 是否为固定列 | boolean | 默认都是非固定列 |
 
+
 <a name="6defd2fd"></a>
 # 复杂功能
+
 | 功能 | vm中字段 | 表格中字段 | 备注 |
 | --- | --- | --- | --- |
 | 多选 | bBatchOperate | showCheckBox | 默认showCheckBox为true，即都包含多选功能 |
 | 右上角columnSetting | groupSchemaId | showColumnSetting | 默认都为true，当groupSchemaId为true，showColumnSetting为false，此时不显示 |
 | 分页 |  | isPagination | 默认为true，特殊场景子表、树表为false |
+
+
+
+viewmodel.get('userdefines').setState('showRowNo', false); // 是否显示序号<br />viewmodel.get('userdefines').setState('showColumnSetting', false); // 是否显示设置列

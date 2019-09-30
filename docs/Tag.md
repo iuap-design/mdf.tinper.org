@@ -1,17 +1,17 @@
 <a name="9e5ffa06"></a>
 ## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#9e5ffa06)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#9e5ffa06)基本信息
-| 组件名称 | Button |
+| 组件名称 | Tag |
 | --- | --- |
 | Version 版本 | - |
 | 位置 | mdf-metaui-web/src/components/basic/tag.jsx |
 | 功能说明 | 标签 |
-| 依赖 | Tinper中的Button组件 |
+| 依赖 | Tinper中的Tag组件 |
 
 <a name="481feccf"></a>
 ## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#481feccf)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#481feccf)如何使用
 
 ```javascript
-<Button {...this.props} />
+<Tag {...this.props} />
 ```
 
 <a name="21f2fa80"></a>
@@ -22,19 +22,17 @@
 | Viewmodel Props | model.addListener | function |  | MVVM 中的模型对象 |
 |  | model.removeListener | <br />function<br /> |  | MVVM 中的模型对象 |
 |  | model.fireEvent | function |  | MVVM 中的模型对象 |
-| UIMeta Props | cStyle | object |  | 组件的cStyle 属性和元数据中的cStyle属性会在组件中选择性的进行合并处理。 |
-|  | cParameter | object |  |  |
-|  | disabeld | boolean |  | 是否禁用 |
-|  | value | string |  | 按钮文字 |
-|  | type | string |  | 类型 |
-|  | icon | string |  | 图标 |
-|  | shape | string |  | 形状 |
-|  | className | string |  | 类名 |
-|  | id | string |  | 唯一标识 |
-|  | iStyle | number |  | 判断显示icon，value或其他 |
-|  | delay | boolean |  | 点击是否防抖，防抖会延迟300ms |
-| UI Props | onClick | function |  | 点击事件 |
-|  | onVisibleChange | function |  | 显示改变事件 |
+| UIMeta Props | cStyle |  |  | 组件的cStyle 属性和元数据中的cStyle属性会在组件中选择性的进行合并处理。 |
+|  | bIsNull | boolean |  | 是否为Null |
+|  | color | string |  | 颜色 |
+|  | refReturn |  |  |  |
+|  | bCanModify | boolean |  | 是否可以修改 |
+|  | readOnly | boolean |  | 是否只读 |
+|  | bHidden | boolean |  | 是否隐藏 |
+|  | focus | boolean |  | 是否聚焦 |
+| UI Props | referClick | function |  | 引用点击事件 |
+|  | onClose | function |  | 关闭事件 |
+|  | afterOkClick | function |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -45,14 +43,9 @@
 ## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#LASIc)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#LASIc)UIMeta 示例
 ```json
 {
-  "value": "提交",
-  "type": "primary",
-  "icon": "uf-submit",
-  "className": "btn-submit"
+  "bIsNull": false,
+  "color": "#13C2C2",
+  "readOnly": false,
+  "bHidden": false
 }
 ```
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#481feccf)
-
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#21f2fa80)
-
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#LASIc)<br />

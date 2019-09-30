@@ -1,5 +1,7 @@
-<a name="Q7YNT"></a>
+_编写：勾成图 有问题可联系勾成图_
+<a name="vBxHi"></a>
 # 1、涉及代码文件
+
 - yxyweb/client/common/common.js
 - voucherlist.js
 - voucher
