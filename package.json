@@ -32,7 +32,7 @@
   "homepage": "https://github.com/iuap-design/ucf.tinper.org#readme",
   "devDependencies": {},
   "dependencies": {
-    "@yonyou/yuque-sync": "^0.1.2",
+    "@yonyou/yuque-sync": "^0.1.3",
     "fs-extra": "^7.0.1",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
