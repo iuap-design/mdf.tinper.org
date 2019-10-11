@@ -1,7 +1,5 @@
-* MDF-版本与升级
-  * [V1.0升级到V2.0迁移手册](<V1.0%E5%8D%87%E7%BA%A7%E5%88%B0V2.0%E8%BF%81%E7%A7%BB%E6%89%8B%E5%86%8C.md>)
-  * [V1.0 和 V2.0 的特性区分](<V1.0%20%E5%92%8C%20V2.0%20%E7%9A%84%E7%89%B9%E6%80%A7%E5%8C%BA%E5%88%86.md>)
-  * [MDF2.0 整体升级进度说明](<MDF2.0%20%E6%95%B4%E4%BD%93%E5%8D%87%E7%BA%A7%E8%BF%9B%E5%BA%A6%E8%AF%B4%E6%98%8E.md>)
+* MDD-多语方案
+  * [MDD-多语使用](<MDD-%E5%A4%9A%E8%AF%AD%E4%BD%BF%E7%94%A8.md>)
 * MDF-多端协议与元数据
   * [多端协议-示例接口数据](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E7%A4%BA%E4%BE%8B%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE.md>)
   * [多端协议-数据模型 viewmodel](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%20viewmodel.md>)
