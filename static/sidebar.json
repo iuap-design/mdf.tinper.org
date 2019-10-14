@@ -218,6 +218,24 @@
     }, {
         "key": "模板级扩展开发",
         "name": "模板级扩展开发"
+    }, {
+        "key": "SimpleModel2",
+        "name": "SimpleModel"
+    }, {
+        "key": "ListModel",
+        "name": "ListModel"
+    }, {
+        "key": "ReferModel",
+        "name": "ReferModel"
+    }, {
+        "key": "TreeModel",
+        "name": "TreeModel"
+    }, {
+        "key": "GridModel2",
+        "name": "GridModel"
+    }, {
+        "key": "ContainerModel",
+        "name": "ContainerModel"
     }]
 }, {
     "key": "",
@@ -331,7 +349,11 @@
         }]
     }, {
         "key": "多交互风格",
-        "name": "多交互风格"
+        "name": "多交互风格",
+        "children": [{
+            "key": "ncc交互风格",
+            "name": "ncc交互风格"
+        }]
     }]
 }, {
     "key": "",
