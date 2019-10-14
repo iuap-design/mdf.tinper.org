@@ -76,6 +76,7 @@
   * [FreeView扩展](<FreeView%E6%89%A9%E5%B1%95.md>)
   * [FilterVM扩展脚本](<FilterVM%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC.md>)
   * [模板级扩展开发](<%E6%A8%A1%E6%9D%BF%E7%BA%A7%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91.md>)
+* [MDF-viewmodel API 手册](<MDF-viewmodel%20API%20%E6%89%8B%E5%86%8C.md>)
   * [SimpleModel](<SimpleModel2.md>)
   * [ListModel](<ListModel.md>)
   * [ReferModel](<ReferModel.md>)

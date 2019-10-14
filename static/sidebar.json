@@ -1,582 +1,812 @@
-[{
-    "key": "",
-    "name": "MDD-多语方案",
-    "children": [{
-        "key": "MDD-多语使用",
-        "name": "MDD-多语使用"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-多端协议与元数据",
-    "children": [{
-        "key": "多端协议-示例接口数据",
-        "name": "多端协议-示例接口数据"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-入门指导",
-    "children": [{
+[
+    {
         "key": "",
-        "name": "介绍",
-        "children": [{
-            "key": "MDF2.0 关键特性",
-            "name": "MDF2.0 关键特性"
-        }, {
-            "key": "MDF 技术栈图谱",
-            "name": "MDF 技术栈图谱"
-        }, {
-            "key": "MDF 运行时框架开发规范",
-            "name": "MDF 运行时框架开发规范"
-        }, {
-            "key": "MDF 各模块功能描述",
-            "name": "MDF 各模块功能描述"
-        }, {
-            "key": "MDD开发入口简介",
-            "name": "MDD开发入口简介"
-        }]
-    }, {
+        "name": "MDD-多语方案",
+        "children": [
+            {
+                "key": "MDD-多语使用",
+                "name": "MDD-多语使用"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "快速上手（使用者）",
-        "children": [{
-            "key": "1.环境安装及前后端工程启动",
-            "name": "1.环境安装及前后端工程启动"
-        }, {
-            "key": "2.元数据配置",
-            "name": "2.元数据配置"
-        }, {
-            "key": "3.模板配置",
-            "name": "3.模板配置"
-        }, {
-            "key": "4.公式使用",
-            "name": "4.公式使用"
-        }, {
-            "key": "5.下拉组件使用",
-            "name": "5.下拉组件使用"
-        }, {
-            "key": "6.编码规则使用",
-            "name": "6.编码规则使用"
-        }, {
-            "key": "7.打印使用",
-            "name": "7.打印使用"
-        }, {
-            "key": "8.流程使用",
-            "name": "8.流程使用"
-        }, {
-            "key": "9.字段校验",
-            "name": "9.字段校验"
-        }, {
-            "key": "10. 参照使用",
-            "name": "10. 参照使用"
-        }, {
-            "key": "11. 如何调试",
-            "name": "11. 如何调试"
-        }]
-    }, {
-        "key": "快速上手（维护者）",
-        "name": "快速上手（维护者）",
-        "children": [{
-            "key": "MDF 分支维护规则",
-            "name": "MDF 分支维护规则"
-        }, {
-            "key": "MDF Package 版本号规则说明",
-            "name": "MDF Package 版本号规则说明"
-        }, {
-            "key": "MDF 扩展机制",
-            "name": "MDF 扩展机制"
-        }, {
-            "key": "MDF 相关模块开发调试",
-            "name": "MDF 相关模块开发调试"
-        }, {
-            "key": "20190923预发环境Package版本清单",
-            "name": "20190923预发环境Package版本清单"
-        }, {
-            "key": "业务工程包体积优化及安装效率提升",
-            "name": "业务工程包体积优化及安装效率提升"
-        }]
-    }, {
-        "key": "YS和NCC交互风格切换",
-        "name": "YS和NCC交互风格切换"
-    }, {
-        "key": "典型场景的Excel配置和XML配置汇总",
-        "name": "典型场景的Excel配置和XML配置汇总"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-运行时原理详解",
-    "children": [{
-        "key": "0) MDF 整体架构说明",
-        "name": "0) MDF 整体架构说明"
-    }, {
-        "key": "1) MDF 运行时原理说明",
-        "name": "1) MDF 运行时原理说明"
-    }, {
-        "key": "2) 协议接口认证",
-        "name": "2) 协议接口认证"
-    }, {
-        "key": "3) 运行时协议转换与模板生成",
-        "name": "3) 运行时协议转换与模板生成"
-    }, {
-        "key": "4) 基于 viewmodel 的通用CRUD业务逻辑",
-        "name": "4) 基于 viewmodel 的通用CRUD业务逻辑"
-    }, {
-        "key": "5) 运行时MetaUI组件解析",
-        "name": "5) 运行时MetaUI组件解析"
-    }, {
-        "key": "6) 客户端渲染",
-        "name": "6) 客户端渲染"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-Cube Core SDK 手册",
-    "children": [{
-        "key": "Cube API List",
-        "name": "Cube API List"
-    }, {
-        "key": "1) 工具类：Util、DOM、Promise",
-        "name": "1) 工具类：Util、DOM、Promise"
-    }, {
+        "name": "MDF-多端协议与元数据",
+        "children": [
+            {
+                "key": "多端协议-示例接口数据",
+                "name": "多端协议-示例接口数据"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "3) ViewModel 模型：通用CRUD业务逻辑抽象",
-        "children": [{
-            "key": "ViewModel 的概念及其设计思路",
-            "name": "ViewModel 的概念及其设计思路"
-        }, {
-            "key": "单据类别定义",
-            "name": "单据类别定义"
-        }, {
-            "key": "ViewModel 的基本使用及扩展",
-            "name": "ViewModel 的基本使用及扩展",
-            "children": [{
-                "key": "ViewModel事件汇总",
-                "name": "ViewModel事件汇总"
-            }, {
-                "key": "Action与Common todo",
-                "name": "Action与Common todo"
-            }]
-        }, {
-            "key": "BaseModel 基类",
-            "name": "BaseModel 基类"
-        }, {
-            "key": "ContainerModel 基类",
-            "name": "ContainerModel 基类"
-        }, {
-            "key": "",
-            "name": "模块级ViewModel",
-            "children": [{
-                "key": "SimpleModel",
+        "name": "MDF-入门指导",
+        "children": [
+            {
+                "key": "",
+                "name": "介绍",
+                "children": [
+                    {
+                        "key": "MDF2.0 关键特性",
+                        "name": "MDF2.0 关键特性"
+                    },
+                    {
+                        "key": "MDF 技术栈图谱",
+                        "name": "MDF 技术栈图谱"
+                    },
+                    {
+                        "key": "MDF 运行时框架开发规范",
+                        "name": "MDF 运行时框架开发规范"
+                    },
+                    {
+                        "key": "MDF 各模块功能描述",
+                        "name": "MDF 各模块功能描述"
+                    },
+                    {
+                        "key": "MDD开发入口简介",
+                        "name": "MDD开发入口简介"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "快速上手（使用者）",
+                "children": [
+                    {
+                        "key": "1.环境安装及前后端工程启动",
+                        "name": "1.环境安装及前后端工程启动"
+                    },
+                    {
+                        "key": "2.元数据配置",
+                        "name": "2.元数据配置"
+                    },
+                    {
+                        "key": "3.模板配置",
+                        "name": "3.模板配置"
+                    },
+                    {
+                        "key": "4.公式使用",
+                        "name": "4.公式使用"
+                    },
+                    {
+                        "key": "5.下拉组件使用",
+                        "name": "5.下拉组件使用"
+                    },
+                    {
+                        "key": "6.编码规则使用",
+                        "name": "6.编码规则使用"
+                    },
+                    {
+                        "key": "7.打印使用",
+                        "name": "7.打印使用"
+                    },
+                    {
+                        "key": "8.流程使用",
+                        "name": "8.流程使用"
+                    },
+                    {
+                        "key": "9.字段校验",
+                        "name": "9.字段校验"
+                    },
+                    {
+                        "key": "10. 参照使用",
+                        "name": "10. 参照使用"
+                    },
+                    {
+                        "key": "11. 如何调试",
+                        "name": "11. 如何调试"
+                    }
+                ]
+            },
+            {
+                "key": "快速上手（维护者）",
+                "name": "快速上手（维护者）",
+                "children": [
+                    {
+                        "key": "MDF 分支维护规则",
+                        "name": "MDF 分支维护规则"
+                    },
+                    {
+                        "key": "MDF Package 版本号规则说明",
+                        "name": "MDF Package 版本号规则说明"
+                    },
+                    {
+                        "key": "MDF 扩展机制",
+                        "name": "MDF 扩展机制"
+                    },
+                    {
+                        "key": "MDF 相关模块开发调试",
+                        "name": "MDF 相关模块开发调试"
+                    },
+                    {
+                        "key": "20190923预发环境Package版本清单",
+                        "name": "20190923预发环境Package版本清单"
+                    },
+                    {
+                        "key": "业务工程包体积优化及安装效率提升",
+                        "name": "业务工程包体积优化及安装效率提升"
+                    }
+                ]
+            },
+            {
+                "key": "YS和NCC交互风格切换",
+                "name": "YS和NCC交互风格切换"
+            },
+            {
+                "key": "典型场景的Excel配置和XML配置汇总",
+                "name": "典型场景的Excel配置和XML配置汇总"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF-运行时原理详解",
+        "children": [
+            {
+                "key": "0) MDF 整体架构说明",
+                "name": "0) MDF 整体架构说明"
+            },
+            {
+                "key": "1) MDF 运行时原理说明",
+                "name": "1) MDF 运行时原理说明"
+            },
+            {
+                "key": "2) 协议接口认证",
+                "name": "2) 协议接口认证"
+            },
+            {
+                "key": "3) 运行时协议转换与模板生成",
+                "name": "3) 运行时协议转换与模板生成"
+            },
+            {
+                "key": "4) 基于 viewmodel 的通用CRUD业务逻辑",
+                "name": "4) 基于 viewmodel 的通用CRUD业务逻辑"
+            },
+            {
+                "key": "5) 运行时MetaUI组件解析",
+                "name": "5) 运行时MetaUI组件解析"
+            },
+            {
+                "key": "6) 客户端渲染",
+                "name": "6) 客户端渲染"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF-Cube Core SDK 手册",
+        "children": [
+            {
+                "key": "Cube API List",
+                "name": "Cube API List"
+            },
+            {
+                "key": "1) 工具类：Util、DOM、Promise",
+                "name": "1) 工具类：Util、DOM、Promise"
+            },
+            {
+                "key": "",
+                "name": "3) ViewModel 模型：通用CRUD业务逻辑抽象",
+                "children": [
+                    {
+                        "key": "ViewModel 的概念及其设计思路",
+                        "name": "ViewModel 的概念及其设计思路"
+                    },
+                    {
+                        "key": "单据类别定义",
+                        "name": "单据类别定义"
+                    },
+                    {
+                        "key": "ViewModel 的基本使用及扩展",
+                        "name": "ViewModel 的基本使用及扩展",
+                        "children": [
+                            {
+                                "key": "ViewModel事件汇总",
+                                "name": "ViewModel事件汇总"
+                            },
+                            {
+                                "key": "Action与Common todo",
+                                "name": "Action与Common todo"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "BaseModel 基类",
+                        "name": "BaseModel 基类"
+                    },
+                    {
+                        "key": "ContainerModel 基类",
+                        "name": "ContainerModel 基类"
+                    },
+                    {
+                        "key": "",
+                        "name": "模块级ViewModel",
+                        "children": [
+                            {
+                                "key": "SimpleModel",
+                                "name": "SimpleModel"
+                            },
+                            {
+                                "key": "GridModel",
+                                "name": "GridModel"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "",
+                        "name": "容器级ViewModel",
+                        "children": [
+                            {
+                                "key": "ReferViewModel",
+                                "name": "ReferViewModel"
+                            },
+                            {
+                                "key": "代码生成-voucher 单据",
+                                "name": "代码生成-voucher 单据"
+                            },
+                            {
+                                "key": "FIlterVIewModel代码分析",
+                                "name": "FIlterVIewModel代码分析"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "4) 模块化规范：requrejs",
+                "name": "4) 模块化规范：requrejs"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF-进阶指导之Excel配置",
+        "children": [
+            {
+                "key": "主表显示子表字段数据",
+                "name": "主表显示子表字段数据"
+            },
+            {
+                "key": "树卡支持浏览态、卡片子表编辑",
+                "name": "树卡支持浏览态、卡片子表编辑"
+            }
+        ]
+    },
+    {
+        "key": "",
+        "name": "MDF-进阶指导之扩展脚本开发",
+        "children": [
+            {
+                "key": "扩展脚本的命名规则及加载流程",
+                "name": "扩展脚本的命名规则及加载流程"
+            },
+            {
+                "key": "模板级ViewModel扩展（除Voucher、VoucherList外）",
+                "name": "模板级ViewModel扩展（除Voucher、VoucherList外）"
+            },
+            {
+                "key": "扩展开发-级联参照开发",
+                "name": "扩展开发-级联参照开发"
+            },
+            {
+                "key": "FreeView扩展",
+                "name": "FreeView扩展"
+            },
+            {
+                "key": "FilterVM扩展脚本",
+                "name": "FilterVM扩展脚本"
+            },
+            {
+                "key": "模板级扩展开发",
+                "name": "模板级扩展开发"
+            }
+        ]
+    },
+    {
+        "key": "MDF-viewmodel API 手册",
+        "name": "MDF-viewmodel API 手册",
+        "children": [
+            {
+                "key": "SimpleModel2",
                 "name": "SimpleModel"
-            }, {
-                "key": "GridModel",
+            },
+            {
+                "key": "ListModel",
+                "name": "ListModel"
+            },
+            {
+                "key": "ReferModel",
+                "name": "ReferModel"
+            },
+            {
+                "key": "TreeModel",
+                "name": "TreeModel"
+            },
+            {
+                "key": "GridModel2",
                 "name": "GridModel"
-            }]
-        }, {
-            "key": "",
-            "name": "容器级ViewModel",
-            "children": [{
-                "key": "ReferViewModel",
-                "name": "ReferViewModel"
-            }, {
-                "key": "代码生成-voucher 单据",
-                "name": "代码生成-voucher 单据"
-            }, {
-                "key": "FIlterVIewModel代码分析",
-                "name": "FIlterVIewModel代码分析"
-            }]
-        }]
-    }, {
-        "key": "4) 模块化规范：requrejs",
-        "name": "4) 模块化规范：requrejs"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-进阶指导之Excel配置",
-    "children": [{
-        "key": "主表显示子表字段数据",
-        "name": "主表显示子表字段数据"
-    }, {
-        "key": "树卡支持浏览态、卡片子表编辑",
-        "name": "树卡支持浏览态、卡片子表编辑"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-进阶指导之扩展脚本开发",
-    "children": [{
-        "key": "扩展脚本的命名规则及加载流程",
-        "name": "扩展脚本的命名规则及加载流程"
-    }, {
-        "key": "模板级ViewModel扩展（除Voucher、VoucherList外）",
-        "name": "模板级ViewModel扩展（除Voucher、VoucherList外）"
-    }, {
-        "key": "扩展开发-级联参照开发",
-        "name": "扩展开发-级联参照开发"
-    }, {
-        "key": "FreeView扩展",
-        "name": "FreeView扩展"
-    }, {
-        "key": "FilterVM扩展脚本",
-        "name": "FilterVM扩展脚本"
-    }, {
-        "key": "模板级扩展开发",
-        "name": "模板级扩展开发"
-    }, {
-        "key": "SimpleModel2",
-        "name": "SimpleModel"
-    }, {
-        "key": "ListModel",
-        "name": "ListModel"
-    }, {
-        "key": "ReferModel",
-        "name": "ReferModel"
-    }, {
-        "key": "TreeModel",
-        "name": "TreeModel"
-    }, {
-        "key": "GridModel2",
-        "name": "GridModel"
-    }, {
-        "key": "ContainerModel",
-        "name": "ContainerModel"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-开发指导",
-    "children": [{
-        "key": "如何落地不同维度的扩展方式",
-        "name": "如何落地不同维度的扩展方式"
-    }, {
-        "key": "理解common action 相关动作规则",
-        "name": "理解common action 相关动作规则"
-    }, {
-        "key": "典型场景开发指导",
-        "name": "典型场景开发指导"
-    }, {
-        "key": "Excel、DB、UI模板关系说明",
-        "name": "Excel、DB、UI模板关系说明"
-    }, {
-        "key": "元数据中的控件类型扩展机制",
-        "name": "元数据中的控件类型扩展机制",
-        "children": [{
-            "key": "MetaUI 组件能力扩展",
-            "name": "MetaUI 组件能力扩展"
-        }, {
-            "key": "BaseUI 组件能力扩展",
-            "name": "BaseUI 组件能力扩展"
-        }, {
-            "key": "扩展MetaUI类型",
-            "name": "扩展MetaUI类型"
-        }]
-    }, {
-        "key": "如何调试",
-        "name": "如何调试",
-        "children": [{
-            "key": "运行时模板代码生成和开发态调试",
-            "name": "运行时模板代码生成和开发态调试"
-        }, {
-            "key": "LOG 日志记录和管理",
-            "name": "LOG 日志记录和管理"
-        }, {
-            "key": "CSS样式sourcemap调试",
-            "name": "CSS样式sourcemap调试"
-        }]
-    }, {
-        "key": "工具栏、状态预置说明",
-        "name": "工具栏、状态预置说明"
-    }, {
-        "key": "只读可编辑各种场景汇总指南",
-        "name": "只读可编辑各种场景汇总指南"
-    }, {
-        "key": "常见问题",
-        "name": "常见问题"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-多交互风格及主题机制",
-    "children": [{
-        "key": "典型布局模式",
-        "name": "典型布局模式",
-        "children": [{
-            "key": "单列表模式",
-            "name": "单列表模式",
-            "children": [{
-                "key": "普通查询+列表",
-                "name": "普通查询+列表"
-            }, {
-                "key": "查询模板+列表",
-                "name": "查询模板+列表"
-            }, {
-                "key": "树状表（列表树）",
-                "name": "树状表（列表树）"
-            }]
-        }, {
-            "key": "树卡模式",
-            "name": "树卡模式"
-        }, {
-            "key": "主子表模式",
-            "name": "主子表模式",
-            "children": [{
-                "key": "一主多子表（流式布局）",
-                "name": "一主多子表（流式布局）"
-            }, {
-                "key": "一主一子表",
-                "name": "一主一子表"
-            }, {
-                "key": "主子孙模式（不推荐）",
-                "name": "主子孙模式（不推荐）"
-            }]
-        }, {
-            "key": "树表模式",
-            "name": "树表模式"
-        }, {
-            "key": "卡片模式",
-            "name": "卡片模式",
-            "children": [{
-                "key": "多卡片（卡片分组）",
-                "name": "多卡片（卡片分组）"
-            }]
-        }, {
-            "key": "卡表模式",
-            "name": "卡表模式",
-            "children": [{
-                "key": "一卡一表",
-                "name": "一卡一表"
-            }, {
-                "key": "一卡多表",
-                "name": "一卡多表"
-            }]
-        }, {
-            "key": "自由布局模式",
-            "name": "自由布局模式"
-        }]
-    }, {
-        "key": "多交互风格",
-        "name": "多交互风格",
-        "children": [{
-            "key": "ncc交互风格",
-            "name": "ncc交互风格"
-        }]
-    }]
-}, {
-    "key": "",
-    "name": "MDF-bpaas业务特性之参照",
-    "children": [{
-        "key": "参照设计说明",
-        "name": "参照设计说明"
-    }, {
-        "key": "基础参照（refer）",
-        "name": "基础参照（refer）",
-        "children": [{
-            "key": "左树右表（treetable）参照的使用",
-            "name": "左树右表（treetable）参照的使用"
-        }, {
-            "key": "表(table)参照的使用",
-            "name": "表(table)参照的使用"
-        }, {
-            "key": "树(tree)参照的使用",
-            "name": "树(tree)参照的使用"
-        }]
-    }, {
-        "key": "Combobox参照（Combobox）",
-        "name": "Combobox参照（Combobox）"
-    }, {
-        "key": "非MDD框架使用统一参照方式",
-        "name": "非MDD框架使用统一参照方式"
-    }, {
+            },
+            {
+                "key": "ContainerModel",
+                "name": "ContainerModel"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "参照设计器",
-        "children": [{
-            "key": "参照注册",
-            "name": "参照注册"
-        }]
-    }, {
-        "key": "常用参照清单汇总",
-        "name": "常用参照清单汇总"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-bpaas业务特性之查询方案",
-    "children": [{
-        "key": "什么是查询模板",
-        "name": "什么是查询模板"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-bpaas其他重要特性",
-    "children": [{
-        "key": "自定义档案",
-        "name": "自定义档案"
-    }, {
-        "key": "编码规则",
-        "name": "编码规则",
-        "children": [{
-            "key": "扩展开发-打印",
-            "name": "扩展开发-打印"
-        }]
-    }, {
-        "key": "自定义项",
-        "name": "自定义项"
-    }, {
+        "name": "MDF-开发指导",
+        "children": [
+            {
+                "key": "如何落地不同维度的扩展方式",
+                "name": "如何落地不同维度的扩展方式"
+            },
+            {
+                "key": "理解common action 相关动作规则",
+                "name": "理解common action 相关动作规则"
+            },
+            {
+                "key": "典型场景开发指导",
+                "name": "典型场景开发指导"
+            },
+            {
+                "key": "Excel、DB、UI模板关系说明",
+                "name": "Excel、DB、UI模板关系说明"
+            },
+            {
+                "key": "元数据中的控件类型扩展机制",
+                "name": "元数据中的控件类型扩展机制",
+                "children": [
+                    {
+                        "key": "MetaUI 组件能力扩展",
+                        "name": "MetaUI 组件能力扩展"
+                    },
+                    {
+                        "key": "BaseUI 组件能力扩展",
+                        "name": "BaseUI 组件能力扩展"
+                    },
+                    {
+                        "key": "扩展MetaUI类型",
+                        "name": "扩展MetaUI类型"
+                    }
+                ]
+            },
+            {
+                "key": "如何调试",
+                "name": "如何调试",
+                "children": [
+                    {
+                        "key": "运行时模板代码生成和开发态调试",
+                        "name": "运行时模板代码生成和开发态调试"
+                    },
+                    {
+                        "key": "LOG 日志记录和管理",
+                        "name": "LOG 日志记录和管理"
+                    },
+                    {
+                        "key": "CSS样式sourcemap调试",
+                        "name": "CSS样式sourcemap调试"
+                    }
+                ]
+            },
+            {
+                "key": "工具栏、状态预置说明",
+                "name": "工具栏、状态预置说明"
+            },
+            {
+                "key": "只读可编辑各种场景汇总指南",
+                "name": "只读可编辑各种场景汇总指南"
+            },
+            {
+                "key": "常见问题",
+                "name": "常见问题"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "权限管控服务-按钮、数据、节点显示"
-    }, {
+        "name": "MDF-多交互风格及主题机制",
+        "children": [
+            {
+                "key": "典型布局模式",
+                "name": "典型布局模式",
+                "children": [
+                    {
+                        "key": "单列表模式",
+                        "name": "单列表模式",
+                        "children": [
+                            {
+                                "key": "普通查询+列表",
+                                "name": "普通查询+列表"
+                            },
+                            {
+                                "key": "查询模板+列表",
+                                "name": "查询模板+列表"
+                            },
+                            {
+                                "key": "树状表（列表树）",
+                                "name": "树状表（列表树）"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "树卡模式",
+                        "name": "树卡模式"
+                    },
+                    {
+                        "key": "主子表模式",
+                        "name": "主子表模式",
+                        "children": [
+                            {
+                                "key": "一主多子表（流式布局）",
+                                "name": "一主多子表（流式布局）"
+                            },
+                            {
+                                "key": "一主一子表",
+                                "name": "一主一子表"
+                            },
+                            {
+                                "key": "主子孙模式（不推荐）",
+                                "name": "主子孙模式（不推荐）"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "树表模式",
+                        "name": "树表模式"
+                    },
+                    {
+                        "key": "卡片模式",
+                        "name": "卡片模式",
+                        "children": [
+                            {
+                                "key": "多卡片（卡片分组）",
+                                "name": "多卡片（卡片分组）"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "卡表模式",
+                        "name": "卡表模式",
+                        "children": [
+                            {
+                                "key": "一卡一表",
+                                "name": "一卡一表"
+                            },
+                            {
+                                "key": "一卡多表",
+                                "name": "一卡多表"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "自由布局模式",
+                        "name": "自由布局模式"
+                    }
+                ]
+            },
+            {
+                "key": "多交互风格",
+                "name": "多交互风格",
+                "children": [
+                    {
+                        "key": "ncc交互风格",
+                        "name": "ncc交互风格"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "组织管理服务"
-    }]
-}, {
-    "key": "MDF-全球化（多语言）",
-    "name": "MDF-全球化（多语言）",
-    "children": [{
-        "key": "多语言方案",
-        "name": "多语言方案"
-    }, {
-        "key": "使用文档",
-        "name": "使用文档"
-    }]
-}, {
-    "key": "MDF-公式组件与公式设计器",
-    "name": "MDF-公式组件与公式设计器"
-}, {
-    "key": "",
-    "name": "MDF-MetaUI Web 组件",
-    "children": [{
-        "key": "解析组件流程",
-        "name": "解析组件流程"
-    }, {
+        "name": "MDF-bpaas业务特性之参照",
+        "children": [
+            {
+                "key": "参照设计说明",
+                "name": "参照设计说明"
+            },
+            {
+                "key": "基础参照（refer）",
+                "name": "基础参照（refer）",
+                "children": [
+                    {
+                        "key": "左树右表（treetable）参照的使用",
+                        "name": "左树右表（treetable）参照的使用"
+                    },
+                    {
+                        "key": "表(table)参照的使用",
+                        "name": "表(table)参照的使用"
+                    },
+                    {
+                        "key": "树(tree)参照的使用",
+                        "name": "树(tree)参照的使用"
+                    }
+                ]
+            },
+            {
+                "key": "Combobox参照（Combobox）",
+                "name": "Combobox参照（Combobox）"
+            },
+            {
+                "key": "非MDD框架使用统一参照方式",
+                "name": "非MDD框架使用统一参照方式"
+            },
+            {
+                "key": "",
+                "name": "参照设计器",
+                "children": [
+                    {
+                        "key": "参照注册",
+                        "name": "参照注册"
+                    }
+                ]
+            },
+            {
+                "key": "常用参照清单汇总",
+                "name": "常用参照清单汇总"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "Container 容器型组件",
-        "children": [{
-            "key": "ConvenientQuery(过滤容器)",
-            "name": "ConvenientQuery(过滤容器)"
-        }, {
-            "key": "TableContainer",
-            "name": "TableContainer"
-        }]
-    }, {
-        "key": "Refer 参照类组件",
-        "name": "Refer 参照类组件",
-        "children": [{
-            "key": "ReferControl(表单参照)",
-            "name": "ReferControl(表单参照)"
-        }, {
-            "key": "ReferModal(参照Modal)",
-            "name": "ReferModal(参照Modal)"
-        }]
-    }, {
-        "key": "Controls 基础组件",
-        "name": "Controls 基础组件",
-        "children": [{
-            "key": "Print",
-            "name": "Print"
-        }, {
-            "key": "ButtonControl",
-            "name": "ButtonControl"
-        }, {
-            "key": "PrimaryButton",
-            "name": "PrimaryButton"
-        }, {
-            "key": "PrintButton",
-            "name": "PrintButton"
-        }, {
-            "key": "DropdownButton",
-            "name": "DropdownButton"
-        }, {
-            "key": "Tag",
-            "name": "Tag"
-        }, {
-            "key": "Icon",
-            "name": "Icon"
-        }]
-    }, {
-        "key": "Basic 类组件",
-        "name": "Basic 类组件",
-        "children": [{
-            "key": "Table",
-            "name": "Table"
-        }, {
-            "key": "Button",
-            "name": "Button"
-        }]
-    }, {
-        "key": "Portal 门户类组件（原）",
-        "name": "Portal 门户类组件（原）"
-    }, {
-        "key": "基础业务组件（公共平台提供）",
-        "name": "基础业务组件（公共平台提供）"
-    }]
-}, {
-    "key": "MDF-MetaUI Mobile组件",
-    "name": "MDF-MetaUI Mobile组件"
-}, {
-    "key": "",
-    "name": "MDF-典型场景代码分析",
-    "children": [{
-        "key": "common_VM.Extend.js",
-        "name": "common_VM.Extend.js"
-    }, {
+        "name": "MDF-bpaas业务特性之查询方案",
+        "children": [
+            {
+                "key": "什么是查询模板",
+                "name": "什么是查询模板"
+            }
+        ]
+    },
+    {
         "key": "",
-        "name": "零售-店存出库列表",
-        "children": [{
-            "key": "VM源代码",
-            "name": "VM源代码"
-        }, {
-            "key": "VM.extend源代码",
-            "name": "VM.extend源代码"
-        }]
-    }, {
+        "name": "MDF-bpaas其他重要特性",
+        "children": [
+            {
+                "key": "自定义档案",
+                "name": "自定义档案"
+            },
+            {
+                "key": "编码规则",
+                "name": "编码规则",
+                "children": [
+                    {
+                        "key": "扩展开发-打印",
+                        "name": "扩展开发-打印"
+                    }
+                ]
+            },
+            {
+                "key": "自定义项",
+                "name": "自定义项"
+            },
+            {
+                "key": "",
+                "name": "权限管控服务-按钮、数据、节点显示"
+            },
+            {
+                "key": "",
+                "name": "组织管理服务"
+            }
+        ]
+    },
+    {
+        "key": "MDF-全球化（多语言）",
+        "name": "MDF-全球化（多语言）",
+        "children": [
+            {
+                "key": "多语言方案",
+                "name": "多语言方案"
+            },
+            {
+                "key": "使用文档",
+                "name": "使用文档"
+            }
+        ]
+    },
+    {
+        "key": "MDF-公式组件与公式设计器",
+        "name": "MDF-公式组件与公式设计器"
+    },
+    {
         "key": "",
-        "name": "零售-店存出库单",
-        "children": [{
-            "key": "VM源代码2",
-            "name": "VM源代码"
-        }, {
-            "key": "VM.extend源代码2",
-            "name": "VM.extend源代码"
-        }]
-    }, {
+        "name": "MDF-MetaUI Web 组件",
+        "children": [
+            {
+                "key": "解析组件流程",
+                "name": "解析组件流程"
+            },
+            {
+                "key": "",
+                "name": "Container 容器型组件",
+                "children": [
+                    {
+                        "key": "ConvenientQuery(过滤容器)",
+                        "name": "ConvenientQuery(过滤容器)"
+                    },
+                    {
+                        "key": "TableContainer",
+                        "name": "TableContainer"
+                    }
+                ]
+            },
+            {
+                "key": "Refer 参照类组件",
+                "name": "Refer 参照类组件",
+                "children": [
+                    {
+                        "key": "ReferControl(表单参照)",
+                        "name": "ReferControl(表单参照)"
+                    },
+                    {
+                        "key": "ReferModal(参照Modal)",
+                        "name": "ReferModal(参照Modal)"
+                    }
+                ]
+            },
+            {
+                "key": "Controls 基础组件",
+                "name": "Controls 基础组件",
+                "children": [
+                    {
+                        "key": "Print",
+                        "name": "Print"
+                    },
+                    {
+                        "key": "ButtonControl",
+                        "name": "ButtonControl"
+                    },
+                    {
+                        "key": "PrimaryButton",
+                        "name": "PrimaryButton"
+                    },
+                    {
+                        "key": "PrintButton",
+                        "name": "PrintButton"
+                    },
+                    {
+                        "key": "DropdownButton",
+                        "name": "DropdownButton"
+                    },
+                    {
+                        "key": "Tag",
+                        "name": "Tag"
+                    },
+                    {
+                        "key": "Icon",
+                        "name": "Icon"
+                    }
+                ]
+            },
+            {
+                "key": "Basic 类组件",
+                "name": "Basic 类组件",
+                "children": [
+                    {
+                        "key": "Table",
+                        "name": "Table"
+                    },
+                    {
+                        "key": "Button",
+                        "name": "Button"
+                    }
+                ]
+            },
+            {
+                "key": "Portal 门户类组件（原）",
+                "name": "Portal 门户类组件（原）"
+            },
+            {
+                "key": "基础业务组件（公共平台提供）",
+                "name": "基础业务组件（公共平台提供）"
+            }
+        ]
+    },
+    {
+        "key": "MDF-MetaUI Mobile组件",
+        "name": "MDF-MetaUI Mobile组件"
+    },
+    {
         "key": "",
-        "name": "零售-店存入库列表",
-        "children": [{
-            "key": "VM源代码3",
-            "name": "VM源代码"
-        }, {
-            "key": "VM.extend源代码3",
-            "name": "VM.extend源代码"
-        }]
-    }, {
-        "key": "",
-        "name": "零售-店存入库单",
-        "children": [{
-            "key": "VM源代码4",
-            "name": "VM源代码"
-        }, {
-            "key": "VM.extend源代码4",
-            "name": "VM.extend源代码"
-        }]
-    }, {
-        "key": "",
-        "name": "基础数据-组织节点",
-        "children": [{
-            "key": "VM源代码5",
-            "name": "VM源代码"
-        }, {
-            "key": "VM.extend源代码5",
-            "name": "VM.extend源代码"
-        }]
-    }, {
-        "key": "FreeView-采购管理-手工结算",
-        "name": "FreeView-采购管理-手工结算",
-        "children": [{
-            "key": "源码",
-            "name": "源码"
-        }]
-    }]
-}, {
-    "key": "MDF-视频专栏",
-    "name": "MDF-视频专栏",
-    "children": [{
-        "key": "20190709架构分享会",
-        "name": "20190709架构分享会"
-    }]
-}, {
-    "key": "环境安装及前后端工程启动",
-    "name": "环境安装及前后端工程启动"
-}]
+        "name": "MDF-典型场景代码分析",
+        "children": [
+            {
+                "key": "common_VM.Extend.js",
+                "name": "common_VM.Extend.js"
+            },
+            {
+                "key": "",
+                "name": "零售-店存出库列表",
+                "children": [
+                    {
+                        "key": "VM源代码",
+                        "name": "VM源代码"
+                    },
+                    {
+                        "key": "VM.extend源代码",
+                        "name": "VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "零售-店存出库单",
+                "children": [
+                    {
+                        "key": "VM源代码2",
+                        "name": "VM源代码"
+                    },
+                    {
+                        "key": "VM.extend源代码2",
+                        "name": "VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "零售-店存入库列表",
+                "children": [
+                    {
+                        "key": "VM源代码3",
+                        "name": "VM源代码"
+                    },
+                    {
+                        "key": "VM.extend源代码3",
+                        "name": "VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "零售-店存入库单",
+                "children": [
+                    {
+                        "key": "VM源代码4",
+                        "name": "VM源代码"
+                    },
+                    {
+                        "key": "VM.extend源代码4",
+                        "name": "VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key": "",
+                "name": "基础数据-组织节点",
+                "children": [
+                    {
+                        "key": "VM源代码5",
+                        "name": "VM源代码"
+                    },
+                    {
+                        "key": "VM.extend源代码5",
+                        "name": "VM.extend源代码"
+                    }
+                ]
+            },
+            {
+                "key": "FreeView-采购管理-手工结算",
+                "name": "FreeView-采购管理-手工结算",
+                "children": [
+                    {
+                        "key": "源码",
+                        "name": "源码"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "MDF-视频专栏",
+        "name": "MDF-视频专栏",
+        "children": [
+            {
+                "key": "20190709架构分享会",
+                "name": "20190709架构分享会"
+            }
+        ]
+    },
+    {
+        "key": "环境安装及前后端工程启动",
+        "name": "环境安装及前后端工程启动"
+    }
+]
