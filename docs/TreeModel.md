@@ -89,5 +89,3 @@ viewmodel.get(propertyName).on(' beforeCheck,function (data) {
 //例：示例中的data为check选中数据
 viewmodel.get(propertyName).on(' afterCheck,function (data) {});
 ```
-
-      <br />            <br />

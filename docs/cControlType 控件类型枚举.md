@@ -1,49 +1,49 @@
 <a name="mMRFx"></a>
 ## 容器类组件
 
-| 控件分类 | cControlType | **含义** | **说明** |  |
-| :---: | :---: | :---: | :---: | :---: |
-| 容器型组件 | TableContainer | 表格容器 | 表格容器 |  |
-| 容器型组件 | Table | 表体区域 | 包括containers和controls，containers中通常放置Toolbar |  |
-| 容器型组件 | CardHeader | 卡片头部区域 | 容器 |  |
-| 容器型组件 | ListHeader | 列表头部区域 | 容器，包括过滤方案 |  |
-| 容器型组件 | MainTitle | 主标题区域 | 通常放置Title |  |
-| 容器型组件 | Title | 标题 | 有特殊样式的Label |  |
-| 容器型组件 | StatusBar | 状态栏 | 无子控件 |  |
-| 容器型组件 | ProcessGroup | 进度组 | 无子控件 |  |
-| 容器型组件 | Toolbar | 工具栏 | 操作按钮组，应存在于其它容器内，且子控件必需是按钮 |  |
-| 容器型组件 | CardTabs | 卡片页签 | 卡片页签控件 |  |
-| 容器型组件 | GroupContainer | 分组容器 | 支持展开和收起 |  |
-| 容器型组件 | Group | 分组 | 渲染逻辑有分组标题 |  |
-| 容器型组件 | LineTabs | 列表页签 | 列表页签控件 |  |
-| 容器型组件 | TabPage | 页面页签 | 无渲染，其渲染逻辑和CardTabs相同 |  |
-| 容器型组件 | Container | 容器 | DIV |  |
-| 容器型组件 | Footer | 页脚 | 恒显示在下面 |  |
-| 容器型组件 | FileUpload | 文件上传 | 文件上传控件，控件位置：src/yxyweb/common/components/file-upload |  |
-| 容器型组件 | RptTableContainer | 报表表格容器 | 报表表格容器 |  |
-| 容器型组件 | RptTable | 报表表格 | 报表表格 |  |
-| 容器型组件 | TotalContainer | 汇总区域 | 汇总区域 |  |
-| 容器型组件 | ConvenientQuery | 过滤区域 | 控件位置：src/yxyweb/common/components/filter |  |
-| 容器型组件 | TableControl | 表格控件 | 表格控件 |  |
-| 容器型组件 | Sign | 标记 | 标记状态图片 |  |
-| 容器型组件 | TreeTableContainer | 树表容器 | 树表容器 |  |
-| 容器型组件 | Tree | 树 | 树控件 |  |
-| 容器型组件 | SearchTree | 搜索树 | 无子控件 |  |
-| 容器型组件 | CheckboxContainer | 复选框容器 | 复选框容器 |  |
-| 容器型组件 | FlatRowContainer | 水平行容器 | 水平行容器 |  |
-| 容器型组件 | TitleTips | 标题Tips | 标题Tips |  |
-| 容器型组件 | Div | 容器 | 无渲染，走通用渲染逻辑 |  |
-| 容器型组件 | View | 容器 | 无渲染，走通用渲染逻辑 |  |
-| 容器型组件 | Header | 容器 | 无渲染，走通用渲染逻辑 |  |
-| 容器型组件 | CardCommonToolbar | 卡片公用工具栏 | 无渲染，猜测无用 |  |
-| 容器型组件 | HighLight | 高亮线 | 无渲染，猜测无用 |  |
-| 容器型组件 | HiddenContainer | 隐藏容器 | 无渲染，猜测无用 |  |
-| 容器型组件 | Member |  |  |  |
-| 容器型组件 | VoucherDetail |  |  |  |
-| 容器型组件 | Card |  |  |  |
-| 容器型组件 | CreditGathering |  |  |  |
-| 容器型组件 | Modal |  |  |  |
-| 容器型组件 | ReportSelect |  |  |  |
+| 控件分类 | cControlType | **含义** | **说明** |
+| :---: | :---: | :---: | :---: |
+| 容器型组件 | TableContainer | 表格容器 | 表格容器 |
+| 容器型组件 | Table | 表体区域 | 包括containers和controls，containers中通常放置Toolbar |
+| 容器型组件 | CardHeader | 卡片头部区域 | 容器 |
+| 容器型组件 | ListHeader | 列表头部区域 | 容器，包括过滤方案 |
+| 容器型组件 | MainTitle | 主标题区域 | 通常放置Title |
+| 容器型组件 | Title | 标题 | 有特殊样式的Label |
+| 容器型组件 | StatusBar | 状态栏 | 无子控件 |
+| 容器型组件 | ProcessGroup | 进度组 | 无子控件 |
+| 容器型组件 | Toolbar | 工具栏 | 操作按钮组，应存在于其它容器内，且子控件必需是按钮 |
+| 容器型组件 | CardTabs | 卡片页签 | 卡片页签控件 |
+| 容器型组件 | GroupContainer | 分组容器 | 支持展开和收起 |
+| 容器型组件 | Group | 分组 | 渲染逻辑有分组标题 |
+| 容器型组件 | LineTabs | 列表页签 | 列表页签控件 |
+| 容器型组件 | TabPage | 页面页签 | 无渲染，其渲染逻辑和CardTabs相同 |
+| 容器型组件 | Container | 容器 | DIV |
+| 容器型组件 | Footer | 页脚 | 恒显示在下面 |
+| 容器型组件 | FileUpload | 文件上传 | 文件上传控件，控件位置：src/yxyweb/common/components/file-upload |
+| 容器型组件 | RptTableContainer | 报表表格容器 | 报表表格容器 |
+| 容器型组件 | RptTable | 报表表格 | 报表表格 |
+| 容器型组件 | TotalContainer | 汇总区域 | 汇总区域 |
+| 容器型组件 | ConvenientQuery | 过滤区域 | 控件位置：src/yxyweb/common/components/filter |
+| 容器型组件 | TableControl | 表格控件 | 表格控件 |
+| 容器型组件 | Sign | 标记 | 标记状态图片 |
+| 容器型组件 | TreeTableContainer | 树表容器 | 树表容器 |
+| 容器型组件 | Tree | 树 | 树控件 |
+| 容器型组件 | SearchTree | 搜索树 | 无子控件 |
+| 容器型组件 | CheckboxContainer | 复选框容器 | 复选框容器 |
+| 容器型组件 | FlatRowContainer | 水平行容器 | 水平行容器 |
+| 容器型组件 | TitleTips | 标题Tips | 标题Tips |
+| 容器型组件 | Div | 容器 | 无渲染，走通用渲染逻辑 |
+| 容器型组件 | View | 容器 | 无渲染，走通用渲染逻辑 |
+| 容器型组件 | Header | 容器 | 无渲染，走通用渲染逻辑 |
+| 容器型组件 | CardCommonToolbar | 卡片公用工具栏 | 无渲染，猜测无用 |
+| 容器型组件 | HighLight | 高亮线 | 无渲染，猜测无用 |
+| 容器型组件 | HiddenContainer | 隐藏容器 | 无渲染，猜测无用 |
+| 容器型组件 | Member |  |  |
+| 容器型组件 | VoucherDetail |  |  |
+| 容器型组件 | Card |  |  |
+| 容器型组件 | CreditGathering |  |  |
+| 容器型组件 | Modal |  |  |
+| 容器型组件 | ReportSelect |  |  |
 
 <a name="9d689446"></a>
 ### 

@@ -1,5 +1,3 @@
-* MDD-多语方案
-  * [MDD-多语使用](<MDD-%E5%A4%9A%E8%AF%AD%E4%BD%BF%E7%94%A8.md>)
 * MDF-多端协议与元数据
   * [多端协议-示例接口数据](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E7%A4%BA%E4%BE%8B%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE.md>)
   * [多端协议-数据模型 viewmodel](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%20viewmodel.md>)
@@ -60,6 +58,10 @@
     * [ContainerModel 基类](<ContainerModel%20%E5%9F%BA%E7%B1%BB.md>)
     * 模块级ViewModel
       * [SimpleModel](<SimpleModel.md>)
+      * [ListModel](<ListModel.md>)
+      * [ReferModel](<ReferModel.md>)
+      * [TagModel](<TagModel.md>)
+      * [TreeModel](<TreeModel.md>)
       * [GridModel](<GridModel.md>)
     * 容器级ViewModel
       * [ReferViewModel](<ReferViewModel.md>)
@@ -76,13 +78,6 @@
   * [FreeView扩展](<FreeView%E6%89%A9%E5%B1%95.md>)
   * [FilterVM扩展脚本](<FilterVM%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC.md>)
   * [模板级扩展开发](<%E6%A8%A1%E6%9D%BF%E7%BA%A7%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91.md>)
-* [MDF-viewmodel API 手册](<MDF-viewmodel%20API%20%E6%89%8B%E5%86%8C.md>)
-  * [SimpleModel](<SimpleModel2.md>)
-  * [ListModel](<ListModel.md>)
-  * [ReferModel](<ReferModel.md>)
-  * [TreeModel](<TreeModel.md>)
-  * [GridModel](<GridModel2.md>)
-  * [ContainerModel](<ContainerModel.md>)
 * MDF-开发指导
   * [如何落地不同维度的扩展方式](<%E5%A6%82%E4%BD%95%E8%90%BD%E5%9C%B0%E4%B8%8D%E5%90%8C%E7%BB%B4%E5%BA%A6%E7%9A%84%E6%89%A9%E5%B1%95%E6%96%B9%E5%BC%8F.md>)
   * [理解common action 相关动作规则](<%E7%90%86%E8%A7%A3common%20action%20%E7%9B%B8%E5%85%B3%E5%8A%A8%E4%BD%9C%E8%A7%84%E5%88%99.md>)
@@ -140,6 +135,7 @@
   * 权限管控服务-按钮、数据、节点显示
   * 组织管理服务
 * [MDF-全球化（多语言）](<MDF-%E5%85%A8%E7%90%83%E5%8C%96%EF%BC%88%E5%A4%9A%E8%AF%AD%E8%A8%80%EF%BC%89.md>)
+  * [MDD-多语使用](<MDD-%E5%A4%9A%E8%AF%AD%E4%BD%BF%E7%94%A8.md>)
   * [多语言方案](<%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%96%B9%E6%A1%88.md>)
   * [使用文档](<%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md>)
 * [MDF-公式组件与公式设计器](<MDF-%E5%85%AC%E5%BC%8F%E7%BB%84%E4%BB%B6%E4%B8%8E%E5%85%AC%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%99%A8.md>)
