@@ -4,20 +4,36 @@
             <li class="menu-group">
                 
                 <% if(item.children){ var two = item.children; %>
-                    <a href="<%= item.key %>" name="<%= item.key || item.name %>" class="menu-item icon-open <%= active==item.key?'active':''%>">
+                    <a name="<%= item.key || item.name %>" class="menu-item icon-open <%= active==item.key?'active':''%>">
                         <%= item.name %>
                     </a>
                     <ul class='menu-components-2'>
                         <% two.forEach(item2=>{ %>
                             <li class="menu-group2">
                                 <% if(item2.children){ var three = item2.children; %>
-                                    <a href="<%= item2.key %>" name="<%= item2.key || item2.name %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
+                                    <a name="<%= item2.key || item2.name %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
                                         <%= item2.name %>
                                     </a>
+
                                     <ul class='menu-components-3'>
                                         <% three.forEach(item3=>{ %>
                                             <li class="menu-group3">
-                                                <a href="<%= item3.key %>" class="menu-item <%= active==item3.key?'active':''%>" name="<%= item3.key || item3.name %>"><%= item3.name %></a>
+                                                <% if(item3.children){ var four = item3.children; %>
+                                                    <a name="<%= item3.key || item3.name %>" class="menu-item icon-open <%= active==item3.key?'active':''%>">
+                                                        <%= item3.name %>
+                                                    </a>
+                                                    <ul class='menu-components-4'>
+                                                        <% four.forEach(item4=>{ %>
+                                                            <li class="menu-group4">
+                                                                <a href="<%= item4.key %>" class="menu-item <%= active==item4.key?'active':''%>" name="<%= item4.key || item4.name %>"><%= item4.name %></a>
+                                                            </li>
+                                                        <% }) %>
+                                                    </ul>
+                                                <% } else { %>
+                                                    <a href="<%= item3.key %>" class="menu-item <%= active==item3.key?'active':''%> ">
+                                                        <%= item3.name %>
+                                                    </a>
+                                                <% } %>
                                             </li>
                                         <% }) %>
                                     </ul>
