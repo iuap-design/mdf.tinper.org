@@ -48,36 +48,40 @@
 * MDF-Cube Core SDK 手册
   * [Cube API List](<Cube%20API%20List.md>)
   * [1) 工具类：Util、DOM、Promise](<1)%20%E5%B7%A5%E5%85%B7%E7%B1%BB%EF%BC%9AUtil%E3%80%81DOM%E3%80%81Promise.md>)
-  * 3) ViewModel 模型：通用CRUD业务逻辑抽象
-    * [ViewModel 的概念及其设计思路](<ViewModel%20%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF.md>)
-    * [单据类别定义](<%E5%8D%95%E6%8D%AE%E7%B1%BB%E5%88%AB%E5%AE%9A%E4%B9%89.md>)
-    * [ViewModel 的基本使用及扩展](<ViewModel%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E5%8F%8A%E6%89%A9%E5%B1%95.md>)
-      * [ViewModel事件汇总](<ViewModel%E4%BA%8B%E4%BB%B6%E6%B1%87%E6%80%BB.md>)
-      * [Action与Common todo](<Action%E4%B8%8ECommon%20todo.md>)
-    * [BaseModel 基类](<BaseModel%20%E5%9F%BA%E7%B1%BB.md>)
-    * [ContainerModel 基类](<ContainerModel%20%E5%9F%BA%E7%B1%BB.md>)
-    * 模块级ViewModel
-      * [SimpleModel](<SimpleModel.md>)
-      * [ListModel](<ListModel.md>)
-      * [ReferModel](<ReferModel.md>)
-      * [TagModel](<TagModel.md>)
-      * [TreeModel](<TreeModel.md>)
-      * [GridModel](<GridModel.md>)
-    * 容器级ViewModel
-      * [ReferViewModel](<ReferViewModel.md>)
-      * [代码生成-voucher 单据](<%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90-voucher%20%E5%8D%95%E6%8D%AE.md>)
-      * [FIlterVIewModel代码分析](<FIlterVIewModel%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90.md>)
   * [4) 模块化规范：requrejs](<4)%20%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83%EF%BC%9Arequrejs.md>)
+* MDF-MVVM+机制原理及扩展脚本开发指导
+  * [ViewModel 的概念及其设计思路](<ViewModel%20%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF.md>)
+  * [单据类别定义](<%E5%8D%95%E6%8D%AE%E7%B1%BB%E5%88%AB%E5%AE%9A%E4%B9%89.md>)
+  * [ViewModel 的基本使用及扩展](<ViewModel%20%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E5%8F%8A%E6%89%A9%E5%B1%95.md>)
+  * [事件汇总](<%E4%BA%8B%E4%BB%B6%E6%B1%87%E6%80%BB.md>)
+    * [ViewModel事件汇总](<ViewModel%E4%BA%8B%E4%BB%B6%E6%B1%87%E6%80%BB.md>)
+    * [Action与Common todo](<Action%E4%B8%8ECommon%20todo.md>)
+  * [BaseModel 基类](<BaseModel%20%E5%9F%BA%E7%B1%BB.md>)
+  * [ContainerModel 基类](<ContainerModel%20%E5%9F%BA%E7%B1%BB.md>)
+  * 模块级ViewModel
+    * [SimpleModel](<SimpleModel.md>)
+    * [ListModel](<ListModel.md>)
+    * [ReferModel](<ReferModel.md>)
+    * [TagModel](<TagModel.md>)
+    * [ReportModel](<ReportModel.md>)
+    * [FilterModel](<FilterModel.md>)
+    * [TreeModel](<TreeModel.md>)
+    * [GridModel](<GridModel.md>)
+  * 容器级ViewModel
+    * [ReferViewModel](<ReferViewModel.md>)
+    * [代码生成-voucher 单据](<%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90-voucher%20%E5%8D%95%E6%8D%AE.md>)
+  * [FilterVIewModel](<FilterVIewModel.md>)
+    * [FIlterVIewModel代码分析](<FIlterVIewModel%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90.md>)
+  * 扩展脚本开发指导
+    * [扩展脚本的命名规则及加载流程](<%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99%E5%8F%8A%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.md>)
+    * [模板级ViewModel扩展（除Voucher、VoucherList外）](<%E6%A8%A1%E6%9D%BF%E7%BA%A7ViewModel%E6%89%A9%E5%B1%95%EF%BC%88%E9%99%A4Voucher%E3%80%81VoucherList%E5%A4%96%EF%BC%89.md>)
+    * [扩展开发-级联参照开发](<%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91-%E7%BA%A7%E8%81%94%E5%8F%82%E7%85%A7%E5%BC%80%E5%8F%91.md>)
+    * [FreeView扩展](<FreeView%E6%89%A9%E5%B1%95.md>)
+    * [FilterVM扩展脚本](<FilterVM%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC.md>)
+    * [模板级扩展开发](<%E6%A8%A1%E6%9D%BF%E7%BA%A7%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91.md>)
 * MDF-进阶指导之Excel配置
   * [主表显示子表字段数据](<%E4%B8%BB%E8%A1%A8%E6%98%BE%E7%A4%BA%E5%AD%90%E8%A1%A8%E5%AD%97%E6%AE%B5%E6%95%B0%E6%8D%AE.md>)
   * [树卡支持浏览态、卡片子表编辑](<%E6%A0%91%E5%8D%A1%E6%94%AF%E6%8C%81%E6%B5%8F%E8%A7%88%E6%80%81%E3%80%81%E5%8D%A1%E7%89%87%E5%AD%90%E8%A1%A8%E7%BC%96%E8%BE%91.md>)
-* MDF-进阶指导之扩展脚本开发
-  * [扩展脚本的命名规则及加载流程](<%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99%E5%8F%8A%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.md>)
-  * [模板级ViewModel扩展（除Voucher、VoucherList外）](<%E6%A8%A1%E6%9D%BF%E7%BA%A7ViewModel%E6%89%A9%E5%B1%95%EF%BC%88%E9%99%A4Voucher%E3%80%81VoucherList%E5%A4%96%EF%BC%89.md>)
-  * [扩展开发-级联参照开发](<%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91-%E7%BA%A7%E8%81%94%E5%8F%82%E7%85%A7%E5%BC%80%E5%8F%91.md>)
-  * [FreeView扩展](<FreeView%E6%89%A9%E5%B1%95.md>)
-  * [FilterVM扩展脚本](<FilterVM%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC.md>)
-  * [模板级扩展开发](<%E6%A8%A1%E6%9D%BF%E7%BA%A7%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91.md>)
 * MDF-开发指导
   * [如何落地不同维度的扩展方式](<%E5%A6%82%E4%BD%95%E8%90%BD%E5%9C%B0%E4%B8%8D%E5%90%8C%E7%BB%B4%E5%BA%A6%E7%9A%84%E6%89%A9%E5%B1%95%E6%96%B9%E5%BC%8F.md>)
   * [理解common action 相关动作规则](<%E7%90%86%E8%A7%A3common%20action%20%E7%9B%B8%E5%85%B3%E5%8A%A8%E4%BD%9C%E8%A7%84%E5%88%99.md>)
@@ -134,10 +138,11 @@
   * [自定义项](<%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B9.md>)
   * 权限管控服务-按钮、数据、节点显示
   * 组织管理服务
-* [MDF-全球化（多语言）](<MDF-%E5%85%A8%E7%90%83%E5%8C%96%EF%BC%88%E5%A4%9A%E8%AF%AD%E8%A8%80%EF%BC%89.md>)
-  * [MDD-多语使用](<MDD-%E5%A4%9A%E8%AF%AD%E4%BD%BF%E7%94%A8.md>)
-  * [多语言方案](<%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%96%B9%E6%A1%88.md>)
-  * [使用文档](<%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md>)
+* [MDF-全球化方案](<MDF-%E5%85%A8%E7%90%83%E5%8C%96%E6%96%B9%E6%A1%88.md>)
+  * [java代码及数据资源的多语化](<java%E4%BB%A3%E7%A0%81%E5%8F%8A%E6%95%B0%E6%8D%AE%E8%B5%84%E6%BA%90%E7%9A%84%E5%A4%9A%E8%AF%AD%E5%8C%96.md>)
+  * [代码多语资源检查与抽取工具 用法说明](<%E4%BB%A3%E7%A0%81%E5%A4%9A%E8%AF%AD%E8%B5%84%E6%BA%90%E6%A3%80%E6%9F%A5%E4%B8%8E%E6%8A%BD%E5%8F%96%E5%B7%A5%E5%85%B7%20%E7%94%A8%E6%B3%95%E8%AF%B4%E6%98%8E.md>)
+  * [MDD前端-多语文档](<MDD%E5%89%8D%E7%AB%AF-%E5%A4%9A%E8%AF%AD%E6%96%87%E6%A1%A3.md>)
+  * [UI模板多语支持升级](<UI%E6%A8%A1%E6%9D%BF%E5%A4%9A%E8%AF%AD%E6%94%AF%E6%8C%81%E5%8D%87%E7%BA%A7.md>)
 * [MDF-公式组件与公式设计器](<MDF-%E5%85%AC%E5%BC%8F%E7%BB%84%E4%BB%B6%E4%B8%8E%E5%85%AC%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%99%A8.md>)
 * MDF-MetaUI Web 组件
   * [解析组件流程](<%E8%A7%A3%E6%9E%90%E7%BB%84%E4%BB%B6%E6%B5%81%E7%A8%8B.md>)

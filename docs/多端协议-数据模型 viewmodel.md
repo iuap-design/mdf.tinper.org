@@ -1,9 +1,22 @@
+| **日期** | **修订号** | **描述** | **著者** | **审阅者** |
+| --- | --- | --- | --- | --- |
+| 【2019-05-18】 | 序列号1 | 【对字段含义进一步说明】 | 【姚磊】 | 【勾成图】 |
+| 【2019-10-18】 | 序列号1 | 【对字段含义进一步说明】 | 【勾成图】 | 【勾成图】 |
+| 【2019-10-16】 | 序列号1 | 【对字段含义进一步说明】 | 【勾成图】 | 【勾成图】 |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
+
 <a name="133e0974"></a>
 # 顶级节点说明
 | **属性** | **含义** | **说明** |
 | :---: | :---: | :---: |
-| viewmodel | 数据模型，发送给node端转译成可执行的js | _JsonObject_ |
-| viewApplication | 表单view模型，node转译后原数据不改变，标签改为viewmete | _JsonObject_ |
+| viewmodel | 数据模型，发送给node端转译成可执行的js，该js在client执行，生成对应的ViewModel对象，前端对所有组件的操作都转化为对ViewModel对象的操作，以符合MVVM思想 | _JsonObject_ |
+| viewApplication | 表单view模型，node转译后原数据不改变，标签改为viewmete，供client使用 | _JsonObject_ |
 
 <a name="4617418c"></a>
 # 模型数据 viewmodel
@@ -27,11 +40,11 @@
 | :---: | :---: | :---: | :---: |
 | iBillId | Integer | 单据ID | 1001282423 |
 | cBillName | String | 名称 | 项目模板列表 |
-| cBillNo | String | 单据编号 | projectlist |
-| cFilterId | String | 过滤器ID | 3450016 |
+| cBillNo | String | 单据编号 | 例如：projectlist |
+| cFilterId | Integer | 过滤器ID | 例如：3450016 |
 | cBillType | String | 类型 | ArchiveList |
 | cSubId | String | 子产品ID | AA |
-| bBatchOperate | Boolean |  | true |
+| bBatchOperate | Boolean |  | 默认为true，开发者可不关注 |
 | entities | _JsonArray_ | 实体列表 | _JsonArray_ |
 | actions | _JsonArray_ | 动作列表 | _JsonArray_ |
 | states | _JsonArray_ | 状态列表 | _JsonArray_ |
@@ -41,7 +54,7 @@
 
 ```json
 {
-		"cCode": "aa_messagelist",
+	"cCode": "aa_messagelist",
     "cEntityName": "消息列表",
     "cType": "Bill",
     "cDataSourceName": "aa.message.Message",
@@ -51,25 +64,11 @@
     "cControlType": "Table",
     "fields": [2],
   	"key": "Entity.Toolbarst_storeoutlogistic_toolbar_data_edit",
-		"parentKey": "st_storeoutlogistic_toolbar_data_edit"
+	"parentKey": "st_storeoutlogistic_toolbar_data_edit"
 }
         
 ```
 
-
-| **属性** | **类型** | **含义** | **说明** |
-| :---: | :---: | :---: | :---: |
-| cCode | String | 实体编码 | aa_messagelist |
-| cEntityName | String | 实体名称 | 消息列表 |
-| cType | String | 实体类型 | Bill，中间数据自动生成 |
-| cDataSourceName | String | 数据源名称 | aa.message.Message |
-| cPrimaryKey | String | 主键名称 | id |
-| iBillEntityId | Integer | 单据实体主键 | 93787 |
-| bMain | Boolean | 是否主表 | true |
-| cControlType | String | 模板类型，容器类型 | Table |
-| fields | _JsonArray_ | 属性列表 | _JsonArray_ |
-| key | String |  | Entity.Toolbarst_storeoutlogistic_toolbar_data_edit |
-| parentKey | String |  | st_storeoutlogistic_toolbar_data_edit |
 
 
 <a name="cb0af344"></a>
@@ -77,7 +76,7 @@
 
 ```json
 {
-		"cFieldName": "tenant",
+	"cFieldName": "tenant",
     "cItemName": "tenant",
     "cCaption": "租户ID",
     "cShowCaption": "租户ID",

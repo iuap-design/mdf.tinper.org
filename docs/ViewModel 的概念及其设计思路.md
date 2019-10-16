@@ -1,10 +1,10 @@
-> 营销云原有相关文档：[https://www.showdoc.cc/89974793848004?page_id=511175388158099](https://www.showdoc.cc/89974793848004?page_id=511175388158099)
+> 原有viewmodel相关文档：[https://www.showdoc.cc/89974793848004?page_id=511175388158099](https://www.showdoc.cc/89974793848004?page_id=511175388158099)
 
 
 <a name="9WZpi"></a>
 ## ViewModel 在 MVVM 架构中的重要性
 
-![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557127346210-35587b49-449a-43e2-94c4-6ddbeb47b80b.png#align=left&display=inline&height=251&name=image.png&originHeight=251&originWidth=690&size=89088&status=done&width=690)<br />（图片来自互联网）
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557127346210-35587b49-449a-43e2-94c4-6ddbeb47b80b.png#align=left&display=inline&height=251&name=image.png&originHeight=251&originWidth=690&search=&size=89088&status=done&width=690)<br />（图片来自互联网）
 
 以上图片中，大体的介绍了 MVVM 中各个分层关系以及通讯方式。
 
@@ -25,7 +25,7 @@ MDF 中的 ViewModel  分为两种：
 <a name="NYUnU"></a>
 ## 不同层级的 ViewModel 
 
-![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557293984717-c7f2fd38-fd80-49f8-b681-773c051ca5b5.png#align=left&display=inline&height=906&name=image.png&originHeight=1812&originWidth=2972&size=674165&status=done&width=1486)
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557293984717-c7f2fd38-fd80-49f8-b681-773c051ca5b5.png#align=left&display=inline&height=906&name=image.png&originHeight=1812&originWidth=2972&search=&size=674165&status=done&width=1486)
 
 <a name="8DjIe"></a>
 ## 常见用法

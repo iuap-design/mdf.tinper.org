@@ -128,69 +128,104 @@
         "key": "1) 工具类：Util、DOM、Promise",
         "name": "1) 工具类：Util、DOM、Promise"
     }, {
-        "key": "",
-        "name": "3) ViewModel 模型：通用CRUD业务逻辑抽象",
-        "children": [{
-            "key": "ViewModel 的概念及其设计思路",
-            "name": "ViewModel 的概念及其设计思路"
-        }, {
-            "key": "单据类别定义",
-            "name": "单据类别定义"
-        }, {
-            "key": "ViewModel 的基本使用及扩展",
-            "name": "ViewModel 的基本使用及扩展",
-            "children": [{
-                "key": "ViewModel事件汇总",
-                "name": "ViewModel事件汇总"
-            }, {
-                "key": "Action与Common todo",
-                "name": "Action与Common todo"
-            }]
-        }, {
-            "key": "BaseModel 基类",
-            "name": "BaseModel 基类"
-        }, {
-            "key": "ContainerModel 基类",
-            "name": "ContainerModel 基类"
-        }, {
-            "key": "",
-            "name": "模块级ViewModel",
-            "children": [{
-                "key": "SimpleModel",
-                "name": "SimpleModel"
-            }, {
-                "key": "ListModel",
-                "name": "ListModel"
-            }, {
-                "key": "ReferModel",
-                "name": "ReferModel"
-            }, {
-                "key": "TagModel",
-                "name": "TagModel"
-            }, {
-                "key": "TreeModel",
-                "name": "TreeModel"
-            }, {
-                "key": "GridModel",
-                "name": "GridModel"
-            }]
-        }, {
-            "key": "",
-            "name": "容器级ViewModel",
-            "children": [{
-                "key": "ReferViewModel",
-                "name": "ReferViewModel"
-            }, {
-                "key": "代码生成-voucher 单据",
-                "name": "代码生成-voucher 单据"
-            }, {
-                "key": "FIlterVIewModel代码分析",
-                "name": "FIlterVIewModel代码分析"
-            }]
-        }]
-    }, {
         "key": "4) 模块化规范：requrejs",
         "name": "4) 模块化规范：requrejs"
+    }]
+}, {
+    "key": "",
+    "name": "MDF-MVVM+机制原理及扩展脚本开发指导",
+    "children": [{
+        "key": "ViewModel 的概念及其设计思路",
+        "name": "ViewModel 的概念及其设计思路"
+    }, {
+        "key": "单据类别定义",
+        "name": "单据类别定义"
+    }, {
+        "key": "ViewModel 的基本使用及扩展",
+        "name": "ViewModel 的基本使用及扩展"
+    }, {
+        "key": "事件汇总",
+        "name": "事件汇总",
+        "children": [{
+            "key": "ViewModel事件汇总",
+            "name": "ViewModel事件汇总"
+        }, {
+            "key": "Action与Common todo",
+            "name": "Action与Common todo"
+        }]
+    }, {
+        "key": "BaseModel 基类",
+        "name": "BaseModel 基类"
+    }, {
+        "key": "ContainerModel 基类",
+        "name": "ContainerModel 基类"
+    }, {
+        "key": "",
+        "name": "模块级ViewModel",
+        "children": [{
+            "key": "SimpleModel",
+            "name": "SimpleModel"
+        }, {
+            "key": "ListModel",
+            "name": "ListModel"
+        }, {
+            "key": "ReferModel",
+            "name": "ReferModel"
+        }, {
+            "key": "TagModel",
+            "name": "TagModel"
+        }, {
+            "key": "ReportModel",
+            "name": "ReportModel"
+        }, {
+            "key": "FilterModel",
+            "name": "FilterModel"
+        }, {
+            "key": "TreeModel",
+            "name": "TreeModel"
+        }, {
+            "key": "GridModel",
+            "name": "GridModel"
+        }]
+    }, {
+        "key": "",
+        "name": "容器级ViewModel",
+        "children": [{
+            "key": "ReferViewModel",
+            "name": "ReferViewModel"
+        }, {
+            "key": "代码生成-voucher 单据",
+            "name": "代码生成-voucher 单据"
+        }]
+    }, {
+        "key": "FilterVIewModel",
+        "name": "FilterVIewModel",
+        "children": [{
+            "key": "FIlterVIewModel代码分析",
+            "name": "FIlterVIewModel代码分析"
+        }]
+    }, {
+        "key": "",
+        "name": "扩展脚本开发指导",
+        "children": [{
+            "key": "扩展脚本的命名规则及加载流程",
+            "name": "扩展脚本的命名规则及加载流程"
+        }, {
+            "key": "模板级ViewModel扩展（除Voucher、VoucherList外）",
+            "name": "模板级ViewModel扩展（除Voucher、VoucherList外）"
+        }, {
+            "key": "扩展开发-级联参照开发",
+            "name": "扩展开发-级联参照开发"
+        }, {
+            "key": "FreeView扩展",
+            "name": "FreeView扩展"
+        }, {
+            "key": "FilterVM扩展脚本",
+            "name": "FilterVM扩展脚本"
+        }, {
+            "key": "模板级扩展开发",
+            "name": "模板级扩展开发"
+        }]
     }]
 }, {
     "key": "",
@@ -201,28 +236,6 @@
     }, {
         "key": "树卡支持浏览态、卡片子表编辑",
         "name": "树卡支持浏览态、卡片子表编辑"
-    }]
-}, {
-    "key": "",
-    "name": "MDF-进阶指导之扩展脚本开发",
-    "children": [{
-        "key": "扩展脚本的命名规则及加载流程",
-        "name": "扩展脚本的命名规则及加载流程"
-    }, {
-        "key": "模板级ViewModel扩展（除Voucher、VoucherList外）",
-        "name": "模板级ViewModel扩展（除Voucher、VoucherList外）"
-    }, {
-        "key": "扩展开发-级联参照开发",
-        "name": "扩展开发-级联参照开发"
-    }, {
-        "key": "FreeView扩展",
-        "name": "FreeView扩展"
-    }, {
-        "key": "FilterVM扩展脚本",
-        "name": "FilterVM扩展脚本"
-    }, {
-        "key": "模板级扩展开发",
-        "name": "模板级扩展开发"
     }]
 }, {
     "key": "",
@@ -409,17 +422,20 @@
         "name": "组织管理服务"
     }]
 }, {
-    "key": "MDF-全球化（多语言）",
-    "name": "MDF-全球化（多语言）",
+    "key": "MDF-全球化方案",
+    "name": "MDF-全球化方案",
     "children": [{
-        "key": "MDD-多语使用",
-        "name": "MDD-多语使用"
+        "key": "java代码及数据资源的多语化",
+        "name": "java代码及数据资源的多语化"
     }, {
-        "key": "多语言方案",
-        "name": "多语言方案"
+        "key": "代码多语资源检查与抽取工具 用法说明",
+        "name": "代码多语资源检查与抽取工具 用法说明"
     }, {
-        "key": "使用文档",
-        "name": "使用文档"
+        "key": "MDD前端-多语文档",
+        "name": "MDD前端-多语文档"
+    }, {
+        "key": "UI模板多语支持升级",
+        "name": "UI模板多语支持升级"
     }]
 }, {
     "key": "MDF-公式组件与公式设计器",

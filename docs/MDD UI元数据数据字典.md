@@ -182,13 +182,13 @@
 | 单据ID | iBillId | bigint(20) | 所属bill |
 | 单据实体ID | iBillEntityId | bigint(20) | billentityid |
 | 单据模板ID | iTplId | bigint(20) | 模版id |
-| 模板分组ID | iBillTplGroupId | bigint(20) | 所属billtplgroup |
+| 模板分组ID | iBillTplGroupId | bigint(20) | 【重要属性】所属billtplgroup |
 | 子产品ID | cSubId | varchar(45) | 子产品号 |
-| 字段名称 | cFieldName | varchar(1000) | 带关联关系的字段名 |
-| 字段别名 | cName | varchar(200) | 字段名 |
+| 字段名称 | cFieldName | varchar(1000) | 【重要属性】带关联关系的字段名 |
+| 字段别名 | cName | varchar(200) | 【重要属性】字段名 |
 | 标题 | cCaption | varchar(200) | 名称 |
-| 显示标题 | cShowCaption | varchar(200) | 显示名称 |
-| 排序 | iOrder | float(10,2) |  |
+| 显示标题 | cShowCaption | varchar(200) | 【重要属性】运行时显示名称 |
+| 排序 | iOrder | float(10,2) | 同容器内排序编号，填整型 |
 | 最大长度 | iMaxLength | int(11) | 最大长度 |
 | 字段类型 | iFieldType | int(11) | 字段类型 |
 | 是否枚举 | bEnum | tinyint(1) | 是否枚举 |
@@ -259,24 +259,24 @@
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) |  |
-| 单据编码 | billnumber | varchar(100) |  |
-| 分组 | toolbar | varchar(100) |  |
-| 名称 | name | varchar(100) |  |
-| 命令 | command | varchar(100) |  |
-| 类型 | type | varchar(100) |  |
+| 单据编码 | billnumber | varchar(100) | 所在的bill的编码 |
+| 分组 | toolbar | varchar(100) | 【关键属性】所在的toolbar |
+| 名称 | name | varchar(100) | 按钮的名称，编程代码使用 |
+| 命令 | command | varchar(100) | 【关键属性】点击item时执行的bill_command中定义的名称 |
+| 类型 | type | varchar(100) | 按钮的类型 |
 | 类型 | style | int(11) |  |
-| 标题 | text | varchar(200) |  |
-| 参数 | parameter | varchar(200) |  |
-| 图标 | imgsrc | varchar(400) |  |
-| 上级菜单 | parent | varchar(100) |  |
-| 排序 | order | int(11) |  |
-| 子产品ID | subid | varchar(10) |  |
+| 标题 | text | varchar(200) | 按钮显示名称 |
+| 参数 | parameter | varchar(200) | 执行command时携带的参数 |
+| 图标 | imgsrc | varchar(400) | 图片按钮使用 |
+| 上级菜单 | parent | varchar(100) | 下拉按钮时的二级按钮指定父按钮的name |
+| 排序 | order | int(11) | 排序值 |
+| 子产品ID | subid | varchar(10) | 子产品Id |
 | 是否系统预制 | system | int(11) |  |
 | 权限ID | authid | varchar(100) |  |
-| 权限控制 | authcontrol | bit(1) |  |
-| 权限名称 | authname | varchar(200) |  |
+| 权限控制 | authcontrol | bit(1) | 权限相关字段 |
+| 权限名称 | authname | varchar(200) | 权限相关字段 |
 | bMerge | bMerge | bit(1) |  |
-| icon | icon | varchar(20) |  |
+| icon | icon | varchar(20) | 图标按钮的icon |
 | 　 | pubts | timestamp | 　 |
 | 　 | sysid | bigint(20) | 　 |
 | 　 | tenant_id | bigint(20) | 　 |
@@ -289,15 +289,15 @@
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) |  |
 | 名称 | name | varchar(100) |  |
-| 动作 | action | varchar(100) |  |
-| 单据编码 | billnumber | varchar(200) |  |
+| 动作 | action | varchar(100) | Action名称 |
+| 单据编码 | billnumber | varchar(200) | 当前单据编码 |
 | 目标 | target | varchar(200) |  |
-| 规则ID | ruleid | varchar(100) |  |
-| URL | svcurl | varchar(1000) |  |
-| http方法 | httpmethod | varchar(10) |  |
-| 子产品ID | subid | varchar(10) |  |
+| 规则ID | ruleid | varchar(100) | 后台规则Id |
+| URL | svcurl | varchar(1000) | 后台服务接口URL |
+| http方法 | httpmethod | varchar(10) | http请求类型 |
+| 子产品ID | subid | varchar(10) | 子产品Id |
 | 是否系统预制 | system | int(11) |  |
 | 参数 | parameter | varchar(200) | 命令参数 |
-| authid | authid | varchar(50) |  |
+| authid | authid | varchar(50) | 权限相关字段 |
 | 　 | pubts | timestamp | 　 |
 | 　 | tenant_id | bigint(20) | 　 |
