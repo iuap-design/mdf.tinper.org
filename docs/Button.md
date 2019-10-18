@@ -1,5 +1,5 @@
 <a name="9e5ffa06"></a>
-## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#9e5ffa06)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#9e5ffa06)基本信息
+## 基本信息
 | 组件名称 | Button |
 | --- | --- |
 | Version 版本 | - |
@@ -8,14 +8,14 @@
 | 依赖 | Tinper中的Button组件 |
 
 <a name="481feccf"></a>
-## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#481feccf)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#481feccf)如何使用
+## 如何使用
 
 ```javascript
 <Button {...this.props} />
 ```
 
 <a name="21f2fa80"></a>
-## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#21f2fa80)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#21f2fa80)组件 Props 接口文档
+## 组件 Props 接口文档
 
 | props 分类 | props 名称 | props 值类型 | 值枚举 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -40,9 +40,9 @@
 |  |  |  |  |  |
 
 <a name="a3d61cc7"></a>
-### [](https://www.yuque.com/gpgy5k/ucf/sp6vps#a3d61cc7)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#a3d61cc7)
+### 
 <a name="LASIc"></a>
-## [](https://www.yuque.com/gpgy5k/ucf/sp6vps#LASIc)[](https://www.yuque.com/gpgy5k/ucf/kpxakm#LASIc)UIMeta 示例
+## UIMeta 示例
 ```json
 {
   "value": "提交",
@@ -51,8 +51,3 @@
   "className": "btn-submit"
 }
 ```
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#481feccf)
-
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#21f2fa80)
-
-[](https://www.yuque.com/gpgy5k/ucf/kpxakm#LASIc)<br />

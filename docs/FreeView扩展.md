@@ -1,18 +1,23 @@
-<a name="0b7bd0cd"></a>
-# 1、核心思想
-**MDD框架负责UI模板渲染，业务数据请求加载交给开发者。**
-<a name="bqw68"></a>
-### 具体含义为：
+> 创建者：勾成图
+> 创建时间：2019-10-17
+> 修改者：
+> 修改时间：
 
-- 在扩展文件中使用api实现业务数据加载
-  - 如果是列表，通过列表的GridModel的setDataSouce来加载数据
-- UIMeta负责将页面渲染出来
-- 使用extend.js调用平台API来做数据加载
-- viewmodel将自动将数据更新到React组件
 
-<a name="3NgIN"></a>
-# 2、示例代码
+<a name="YpcKA"></a>
+# FreeView扩展
+<a name="Rr7Cj"></a>
+## 1 核心思想
+MDD框架负责UI模板渲染，业务数据请求加载交给开发者。
 
+  - 在扩展文件中使用api实现业务数据加载
+    - 如果是列表，通过列表的GridModel的setDataSouce来加载数据
+  - UIMeta负责将页面渲染出来
+  - 使用extend.js调用平台API来做数据加载
+  - viewmodel将自动将数据更新到React组件
+
+<a name="hl9RT"></a>
+## 2 示例代码
 ```javascript
 cb.define(['common/common_VM.Extend.js'], function(common) {
     var PU_pu_pursettlemanualmenu_VM_Extend = {
@@ -56,9 +61,4 @@ cb.define(['common/common_VM.Extend.js'], function(common) {
     }
     return PU_pu_pursettlemanualmenu_VM_Extend;
 });
-
-
-
-// WEBPACK FOOTER //
-// ./src/client/business/PU/PU_pu_pursettlemanualmenu_VM.Extend.js
 ```
