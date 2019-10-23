@@ -39,10 +39,25 @@ marked.setOptions({
   smartypants: false
 });
 
+function getFirstKey (nodes) {
+  for (let item of nodes || []) {
+    if (!item.children && item.key) {
+      return item.key
+    } 
+    if (item.children) {
+      let key = getFirstKey(item.children)
+      if (key) {
+        return key
+      }
+    }
+  }
+  return ''
+}
+
 
 module.exports = {
   index: async (ctx, next) => {
-    let component = ctx.params.component || (sidebar[0].children && sidebar[0].children[0] ? sidebar[0].children[0].key : sidebar[0].key)
+    const component = ctx.params.component || getFirstKey(sidebar)
     let rightMenu = [];
     if(menu[component])rightMenu=menu[component];
     let filePath = path.join(__dirname, `../../docs/${component}.md`);
@@ -51,7 +66,7 @@ module.exports = {
     data = data
       .replace(/\<table/gi, '<div class="table-container">\n<table')
       .replace(/<\/table>/gi, "</table>\n</div>\n");
-
+    
     await ctx.render('index', {
       sidebar: sidebar,
       docs: data,
