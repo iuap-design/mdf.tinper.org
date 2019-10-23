@@ -36,7 +36,7 @@
 
 <a name="9Xnjk"></a>
 ## batchCheck(billNo, viewModel, params)
-**说明**：批量<br />**监听事件：**
+**说明**：批量校验<br />**监听事件：**
 
 | **事件** | **备注** |
 | :---: | :---: |

@@ -1,26 +1,30 @@
-> 作者：姚磊；修改：勾成图
+> 创建者：姚磊
+> 创建时间：2019-05-12
+> 修改者：勾成图
+> 修改时间：2019-09-19
 
 
-<a name="txP4u"></a>
-### 字段名称命名规则
+<a name="BoRWq"></a>
+## 字段名称命名规则
 
-<a name="xO71Q"></a>
-#### 命名分类说明
-| 命名分类 | 类型说明 | 示例 | 备注 |
-| --- | --- | --- | --- |
+<a name="7a8ZB"></a>
+### 命名分类说明
+| **命名分类** | **类型说明** | **示例** | **备注** |
+| :---: | :---: | :---: | :---: |
 | c开头 | varchar类型，普通字符串 | cBillNo | 单据编码 |
 | i开头 | init类型(init/biginit/tinyinit)，0~65553 | iDefPrnTplId | 0，1，2 |
 | b开头 | boolean类型，布尔值 | bMain | true/false，是否主表 |
 | 其他 |  | templateType、tenant_id |  |
 
 
-<a name="xfQf9"></a>
-#### 命名规范
-
+<a name="4bDbQ"></a>
+### 命名规范
 遵循小驼峰命名，极少部分采用“_”连接的命名方式。
 
+<a name="WHWza"></a>
+## 基础信息
 <a name="FrmFo"></a>
-### [bill_base] 单据信息
+### [bill_base] 单据表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) | 表单主表主键--自增 |
@@ -62,7 +66,7 @@
 
 
 <a name="fa5a76ff"></a>
-### [billentity_base] 单据实体信息
+### [billentity_base] 实体表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | int(11) | 主键 |
@@ -91,7 +95,7 @@
 
 
 <a name="8581d309"></a>
-### [billtemplate_base] 模板信息
+### [billtemplate_base] 模板表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) | 主键 |
@@ -122,8 +126,10 @@
 |  |  |  |  |
 
 
+<a name="LEEEM"></a>
+## 模板层级
 <a name="dbfd741e"></a>
-### [billtplgroup_base] 模板分组
+### [billtplgroup_base] 模板分组表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** | 值枚举 |
 | :---: | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) | 主键 |  |
@@ -153,7 +159,7 @@
 
 
 <a name="dab7dce0"></a>
-### [bill_toolbar] 工具栏信息
+### [bill_toolbar] 工具栏表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) |  |
@@ -175,7 +181,7 @@
 
 
 <a name="2085f4ed"></a>
-### [billitem_base] 控件字段信息
+### [billitem_base] 控件字段表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) | 主键 |
@@ -251,11 +257,10 @@
 | 　 | isExport | tinyint(1) | 　 |
 | 　 | makeField | varchar(200) | 　 |
 | 属性不可修改 | bNotModify |  | 不可以修改优先级大于bCanModify |
-|  |  |  |  |
 
 
 <a name="93c11cd2"></a>
-### [bill_toolbaritem] 工具栏控件
+### [bill_toolbaritem] 工具栏控件表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) |  |
@@ -283,8 +288,10 @@
 | 　 | auth_level | smallint(6) | 　 |
 
 
+<a name="DD2nG"></a>
+## 动作命令
 <a name="a8d97131"></a>
-### [bill_command] 单据动作信息
+### [bill_command] 单据命令表
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) |  |
@@ -301,3 +308,174 @@
 | authid | authid | varchar(50) | 权限相关字段 |
 | 　 | pubts | timestamp | 　 |
 | 　 | tenant_id | bigint(20) | 　 |
+
+
+<a name="xELWU"></a>
+## 查询模板及方案
+<a name="WXGEQ"></a>
+### [pb_meta_filters] 查询模板表
+| **Excel中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) |  |
+| 过滤名称 | filterName | varchar(50) |  |
+| 过滤描述 | filterDesc | varchar(500) |  |
+| 子产品ID | subId | varchar(50) |  |
+| 创建时间 | createTime | varchar(25) |  |
+| 更新时间 | updateTime | varchar(26) |  |
+| 是否升级 | isUpGrade | int(11) |  |
+| 是否删除 | dr | int(11) |  |
+|  | advanceSupport | int(11) |  |
+| 扩展脚本地址 | behaviorObject | varchar(200) | 如：EC/EC_ec_express_filterVM.Extend.js |
+
+
+<a name="iQnya"></a>
+### [pb_meta_filter_item] 查询项表
+| **Excel中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) |  |
+| 过滤ID | filtersId | int(11) |  |
+| 字段名称 | itemName | varchar(1000) |  |
+| 标题 | itemTitle | varchar(50) |  |
+| 类型 | itemType | varchar(100) |  |
+| 参照ID | referId | int(11) |  |
+| 参照编码 | referCode | varchar(255) |  |
+| 参照类型 | refType | int(11) |  |
+| 参照返回值 | refReturn | varchar(64) |  |
+| 比较符 | compareLogic | enum(0) |  |
+| 小数位数 | iprecision | int(11) |  |
+| 数据源 | dataSource | varchar(300) |  |
+| 描述值 | descValue | int(11) |  |
+| 是否常用条件 | isCommon | int(11) |  |
+| 是否必输 | mustInput | int(11) |  |
+| 是否区间条件 | rangeInput | int(11) |  |
+| 是否多选 | multSelect | int(11) |  |
+| 允许修改比较符 | allowUpdateCompare | int(11) |  |
+| 是否或条件 | orLogic | int(11) |  |
+| 缺省值1 | defaultVal1 | varchar(50) |  |
+| 缺省值2 | defaultVal2 | varchar(50) |  |
+| 分组 | groupName | varchar(50) |  |
+| 是否系统预制 | isSys | int(11) |  |
+| 创建时间 | createTime | varchar(25) |  |
+| 是否删除 | updateTime | varchar(25) |  |
+| 是否删除 | dr | int(11) |  |
+| 枚举类型 | cEnumType | varchar(45) |  |
+| 是否枚举 | bEnum | tinyint(4) |  |
+|  | bAutoflt | tinyint(4) |  |
+| 显示名称 | displayname | varchar(64) |  |
+| 格式数据 | cFormatData | varchar(45) |  |
+| 扩展字段 | extendField | varchar(100) |  |
+| 权限级别 | auth_level | smallint(6) |  |
+| 是否主组织 | isMasterOrg | bit(1) |  |
+| 数据权限 | cDataRule | varchar(200) |  |
+|  | attribute | varchar(60) |  |
+| 多语资源ID | itemTitle_resid | varchar(200) | 多语 |
+
+
+<a name="EWI23"></a>
+### [pb_filter_solution] 查询方案表
+| **Excel中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) |  |
+| 过滤ID | filtersId | int(11) |  |
+| 方案名称 | solutionName | varchar(255) |  |
+| 是否默认 | isDefault | int(11) |  |
+| 是否公共 | isPublic | int(11) |  |
+| 用户ID | userId | varchar(50) |  |
+|  | orderId | int(11) |  |
+| 终端类型 | terminalType | varchar(20) |  |
+| 系统ID | sysid | bigint(20) |  |
+| 多语资源ID | solutionName_resid | varchar(200) |  |
+| 租户ID | tenant_id | varchar(50) |  |
+
+
+<a name="CxHXy"></a>
+### [pb_filter_solution_common] 查询方案项表
+| **Excel中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) |  |
+| 方案ID | solutionId | int(11) |  |
+| 字段Id | itemName | varchar(255) |  |
+| 字段名称 | itemId | bigint(20) |  |
+| 标题 | itemTitle | varchar(50) |  |
+| 参照类型 | refType | int(11) |  |
+| 是否常用条件 | isCommon | int(11) |  |
+| 是否区间条件 | rangeInput | int(11) |  |
+| 是否多选 | multSelect | int(11) |  |
+| 比较符 | compareLogic | enum(0) |  |
+| 缺省值1 | defaultVal1 | varchar(5000) |  |
+| 缺省值2 | defaultVal2 | varchar(5000) |  |
+|  | orderId | float(10) |  |
+|  | saveHistory | int(11) |  |
+|  | checkRefer | int(11) |  |
+|  | pb_filter_solution_commoncol | varchar(45) |  |
+| 租户ID | tenant_id | varchar(50) |  |
+|  | defineId | varchar(100) |  |
+| 控件类型 | itemType | varchar(100) |  |
+| 参照编码 | refercode | varchar(255) |  |
+| 是否隐藏 | bhidden | bit(1) |  |
+| 是否门店 | isshoprelated | tinyint(1) |  |
+| 枚举类型 | cEnumType | varchar(40) |  |
+| 是否枚举 | bEnum | tinyint(4) |  |
+|  | bAutoflt | tinyint(4) |  |
+| 数据权限 | cDataRule | varchar(200) |  |
+| 多语资源ID | itemTitle_resid | varchar(200) |  |
+
+
+<a name="boGVF"></a>
+## 状态配置
+<a name="CbSo6"></a>
+### [bill_status] 状态表
+| **中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) | 自增主键，不需要预置 |
+| 状态编码 | code | varchar(100) | 状态编码，由业务单据自定义，如blank\new等 |
+| 状态名称 | name | varchar(100) | 名称，显示名称 |
+| 状态组编码 | billnumber | varchar(200) | 状态组编码，可自定义公共状态组 |
+| 按钮是否显示 | cmdvisible | int(11) | 工具栏按钮默认可见性 |
+| 按钮是否可用 | cmdenable | int(11) | 工具栏按钮默认可用性 |
+| 字段是否显示 | itemvisible | int(11) | 栏目默认可见性 |
+| 字段是否可用 | itemenable | int(11) | 栏目默认可用（编辑）性 |
+| 子产品编码 | subId | varchar(10) | 产品ID |
+| 是否系统 | system | int(11) | 元数据分层项目ID，默认值0表示系统预置 |
+| 时间戳 | pubts | timestamp | 时间戳，不需要预置 |
+
+
+<a name="LdceP"></a>
+### [bill_status_config] 状态与单据关系表
+| **中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) | 自动编号 |
+| 单据编码 | billnumber | varchar(100) | 表单号，对应bill_base表的cBillNo字段 |
+| 状态组编码 | basedon | varchar(200) | 状态表中billnumber，对应的billnumber应在bill_status表和bill_status_profile表中预置有状态配置数据。 |
+| 子产品编码 | subid | varchar(10) | 子产品 |
+| 是否系统 | system | int(11) | 元数据分层项目ID，默认值0表示系统预置 |
+| 时间戳 | pubts | timestamp | 时间戳，不需要预置 |
+
+
+<a name="O79Qq"></a>
+### [bill_status_profile] 状态个性配置表
+| **中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) | 自动编号 |
+| 状态组编码 | billnumber | varchar(100) | 状态组编码，和bill_status.billnumber一致 |
+| 状态 | status | varchar(100) | 状态码，外键关联bill_status.code |
+| 对应项 | item | varchar(200) | 对象标识（实体字段名或按钮名称），外键关联billitem_base.cName（栏目）或<br />bill_toolbar_item.name（按钮） |
+| 所属组 | group | varchar(100) | 组：按钮项的group=toolbaritem，栏目项的group=实体DataSrouceName |
+| 是否显示 | visible | int(11) | 是否可见 |
+| 是否可用 | enable | int(11) | 栏目是否可编辑、按钮是否可用 |
+| 子产品编码 | subid | varchar(10) | 子产品 |
+| 是否系统 | system | int(11) | 元数据分层项目ID，默认值0表示系统预置 |
+| 时间戳 | pubts | timestamp | 时间戳，不需要预置 |
+
+
+<a name="ei9q9"></a>
+## 扩展
+<a name="s4SRX"></a>
+### [bill_customerdef] 扩展定义
+| **中文描述** | **数据库字段** | **类型** | **描述** |
+| :---: | :---: | :---: | :---: |
+| 主键 | id | bigint(20) | 自动编号 |
+| 单据编码 | cbillno | varchar(100) | 对应bill_base表的cBillNo字段 |
+| 扩展脚本地址 | extscripturl | varchar(100) |  |
+| 租户ID | tenant_id | bigint(20) |  |
+| 时间戳 | pubts | timestamp | 时间戳，不需要预置 |

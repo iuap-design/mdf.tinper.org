@@ -1,6 +1,3 @@
-> 原有viewmodel相关文档：[https://www.showdoc.cc/89974793848004?page_id=511175388158099](https://www.showdoc.cc/89974793848004?page_id=511175388158099)
-
-
 <a name="9WZpi"></a>
 ## ViewModel 在 MVVM 架构中的重要性
 
