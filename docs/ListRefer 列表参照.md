@@ -29,3 +29,17 @@
 **
 <a name="bKkHe"></a>
 ### 实例
+1、允许清空，参照上是否显示清除按钮
+```javascript
+viewmodel.get('parentorgid_name').setState('allowClear', false);
+```
+
+2、需要清除数据，loadData后是否清空数据
+```javascript
+viewmodel.get('parentorgid_name').setState('needClear', false);
+```
+
+3、多选参照
+```javascript
+viewmodel.get('parentorgid_name').setState('multiple', false);
+```

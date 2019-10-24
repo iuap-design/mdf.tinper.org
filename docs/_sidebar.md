@@ -56,22 +56,32 @@
     * [API 总览](<API%20%E6%80%BB%E8%A7%88.md>)
     * [工具类 API手册](<%E5%B7%A5%E5%85%B7%E7%B1%BB%20API%E6%89%8B%E5%86%8C.md>)
     * [模块化规范API手册](<%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83API%E6%89%8B%E5%86%8C.md>)
-  * MVVM机制及ViewModel API手册
-    * [ViewModel 的概念及其设计思路](<ViewModel%20%E7%9A%84%E6%A6%82%E5%BF%B5%E5%8F%8A%E5%85%B6%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF.md>)
-    * 模块级 ViewModel
-      * [BaseModel 基类](<BaseModel%20%E5%9F%BA%E7%B1%BB.md>)
-      * [SimpleModel 简单](<SimpleModel%20%E7%AE%80%E5%8D%95.md>)
-      * [ListModel 列表](<ListModel%20%E5%88%97%E8%A1%A8.md>)
-      * [ReferModel 参照](<ReferModel%20%E5%8F%82%E7%85%A7.md>)
-      * [TagModel 标签](<TagModel%20%E6%A0%87%E7%AD%BE.md>)
-      * [ReportModel 报表](<ReportModel%20%E6%8A%A5%E8%A1%A8.md>)
-      * [FilterModel 过滤](<FilterModel%20%E8%BF%87%E6%BB%A4.md>)
-      * [TreeModel 树](<TreeModel%20%E6%A0%91.md>)
-      * [GridModel 表格](<GridModel%20%E8%A1%A8%E6%A0%BC.md>)
-    * 容器级 ViewModel
-      * [ContainerModel 基类](<ContainerModel%20%E5%9F%BA%E7%B1%BB.md>)
-      * [ReferViewModel 参照](<ReferViewModel%20%E5%8F%82%E7%85%A7.md>)
-      * [FIlterVIewModel 查询区](<FIlterVIewModel%20%E6%9F%A5%E8%AF%A2%E5%8C%BA.md>)
+  * MVVM机制及其API手册
+    * [MVVM整体设计](<MVVM%E6%95%B4%E4%BD%93%E8%AE%BE%E8%AE%A1.md>)
+    * 数据模型及其API说明
+      * [前端数据模型概念定义](<%E5%89%8D%E7%AB%AF%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89.md>)
+      * [数据模型基类 BaseModel](<%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%B1%BB%20BaseModel.md>)
+      * 一维数据模型
+        * [SimpleModel 简单](<SimpleModel%20%E7%AE%80%E5%8D%95.md>)
+        * [TagModel 标签](<TagModel%20%E6%A0%87%E7%AD%BE.md>)
+      * 二维数据模型
+        * [ListModel 列表](<ListModel%20%E5%88%97%E8%A1%A8.md>)
+      * 三维数据模型
+        * [GridModel 表格](<GridModel%20%E8%A1%A8%E6%A0%BC.md>)
+      * 递归数据模型
+        * [TreeModel 树](<TreeModel%20%E6%A0%91.md>)
+      * 业务数据模型
+        * [FilterModel 过滤](<FilterModel%20%E8%BF%87%E6%BB%A4.md>)
+        * [ReportModel 报表](<ReportModel%20%E6%8A%A5%E8%A1%A8.md>)
+        * [ReferModel 参照](<ReferModel%20%E5%8F%82%E7%85%A7.md>)
+    * 视图业务模型及其API说明
+      * [视图业务模型viewmodel的概念定义](<%E8%A7%86%E5%9B%BE%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8Bviewmodel%E7%9A%84%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89.md>)
+      * [视图业务模型基类 ContainerModel](<%E8%A7%86%E5%9B%BE%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%B1%BB%20ContainerModel.md>)
+      * 区块级视图业务模型
+        * [ReferViewModel 参照](<ReferViewModel%20%E5%8F%82%E7%85%A7.md>)
+        * [FIlterVIewModel 查询区](<FIlterVIewModel%20%E6%9F%A5%E8%AF%A2%E5%8C%BA.md>)
+      * 模板级视图业务模型
+        * [自动创建视图业务模型-Node层实现](<%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BA%E8%A7%86%E5%9B%BE%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8B-Node%E5%B1%82%E5%AE%9E%E7%8E%B0.md>)
   * 整体扩展机制及方案介绍
     * [如何落地不同维度的扩展方式](<%E5%A6%82%E4%BD%95%E8%90%BD%E5%9C%B0%E4%B8%8D%E5%90%8C%E7%BB%B4%E5%BA%A6%E7%9A%84%E6%89%A9%E5%B1%95%E6%96%B9%E5%BC%8F.md>)
     * 单据扩展
@@ -147,6 +157,7 @@
     * [MDF 相关模块开发调试](<MDF%20%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95.md>)
     * [20190923预发环境Package版本清单](<20190923%E9%A2%84%E5%8F%91%E7%8E%AF%E5%A2%83Package%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.md>)
     * [业务工程包体积优化及安装效率提升](<%E4%B8%9A%E5%8A%A1%E5%B7%A5%E7%A8%8B%E5%8C%85%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87.md>)
+    * [iuap5.0专属化发版](<iuap5.0%E4%B8%93%E5%B1%9E%E5%8C%96%E5%8F%91%E7%89%88.md>)
   * MDF-MetaUI Web 组件
     * [组件解析流程](<%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%B5%81%E7%A8%8B.md>)
     * 表单组件
