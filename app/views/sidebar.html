@@ -11,7 +11,7 @@
                         <% two.forEach(item2=>{ %>
                             <li class="menu-group2">
                                 <% if(item2.children){ var three = item2.children; %>
-                                    <a name="<%= item2.key || item2.name %>" class="menu-item icon-open <%= active==item2.key?'active':''%>">
+                                    <a name="<%= item2.key || item2.name %>" class="menu-item icon-close <%= active==item2.key?'active':''%>">
                                         <%= item2.name %>
                                     </a>
 
@@ -19,7 +19,7 @@
                                         <% three.forEach(item3=>{ %>
                                             <li class="menu-group3">
                                                 <% if(item3.children){ var four = item3.children; %>
-                                                    <a name="<%= item3.key || item3.name %>" class="menu-item icon-open <%= active==item3.key?'active':''%>">
+                                                    <a name="<%= item3.key || item3.name %>" class="menu-item icon-close <%= active==item3.key?'active':''%>">
                                                         <%= item3.name %>
                                                     </a>
                                                     <ul class='menu-components-4'>
@@ -59,7 +59,7 @@
 <script>
 
     // 展开关闭事件
-    let nodeList = document.querySelectorAll('.menu-item.icon-open');
+    let nodeList = document.querySelectorAll('.menu-item');
     nodeList.forEach((item, index) => {
         let name = item.getAttribute('name');
         item.onclick = (e) => {
