@@ -79,6 +79,7 @@
         let name = item.getAttribute('name');
         let cls = item.getAttribute('class');
         if(sessionStorage.getItem(`${name}Open`)=='false')item.setAttribute('class', cls.replace('icon-open','icon-close'));
+        if(sessionStorage.getItem(`${name}Open`)=='true')item.setAttribute('class', cls.replace('icon-close','icon-open'));
     })
 
 
