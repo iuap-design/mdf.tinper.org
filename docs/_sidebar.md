@@ -11,6 +11,9 @@
     * [元数据配置说明](<%E5%85%83%E6%95%B0%E6%8D%AE%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.md>)
   * 框架运行时渲染原理
     * [整体架构说明](<%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E.md>)
+    * [基于统一协议的模式化渲染](<%E5%9F%BA%E4%BA%8E%E7%BB%9F%E4%B8%80%E5%8D%8F%E8%AE%AE%E7%9A%84%E6%A8%A1%E5%BC%8F%E5%8C%96%E6%B8%B2%E6%9F%93.md>)
+    * [对通用逻辑的抽象和自动生成](<%E5%AF%B9%E9%80%9A%E7%94%A8%E9%80%BB%E8%BE%91%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%92%8C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90.md>)
+    * [基于统一协议的UI组件化集成](<%E5%9F%BA%E4%BA%8E%E7%BB%9F%E4%B8%80%E5%8D%8F%E8%AE%AE%E7%9A%84UI%E7%BB%84%E4%BB%B6%E5%8C%96%E9%9B%86%E6%88%90.md>)
     * [运行时MetaUI组件解析](<%E8%BF%90%E8%A1%8C%E6%97%B6MetaUI%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90.md>)
   * 开发过程与调试方案
     * [React&JS代码调试](<React%26JS%E4%BB%A3%E7%A0%81%E8%B0%83%E8%AF%95.md>)
@@ -19,8 +22,6 @@
   * 开发规范
     * [脚手架规范说明](<%E8%84%9A%E6%89%8B%E6%9E%B6%E8%A7%84%E8%8C%83%E8%AF%B4%E6%98%8E.md>)
   * [部署与集成对接](<%E9%83%A8%E7%BD%B2%E4%B8%8E%E9%9B%86%E6%88%90%E5%AF%B9%E6%8E%A5.md>)
-  * 视频学习
-    * [MDF-视频专栏](<MDF-%E8%A7%86%E9%A2%91%E4%B8%93%E6%A0%8F.md>)
 * 第二章 使用及扩展开发指导
   * 交互风格及主题机制
     * [典型场景布局模式支持情况](<%E5%85%B8%E5%9E%8B%E5%9C%BA%E6%99%AF%E5%B8%83%E5%B1%80%E6%A8%A1%E5%BC%8F%E6%94%AF%E6%8C%81%E6%83%85%E5%86%B5.md>)
@@ -45,12 +46,12 @@
       * [NCCloud交互风格实现详情](<NCCloud%E4%BA%A4%E4%BA%92%E9%A3%8E%E6%A0%BC%E5%AE%9E%E7%8E%B0%E8%AF%A6%E6%83%85.md>)
     * [图标字体文件汇总](<%E5%9B%BE%E6%A0%87%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6%E6%B1%87%E6%80%BB.md>)
   * [全球化多语方案](<%E5%85%A8%E7%90%83%E5%8C%96%E5%A4%9A%E8%AF%AD%E6%96%B9%E6%A1%88.md>)
-    * [提取工具入门篇](<%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87.md>)
+    * [提取工具](<%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7.md>)
     * [前端-国际化方案](<%E5%89%8D%E7%AB%AF-%E5%9B%BD%E9%99%85%E5%8C%96%E6%96%B9%E6%A1%88.md>)
-    * [前端国际化demo](<%E5%89%8D%E7%AB%AF%E5%9B%BD%E9%99%85%E5%8C%96demo.md>)
+    * [前端MDD 2.x 项目国际化demo](<%E5%89%8D%E7%AB%AFMDD%202.x%20%E9%A1%B9%E7%9B%AE%E5%9B%BD%E9%99%85%E5%8C%96demo.md>)
+    * [前端ucf项目国际化demo](<%E5%89%8D%E7%AB%AFucf%E9%A1%B9%E7%9B%AE%E5%9B%BD%E9%99%85%E5%8C%96demo.md>)
     * [lang 转换工具(pack.json、excel 相互)](<lang%20%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7(pack.json%E3%80%81excel%20%E7%9B%B8%E4%BA%92).md>)
-    * [工具配置文件 config.properties](<%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%20config.properties.md>)
-    * [java 代码及数据资源的多语使用文档](<java%20%E4%BB%A3%E7%A0%81%E5%8F%8A%E6%95%B0%E6%8D%AE%E8%B5%84%E6%BA%90%E7%9A%84%E5%A4%9A%E8%AF%AD%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md>)
+    * [完整 config.properties](<%E5%AE%8C%E6%95%B4%20config.properties.md>)
     * [UI模板多语支持升级(SQL)](<UI%E6%A8%A1%E6%9D%BF%E5%A4%9A%E8%AF%AD%E6%94%AF%E6%8C%81%E5%8D%87%E7%BA%A7(SQL).md>)
   * Cube API 手册
     * [API 总览](<API%20%E6%80%BB%E8%A7%88.md>)
@@ -61,19 +62,14 @@
     * 数据模型及其API说明
       * [前端数据模型概念定义](<%E5%89%8D%E7%AB%AF%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89.md>)
       * [数据模型基类 BaseModel](<%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%B1%BB%20BaseModel.md>)
-      * 一维数据模型
-        * [SimpleModel 简单](<SimpleModel%20%E7%AE%80%E5%8D%95.md>)
-        * [TagModel 标签](<TagModel%20%E6%A0%87%E7%AD%BE.md>)
-      * 二维数据模型
-        * [ListModel 列表](<ListModel%20%E5%88%97%E8%A1%A8.md>)
-      * 三维数据模型
-        * [GridModel 表格](<GridModel%20%E8%A1%A8%E6%A0%BC.md>)
-      * 递归数据模型
-        * [TreeModel 树](<TreeModel%20%E6%A0%91.md>)
-      * 业务数据模型
-        * [FilterModel 过滤](<FilterModel%20%E8%BF%87%E6%BB%A4.md>)
-        * [ReportModel 报表](<ReportModel%20%E6%8A%A5%E8%A1%A8.md>)
-        * [ReferModel 参照](<ReferModel%20%E5%8F%82%E7%85%A7.md>)
+      * [SimpleModel 简单](<SimpleModel%20%E7%AE%80%E5%8D%95.md>)
+      * [TagModel 标签](<TagModel%20%E6%A0%87%E7%AD%BE.md>)
+      * [ListModel 列表](<ListModel%20%E5%88%97%E8%A1%A8.md>)
+      * [GridModel 表格](<GridModel%20%E8%A1%A8%E6%A0%BC.md>)
+      * [TreeModel 树](<TreeModel%20%E6%A0%91.md>)
+      * [FilterModel 过滤](<FilterModel%20%E8%BF%87%E6%BB%A4.md>)
+      * [ReportModel 报表](<ReportModel%20%E6%8A%A5%E8%A1%A8.md>)
+      * [ReferModel 参照](<ReferModel%20%E5%8F%82%E7%85%A7.md>)
     * 视图业务模型及其API说明
       * [视图业务模型viewmodel的概念定义](<%E8%A7%86%E5%9B%BE%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8Bviewmodel%E7%9A%84%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89.md>)
       * [视图业务模型基类 ContainerModel](<%E8%A7%86%E5%9B%BE%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%B1%BB%20ContainerModel.md>)
@@ -91,6 +87,7 @@
     * [参照扩展](<%E5%8F%82%E7%85%A7%E6%89%A9%E5%B1%95.md>)
     * [UI组件扩展](<UI%E7%BB%84%E4%BB%B6%E6%89%A9%E5%B1%95.md>)
     * [UI组件属性扩展](<UI%E7%BB%84%E4%BB%B6%E5%B1%9E%E6%80%A7%E6%89%A9%E5%B1%95.md>)
+    * [配置项扩展](<%E9%85%8D%E7%BD%AE%E9%A1%B9%E6%89%A9%E5%B1%95.md>)
     * [ViewModel扩展](<ViewModel%E6%89%A9%E5%B1%95.md>)
     * [FreeView扩展](<FreeView%E6%89%A9%E5%B1%95.md>)
     * 其它
@@ -107,6 +104,7 @@
     * [billmaker 生拉单](<billmaker%20%E7%94%9F%E6%8B%89%E5%8D%95.md>)
   * 扩展脚本开发指南
     * [扩展脚本的命名规则及加载流程](<%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC%E7%9A%84%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99%E5%8F%8A%E5%8A%A0%E8%BD%BD%E6%B5%81%E7%A8%8B.md>)
+    * [父子页面间的数据通讯](<%E7%88%B6%E5%AD%90%E9%A1%B5%E9%9D%A2%E9%97%B4%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%9A%E8%AE%AF.md>)
     * [ViewModel事件汇总](<ViewModel%E4%BA%8B%E4%BB%B6%E6%B1%87%E6%80%BB.md>)
   * 支撑服务接入-参照服务
     * [参照设计说明](<%E5%8F%82%E7%85%A7%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E.md>)
@@ -133,32 +131,31 @@
     * [计算公式配置](<%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F%E9%85%8D%E7%BD%AE.md>)
     * [4.公式使用](<4.%E5%85%AC%E5%BC%8F%E4%BD%BF%E7%94%A8.md>)
     * [MDF-公式组件与公式设计器](<MDF-%E5%85%AC%E5%BC%8F%E7%BB%84%E4%BB%B6%E4%B8%8E%E5%85%AC%E5%BC%8F%E8%AE%BE%E8%AE%A1%E5%99%A8.md>)
+  * 支撑服务接入-上下文
+    * [接入方式](<%E6%8E%A5%E5%85%A5%E6%96%B9%E5%BC%8F.md>)
+  * [支撑服务接入-附件](<%E6%94%AF%E6%92%91%E6%9C%8D%E5%8A%A1%E6%8E%A5%E5%85%A5-%E9%99%84%E4%BB%B6.md>)
+    * [附件管理能力介绍](<%E9%99%84%E4%BB%B6%E7%AE%A1%E7%90%86%E8%83%BD%E5%8A%9B%E4%BB%8B%E7%BB%8D.md>)
+    * [附件接入方式](<%E9%99%84%E4%BB%B6%E6%8E%A5%E5%85%A5%E6%96%B9%E5%BC%8F.md>)
   * [运行时管理-模板](<%E8%BF%90%E8%A1%8C%E6%97%B6%E7%AE%A1%E7%90%86-%E6%A8%A1%E6%9D%BF.md>)
     * [模板配置](<%E6%A8%A1%E6%9D%BF%E9%85%8D%E7%BD%AE.md>)
 * 第三章 进阶及维护指南
   * 多端协议与元数据
     * [多端协议-示例接口数据](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E7%A4%BA%E4%BE%8B%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE.md>)
-    * [多端协议-数据模型 viewmodel](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%20viewmodel.md>)
-    * [多端协议-UI模型 viewApplication](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-UI%E6%A8%A1%E5%9E%8B%20viewApplication.md>)
-    * [MDD UI元数据数据字典](<MDD%20UI%E5%85%83%E6%95%B0%E6%8D%AE%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8.md>)
     * 协议字段枚举值清单
-      * [cBillType 单据类型枚举](<cBillType%20%E5%8D%95%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%9E%9A%E4%B8%BE.md>)
-      * [cControlType 控件类型枚举](<cControlType%20%E6%8E%A7%E4%BB%B6%E7%B1%BB%E5%9E%8B%E6%9E%9A%E4%B8%BE.md>)
-      * [bIsNull 校验字段](<bIsNull%20%E6%A0%A1%E9%AA%8C%E5%AD%97%E6%AE%B5.md>)
-    * [组件依赖关系](<%E7%BB%84%E4%BB%B6%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.md>)
-    * [UI设计器支持可拖拽新增协议字段说明](<UI%E8%AE%BE%E8%AE%A1%E5%99%A8%E6%94%AF%E6%8C%81%E5%8F%AF%E6%8B%96%E6%8B%BD%E6%96%B0%E5%A2%9E%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.md>)
-    * [协议字段常见问题解答](<%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94.md>)
   * 核心贡献者开发指南
     * [各业务项目前端负责人邮件列表](<%E5%90%84%E4%B8%9A%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E8%B4%9F%E8%B4%A3%E4%BA%BA%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8.md>)
-    * [20191022预发环境Package版本清单](<20191022%E9%A2%84%E5%8F%91%E7%8E%AF%E5%A2%83Package%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.md>)
-    * [MDF 分支维护规则](<MDF%20%E5%88%86%E6%94%AF%E7%BB%B4%E6%8A%A4%E8%A7%84%E5%88%99.md>)
     * [MDF Package 版本号规则说明](<MDF%20Package%20%E7%89%88%E6%9C%AC%E5%8F%B7%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E.md>)
-    * [MDF 扩展机制](<MDF%20%E6%89%A9%E5%B1%95%E6%9C%BA%E5%88%B6.md>)
+    * [MDF 分支维护规则](<MDF%20%E5%88%86%E6%94%AF%E7%BB%B4%E6%8A%A4%E8%A7%84%E5%88%99.md>)
     * [MDF 相关模块开发调试](<MDF%20%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95.md>)
+    * [MDF 扩展机制](<MDF%20%E6%89%A9%E5%B1%95%E6%9C%BA%E5%88%B6.md>)
+    * [MDF-视频专栏](<MDF-%E8%A7%86%E9%A2%91%E4%B8%93%E6%A0%8F.md>)
+    * [iuap5.0前端编程模型发版资源包梳理](<iuap5.0%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B%E5%8F%91%E7%89%88%E8%B5%84%E6%BA%90%E5%8C%85%E6%A2%B3%E7%90%86.md>)
+  * [日常迭代与更新](<%E6%97%A5%E5%B8%B8%E8%BF%AD%E4%BB%A3%E4%B8%8E%E6%9B%B4%E6%96%B0.md>)
     * [20190923预发环境Package版本清单](<20190923%E9%A2%84%E5%8F%91%E7%8E%AF%E5%A2%83Package%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.md>)
+    * [20191029预发环境Package版本清单](<20191029%E9%A2%84%E5%8F%91%E7%8E%AF%E5%A2%83Package%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.md>)
+    * [20191022预发环境Package版本清单](<20191022%E9%A2%84%E5%8F%91%E7%8E%AF%E5%A2%83Package%E7%89%88%E6%9C%AC%E6%B8%85%E5%8D%95.md>)
     * [业务工程包体积优化及安装效率提升](<%E4%B8%9A%E5%8A%A1%E5%B7%A5%E7%A8%8B%E5%8C%85%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96%E5%8F%8A%E5%AE%89%E8%A3%85%E6%95%88%E7%8E%87%E6%8F%90%E5%8D%87.md>)
-    * [iuap5.0专属化发版](<iuap5.0%E4%B8%93%E5%B1%9E%E5%8C%96%E5%8F%91%E7%89%88.md>)
-  * MDF-MetaUI Web 组件
+  * MetaUI Web 组件
     * [组件解析流程](<%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90%E6%B5%81%E7%A8%8B.md>)
     * 表单组件
       * [公共属性](<%E5%85%AC%E5%85%B1%E5%B1%9E%E6%80%A7.md>)
@@ -201,7 +198,7 @@
     * 其它
       * [Portal 门户类组件（原）](<Portal%20%E9%97%A8%E6%88%B7%E7%B1%BB%E7%BB%84%E4%BB%B6%EF%BC%88%E5%8E%9F%EF%BC%89.md>)
       * [基础业务组件（公共平台提供）](<%E5%9F%BA%E7%A1%80%E4%B8%9A%E5%8A%A1%E7%BB%84%E4%BB%B6%EF%BC%88%E5%85%AC%E5%85%B1%E5%B9%B3%E5%8F%B0%E6%8F%90%E4%BE%9B%EF%BC%89.md>)
-  * MDF-典型场景代码分析
+  * 典型场景代码分析
     * [common_VM.Extend.js](<common_VM.Extend.js.md>)
     * 零售-店存出库列表
       * [VM源代码](<VM%E6%BA%90%E4%BB%A3%E7%A0%81.md>)

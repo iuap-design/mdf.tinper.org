@@ -13,11 +13,25 @@ body {
     color: #737373;
     background-color: white;
 }
+
+.doc-content{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+}
 .docs .doc-content{
-    margin-right: 200px;
     padding-top: 30px;
     min-height: 500px;
 }
+.docs {
+    flex:1;
+    width:80%;
+}
+.doc::-webkit-scrollbar {
+    width: 0!important;
+    height: 0!important;
+}
+
 .docs .doc-content h1, .docs .doc-content h2, .docs .doc-content h3, .docs .doc-content h4, .docs .doc-content h5, .docs .doc-content h6 {
     color: rgba(66,66,66,1);
     margin-top: 10px;
@@ -42,7 +56,6 @@ body {
 .docs .doc-content h2 {
     font-size: 24px;
     line-height: 32px;
-    padding: 7px 0;
 }
 .docs .doc-content h3 {
     font-size: 20px;
@@ -72,7 +85,7 @@ body {
     opacity: .6;
 }
 .docs .doc-content .img-out-div{
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 .docs .doc-content img{

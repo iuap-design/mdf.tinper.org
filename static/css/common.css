@@ -1,0 +1,13 @@
+ol{
+    padding-left:20px;
+}
+
+#drap-line{
+    width: 6px;
+    background-color: transparent;
+    cursor: e-resize;
+    height:4000px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

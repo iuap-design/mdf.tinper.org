@@ -260,7 +260,7 @@ initContext: function(viewmodel) {
 
 - 无需配置，默认支持
 
-5. 树参照和树表参照支持包含下级配置
+5. 树参照和树表参照支持包含下级配置 （后端同学同样需要特殊处理）
 
 <a name="4a4e3b5a-9"></a>
 ###### 描述：
@@ -272,7 +272,7 @@ initContext: function(viewmodel) {
 
 - 参照配置项的extendFeild中添加{"includeChildren":true}
 
-6. 参照支持显示停用配置
+6. 参照支持显示停用配置（后端同学同样需要特殊处理）
 
 <a name="4a4e3b5a-10"></a>
 ###### 描述：
@@ -284,7 +284,7 @@ initContext: function(viewmodel) {
 
 - 参照配置项的extendField中添加{"isShowDisabledData":true}
 
-7. 树参照支持执行时包含下级配置
+7. 树参照支持执行时包含下级配置（后端同学同样需要特殊处理）
 
 <a name="4a4e3b5a-11"></a>
 ###### 描述：

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/docs.css" type="text/css"/>
     <link rel="stylesheet" href="./css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="./css/rightMenus.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/common.css">
     <script type="text/javascript" src="//design.yonyoucloud.com/static/tinper-bee/js/yonyou-yyy.js"></script> 
 </head>
 <script src="//design.yonyoucloud.com/static/highlight/9.15.6/highlight.min.js"></script>
@@ -37,18 +38,25 @@
     <div id="openbtn" class="uf uf-navmenu"></div>
     <div id="closebtn" class="uf uf-close"></div>
     <div id="upbtn" class="uf uf-top-up"></div>
-    <div class="doc-content">
-    <div class="content">
-        <div class="sidebar"  id="sidebar">
-            <% include sidebar.html %>
+    <!-- <div class="docWrap"> -->
+        <div class="doc-content">
+            <div class="content">
+                <div class="sidebar"  id="sidebar">
+                    <% include sidebar.html %>
+                    <div id="drap-line"></div>
+                </div>
+                
+                <div class="docs" id="docs">
+                    <% include docs.html %>
+                    <div class="footer-out">
+                        <% include footer.html %>
+                    </div>
+                </div>            
+            </div>
+            
         </div>
-        <div class="docs" id="docs">
-            <% include docs.html %>
-        </div>
-    </div>
-    <div class="footer-out">
-        <% include footer.html %>
-    </div>
+    <!-- </div> -->
+    
 </body>
 <script type="text/javascript" src="//design.yonyoucloud.com/static/docSearch/docsearch.min.js"></script>
 
@@ -152,7 +160,8 @@
 //返回顶部按钮
 window.onload = function(){   
     var upbtn = document.getElementById("upbtn");
-    var clientHeight = document.documentElement.clientHeight;  //获取可视区域的高度
+    console.log(upbtn)
+    var clientHeight = document.documentElement.clientHeight;  //获取可视区域的高度 
     var timer = null;   //定义一个定时器
     var isTop = true;   //定义一个布尔值，用于判断是否到达顶部
     window.onscroll = function(){
@@ -173,6 +182,7 @@ window.onload = function(){
             var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
             //用于设置速度差，产生缓动的效果
             var speed = Math.floor(-scrollTop / 6);
+            console.log(speed)
             document.documentElement.scrollTop = document.body.scrollTop = scrollTop + speed;
             isTop =true;  //用于阻止滚动事件清除定时器
             if(scrollTop == 0){
@@ -180,6 +190,57 @@ window.onload = function(){
             }
         },50 );
     }
+
+    //终止事件
+    let sidebar = document.querySelector('#sidebar');
+    let drapLine = document.querySelector('#drap-line');
+    let docs = document.querySelector('#docs')
+    let footerOut = document.querySelector('.footer-out')
+    if (typeof localStorage === "undefined" || localStorage === null) {
+            var LocalStorage = require('node-localstorage').LocalStorage;
+            localStorage = new LocalStorage('./scratch');
+    }
+    function mouseUp() {
+        document.onmousemove = null;
+        document.onmouseup = null;
+        //localStorage设置
+        localStorage.setItem('sliderWidth', sidebar.style.width)
+        localStorage.setItem('docsWidth', docs.style.marginLeft)
+    }
+      
+    //localStorage读取
+    var history_slider_width = localStorage.getItem('sliderWidth');
+    var history_docs_width = localStorage.getItem('docsWidth');
+
+    if (history_slider_width && history_docs_width ) {    
+        sidebar.style.width = history_slider_width;
+        docs.style.marginLeft  = history_docs_width ;
+    }
+    //绑定鼠标按下事件
+    drapLine.onmousedown = function (e) {
+        var e = e || window.event;
+
+        //阻止默认事件
+        e.preventDefault();
+        document.onmousemove = mouseMove; 
+        document.onmouseup = mouseUp;
+    }
+
+    //鼠标移动事件
+    let min_width = 300;
+    function mouseMove(e) {
+        var e = e || window.event;
+        //获取鼠标移动时的坐标
+        var move_x = e.clientX;
+        var sidebar_width = move_x - sidebar.offsetLeft;
+        
+        sidebar_width = sidebar_width < min_width ? min_width : sidebar_width;
+        sidebar.style.width = sidebar_width + 'px';
+        docs.style.marginLeft = sidebar_width + 'px';
+        footerOut.style.width = document.documentElement.clientWidth - sidebar_width  + 'px'
+    }
 }
 </script>
+
+
 </html>

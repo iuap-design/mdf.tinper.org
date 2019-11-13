@@ -4,8 +4,8 @@
 ![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1571730563527-9cddb88a-029e-4ae9-b483-f29c25c04d05.png#align=left&display=inline&height=821&name=image.png&originHeight=805&originWidth=257&search=&size=52888&status=done&width=262)
 
 1. 在工程目录的根目录下新建一个lang目录。
-1. [下载java lang-tool](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/lang-tool.zip) 把文件都拷贝到lang目录下。
-1. 在 imp-iot-alarm-fe/ucf-apps/dfm/eqp/tag/src/app.js 文件中加入如下代码
+2. [下载java lang-tool](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/lang-tool.zip) 把文件都拷贝到lang目录下。
+3. 在 imp-iot-alarm-fe/ucf-apps/dfm/eqp/tag/src/app.js 文件中加入如下代码
 
 ```javascript
 import {Locale} from "tinper-bee";

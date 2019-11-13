@@ -2,7 +2,12 @@
 ## 方法
 <a name="f7BLU"></a>
 ### getFromModel()
-说明：获取过滤开始model
+说明：获取过滤开始的 `model` 。
+
+- `getFromModel` 是 `filterModel` 特有的 `API` ； 
+- `filterModel` 在创建并初始化 `data` 的时候，会创建一个 `data.fromModel` 用于存储对应数据模型， `fromModel` 会根据不同的 `ctrlType` 创建不同的 `model` 类型。
+- 所以，和其他的 `model` 通过 get() 方法获取 data上的数据不同的是， `filterModel`  单独提供了`getFromModel()  这个方法去取 `data.fromModel` 。
+
 ```javascript
 model.getFromModel()
 ```
