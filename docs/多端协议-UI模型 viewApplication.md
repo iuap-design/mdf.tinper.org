@@ -36,7 +36,7 @@
 | cBillNo | String | 单据编号 | projectlist; 可以理解为name |
 | bAllowMultiTpl | Boolean | 是否允许多模版 | false; 如果为true，则有可选模板，数据会重新获取 |
 | cSubId | String | 子产品ID （业务含义） | AA; AA_billno=xxx?extend  扩展 |
-| cCardKey | String | 单据类型 | project; 卡片模板的id，用于打开卡片模板页面 |
+| cCardKey | String | 单据类型 | 跳转目标表单的单据编号(对于列表来说，此字段代表列表所对应的单据详情的cBillNo）<br />其值为要跳转目标表单的cBillNo |
 | batchoperate | Boolean | 是否多选 | 通常用于参照，标记参照是否支持多选 |
 | view | JSONObject | 视图根【Excel中无】 | _JOSN_ |
 | extscripturls | JSONArray | 扩展脚本地址【Excel中无】 | _JSONArray_ |

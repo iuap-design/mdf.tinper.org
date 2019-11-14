@@ -141,7 +141,16 @@
 * 第三章 进阶及维护指南
   * 多端协议与元数据
     * [多端协议-示例接口数据](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E7%A4%BA%E4%BE%8B%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE.md>)
+    * [多端协议-数据模型 viewmodel](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%20viewmodel.md>)
+    * [多端协议-UI模型 viewApplication](<%E5%A4%9A%E7%AB%AF%E5%8D%8F%E8%AE%AE-UI%E6%A8%A1%E5%9E%8B%20viewApplication.md>)
+    * [MDD UI元数据数据字典](<MDD%20UI%E5%85%83%E6%95%B0%E6%8D%AE%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8.md>)
     * 协议字段枚举值清单
+      * [cBillType 单据类型枚举](<cBillType%20%E5%8D%95%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%9E%9A%E4%B8%BE.md>)
+      * [cControlType 控件类型枚举](<cControlType%20%E6%8E%A7%E4%BB%B6%E7%B1%BB%E5%9E%8B%E6%9E%9A%E4%B8%BE.md>)
+      * [bIsNull 校验字段](<bIsNull%20%E6%A0%A1%E9%AA%8C%E5%AD%97%E6%AE%B5.md>)
+    * [组件依赖关系](<%E7%BB%84%E4%BB%B6%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB.md>)
+    * [UI设计器支持可拖拽新增协议字段说明](<UI%E8%AE%BE%E8%AE%A1%E5%99%A8%E6%94%AF%E6%8C%81%E5%8F%AF%E6%8B%96%E6%8B%BD%E6%96%B0%E5%A2%9E%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E.md>)
+    * [协议字段常见问题解答](<%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94.md>)
   * 核心贡献者开发指南
     * [各业务项目前端负责人邮件列表](<%E5%90%84%E4%B8%9A%E5%8A%A1%E9%A1%B9%E7%9B%AE%E5%89%8D%E7%AB%AF%E8%B4%9F%E8%B4%A3%E4%BA%BA%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8.md>)
     * [MDF Package 版本号规则说明](<MDF%20Package%20%E7%89%88%E6%9C%AC%E5%8F%B7%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E.md>)

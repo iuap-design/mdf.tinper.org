@@ -24,17 +24,21 @@ localres=true									//是否要连接服务中心
 localflag=L										//和7行成对出现
 
 ```
-> 示例
 
-> # 产品线(ys,ncc,diwork...all代表所有)
-> productline=YS
-> # 领域(财务云，税务云，营销云，all代表所有)
-> domain=FED
-> # 项目标识（一般以代码工程来区分，按构建、打包和部署来做隔离维度）
-> project=SCAPM
-> # 使用者组，主要决定打包范围和数据版本范围的参数，不使用项目是因为多个项目可能属于一个组
-> groupCode=YS_FED_SCAPM
+```javascript
+示例
+产品线(ys,ncc,diwork...all代表所有)
+productline=YS
 
+领域(财务云，税务云，营销云，all代表所有)
+domain=FED
+
+项目标识（一般以代码工程来区分，按构建、打包和部署来做隔离维度）
+project=SCAPM
+
+使用者组，主要决定打包范围和数据版本范围的参数，不使用项目是因为多个项目可能属于一个组
+groupCode=YS_FED_SCAPM
+```
 <br />
 
 4. **新建 pack.js 文件，包含需要的语种,放到mdf-app/src/pack.js 下。**

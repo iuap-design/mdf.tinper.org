@@ -28,9 +28,9 @@
 | **Excel中文描述** | **数据库字段** | **类型** | **描述** |
 | :---: | :---: | :---: | :---: |
 | 主键 | id | bigint(20) | 表单主表主键--自增 |
-| 单据编码 | cBillNo | varchar(40) | 单据编号-cardnumber |
+| 单据编码 | cBillNo | varchar(40) | 单据编号 |
 | 单据名称 | cName | varchar(200) | 单据名称 |
-| 关联单据类型编码 | cCardKey | varchar(100) | 单据cardNumber(对于列表来说，此字段代表列表所对应的单据的cardNumber） |
+| 关联单据类型编码 | cCardKey | varchar(100) | 跳转目标表单的单据编号(对于列表来说，此字段代表列表所对应的单据详情的cBillNo）<br />其值为要跳转目标表单的cBillNo |
 | 子产品ID | cSubId | varchar(45) | 子产品ID |
 | 单据默认显示模版 | iDefTplId | bigint(20) | 单据默认显示模版 |
 | 单据默认打印模版 | iDefPrnTplId | bigint(20) | 单据默认打印模版 |
