@@ -17,14 +17,15 @@ body {
 .doc-content{
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
+    width: 100%;
+    /* overflow: scroll; */
 }
 .docs .doc-content{
     padding-top: 30px;
     min-height: 500px;
 }
 .docs {
-    flex:1;
+    /* flex:1; */
     width:80%;
 }
 .doc::-webkit-scrollbar {

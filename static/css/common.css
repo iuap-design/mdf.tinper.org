@@ -6,8 +6,8 @@ ol{
     width: 6px;
     background-color: transparent;
     cursor: e-resize;
-    height:4000px;
+    height:100%;
     position: absolute;
     top: 0;
-    right: 0;
+    margin-left: 300px;
 }

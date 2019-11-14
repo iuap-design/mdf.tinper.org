@@ -43,17 +43,16 @@
             <div class="content">
                 <div class="sidebar"  id="sidebar">
                     <% include sidebar.html %>
-                    <div id="drap-line"></div>
+                    
                 </div>
-                
+                <div id="drap-line"></div>
                 <div class="docs" id="docs">
                     <% include docs.html %>
-                    <div class="footer-out">
-                        <% include footer.html %>
-                    </div>
                 </div>            
             </div>
-            
+            <div class="footer-out">
+                <% include footer.html %>
+            </div>
         </div>
     <!-- </div> -->
     
@@ -206,15 +205,22 @@ window.onload = function(){
         //localStorage设置
         localStorage.setItem('sliderWidth', sidebar.style.width)
         localStorage.setItem('docsWidth', docs.style.marginLeft)
+        localStorage.setItem('footsWidth', footerOut.style.marginLeft)
+        localStorage.setItem('drapWidth',drapLine.style.marginLeft)
     }
       
     //localStorage读取
     var history_slider_width = localStorage.getItem('sliderWidth');
     var history_docs_width = localStorage.getItem('docsWidth');
+    var history_foot_width = localStorage.getItem('footsWidth');
+    var history_drap_width = localStorage.getItem('drapWidth')
 
     if (history_slider_width && history_docs_width ) {    
         sidebar.style.width = history_slider_width;
         docs.style.marginLeft  = history_docs_width ;
+        footerOut.style.marginLeft  = history_foot_width ;
+        drapLine.style.marginLeft = history_drap_width
+
     }
     //绑定鼠标按下事件
     drapLine.onmousedown = function (e) {
@@ -237,7 +243,8 @@ window.onload = function(){
         sidebar_width = sidebar_width < min_width ? min_width : sidebar_width;
         sidebar.style.width = sidebar_width + 'px';
         docs.style.marginLeft = sidebar_width + 'px';
-        footerOut.style.width = document.documentElement.clientWidth - sidebar_width  + 'px'
+        footerOut.style.marginLeft =  sidebar_width  + 'px'
+        drapLine.style.marginLeft = sidebar_width + 'px'
     }
 }
 </script>
