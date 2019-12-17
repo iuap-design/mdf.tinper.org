@@ -306,7 +306,7 @@ initContext: function(viewmodel) {
 <a name="a390aff1-11"></a>
 ###### 配置：
 
-- 参照配置项的extendField中添加{"isRunWithChildren":true}
+- 参照配置项的extendField中添加{"onlyLeafCanSelect":true}
 
 9. 参照添加全屏显示
 

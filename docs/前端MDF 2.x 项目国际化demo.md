@@ -1,199 +1,47 @@
-<a name="ace32fc8"></a>
-## 专属化的多语方案
+**升级须知**<br />**
 
-优点
+- **以下操作，需要在项目的日常开发分支上修改，步骤10以后的不要提交到主干分支。**
+- **接着切换一个新的多语分支，然后把9步改成 MDF_LANG=true,10以后的步骤正常操作。**
 
-1. 直接上传源码，把源码转换成标签的形式，能兼容react、jquery 等。
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1573197287256-3701d186-041c-41da-b354-277b8fd248d4.png#align=left&display=inline&height=951&name=image.png&originHeight=951&originWidth=347&size=82668&status=done&style=none&width=347)
 
-2. 一套资源，通过标签的属性，来进行多语的查找、替换。
+1. **在工程目录的根目录下新建一个lang-tool目录。**
 
-3. 有线上工具。
+2. [**下载java lang-tool**](http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/mdd/lang-tool.zip)** 把文件都拷贝到项目根目录下。**
 
-缺点
-
-1. 属于半自动化工具，不支持变量，没有对中文语意，进行区分。
-
-2. 需要维护编译后的代码。
-
-[专属化国际化](http://pap-i18n.online.app.yyuap.com/I18n/i18n/index.html#/)[在线]()[生成]()[资源]()
-
-<a name="be60213e"></a>
-## i18n 多语
-
-1. 把代码打包成多套资源源码。
-
-2. 提供工具进行快速编译，不用维护编译后的代码。
-<a name="50P3Y"></a>
-## 
-<a name="PIZq2"></a>
-## 我们采用的多语方案
-
-1. 一套源码，通过多套静态资源进行加载。
-
-2. 在静态资源、翻译文档中可以穿插变量、利用 Underscore 模版引擎的－template进行替换。
-
-3. 在渲染之前还可以做自定义的规则渲染。
-
-<a name="7d3e85cc"></a>
-## 前端多语
-
-<a name="fd421519"></a>
-#### 1. React 普通项目静态资源国际化
-
-> 1. 多语访问方式:
-> 
-通过http://ip:8080?locale=zh-CN/zh-TW/en-US 进行多语切换、cookie均可。
-> 
-> 2. [多语服务平台](http://workbench.yyuap.com/multilang-fe/#/dev)
-> 
-
-
-1. 静态资源的国际化，是通过cli 工具提取中文，把中文替换成 api 的方式。
+3. **编辑 lang-tool/config/config.properties 文件 **
 
 ```javascript
-let _title = "我是变量的多余!";
-    
- 转换后
-    
- let _title = `${lang.template("YS_FI_FP_0000033576")}`/* 我是变量的多余! */;
-```
+groupCode=XXX									//需要修改成你自己的组(productline+domain+project,已下划线连接)
 
-2. 提供 **ac-lang-cn **组件  [如何使用](https://package.yonyoucloud.com/#/package/YWMtbGFuZy1jbg==)
+respath=/lang-tool/resource   //修改你本地的路径
 
-```javascript
-  安装
-  ynpm install ac-lang-cn --save
+type=js,jsx										//需要提取的文件类型
 
-  引入
-  import lang from 'ac-lang-cn'
+excludepath=html.jsx,html.js,pack.js	//需排除的文件
 
-  使用
-  
-  lang.init(pack); //初始化
-```
-
-
-4. pack 为资源文件。格式如下:
-
-```javascript
-
-module.exports={
-  "zhcn": {
-  	  "YS_FI_FP_000003484632": "大前端技术部",
-  },
-  "zhtw": {
-    "YS_FI_FP_000003484632": "大前端技術部",
-  },
-  "enus": {
-    "YS_FI_FP_000003484632": "FED",
-  }
-}
-```
-
-5. 在工程的入口引入如下代码。
-
-```javascript
-    import lang ,{ Local } from "ac-lang-cn";
-    const pack = require('components/lang/pack').default;
-    lang.init(pack, null);
-    console.log(" ************************多语加载成功!***************************");
-    
-```
-
-6. 完整示例 
-
-```javascript
-render(){
-  let _title = `${lang.template("YS_FI_FP_0000033576")}`/* 我是变量的多余! */;
-  return(<div>{_title}</div>)
-}
-```
-
-
-<br />~~ over ~~<br />
-
-
-<a name="EIeRf"></a>
-#### 2. Ucf 项目静态资源国际化   
-
-1. 提供 **ac-lang-cn **组件  [如果使用](https://package.yonyoucloud.com/#/package/YWMtbGFuZy1jbg==)
-
-```javascript
-  安装
-  ynpm install ac-lang-cn --save
- 
-  
-  后者通过cnd标签引入
-  
- <script src="//design.yonyoucloud.com/static/tinper-bee/latest/ac-lang-cn/dist/index.js"></script>
+localres=true									//是否要连接服务中心
+localflag=L										//和7行成对出现
 
 ```
 
-2. 新增一个index.js
-
-
-
 ```javascript
-import {Locale} from "tinper-bee";
-import lang ,{ Local } from "ac-lang-cn";
-import React from 'react';
-import mirror, { render, Router } from 'mirrorx';
-import Routes from './routes';
+示例
+产品线(ys,ncc,diwork...all代表所有)
+productline=YS
 
-// 全局样式
-import './app.less';
+领域(财务云，税务云，营销云，all代表所有)
+domain=FED
 
-// 设置mirrorx 路由加载方式
-mirror.defaults({
-    historyMode: "hash"
-});
+项目标识（一般以代码工程来区分，按构建、打包和部署来做隔离维度）
+project=SCAPM
 
-render(
-  <Local Locale={Locale}>
-    <Router>
-      <Routes />
-    </Router>
-  </Local>, document.querySelector("#app"));
+使用者组，主要决定打包范围和数据版本范围的参数，不使用项目是因为多个项目可能属于一个组
+groupCode=YS_FED_SCAPM
 ```
+<br />
 
-
-3. 在工程的入口app.js引入如下代码。
-
-```javascript
-import lang from "ac-lang-cn";
-const pack = require('components/lang/pack.js');//.default;
-lang.init(pack, null);
-console.log(" ************************多语加载成功!***************************");
-require('./index');
-```
- 
-
-3. pack 为资源文件。格式如下:
-
-```javascript
-
-module.exports={
-  "zhcn": {
-  	  "YS_FI_FP_000003484632": "大前端技术部",
-  },
-  "zhtw": {
-    "YS_FI_FP_000003484632": "大前端技術部",
-  },
-  "enus": {
-    "YS_FI_FP_000003484632": "FED",
-  }
-}
-```
-
-
-<br />~~ over ~~<br />
-
-
-<a name="FRtt6"></a>
-#### MDF 2.0 项目中资源国际化
- 
-
-1. **组织 pack.js 文件，包含需要的语种,放到mdf-app/src/pack.js 下。**
+4. **新建 pack.js 文件，包含需要的语种,放到mdf-app/src/pack.js 下。**
 
 
 
@@ -211,8 +59,7 @@ module.exports={
 }
 ```
 
-
-3. **mdf-app/src/web/client/index.jsx 文件中填写如下代码**
+5. **mdf-app/src/web/client/index.jsx 文件中添加如下代码**
 
 ```javascript
 require('@babel/polyfill')
@@ -244,8 +91,34 @@ if(process.env.__LANG__ && process.env.__LANG__ == true){
 > 3. cb.lang.template("YS_FI_FP_000003484632") 测试可翻译的词条
 
 
+6. **mdf-app/src/web/client/client.jsx 文件中添加如下代码**
 
-4. **mdf-app/src/web/server/index.js**
+```javascript
+import {Locale} from '@mdf/baseui/lib'
+
+....
+
+//改造 render 方法
+const render = () => {
+  match({ routes, location }, (error, redirectLocation, renderProps) => {
+    if(Locale && process.env.__LANG__ && process.env.__LANG__ == true){
+      ReactRender(Locale);
+    }else{
+      ReactRender(null);
+    }
+  })
+}
+const ReactRender = (Lang) => {
+  if(Lang){ 
+    ReactDOM.render(<Lang><Isomorph store={store} history={history} routes={routes} /></Lang>,rootElement)
+  }else{
+    ReactDOM.render(<Isomorph store={store} history={history} routes={routes} />,rootElement)
+  }
+}
+
+```
+
+7. **mdf-app/src/web/server/index.js**
 
 ```javascript
 process.env.__THEMETYPE__ = packageJson.themeType
@@ -270,7 +143,7 @@ if (process.env.MDF_LANG && process.env.MDF_LANG == 'true') {
 > 2. cb.lang.template("YS_FI_FP_000003484632") 测试可翻译的词条
 
 
-4. **webpack.config**
+8. **webpack.config**
 
 ```javascript
 new webpack.DefinePlugin({
@@ -279,7 +152,9 @@ new webpack.DefinePlugin({
 })
 ```
 
-5. **package.json 启动命令中需要加载多语的都需要加上  MDF_LANG=true 加上**
+9. **package.json 启动命令中需要加载多语的都需要加上  MDF_LANG=false 加上**
+> **在多语分支上需要把 MDF_LANG=true**
+> 上线时候，需要检测启动命令，并且在package.json里面加上 **MDF_LANG 的设置。**
 
 ```json
 "scripts": {
@@ -322,11 +197,12 @@ new webpack.DefinePlugin({
   },
 ```
 
-6. 配置最新的包
+10. 配置最新的包
+> 此代码不要合并主干分支。
 
 ```jsx
  "devDependencies": {
-		"@mdf/baseui": "snapshot-lang",
+    "@mdf/baseui": "snapshot-lang",
     "@mdf/cube": "snapshot-lang",
     "@mdf/metaui-web": "snapshot-lang",
     "@mdf/middlewares-auth": "snapshot",
@@ -337,7 +213,7 @@ new webpack.DefinePlugin({
 }
 ```
 
-7. 适配多环境，src/web/common/config.env.js。
+11. 适配多环境，src/web/common/config.env.js。
 
 测试环境: http://workbench.yyuap.com/<br />
 <br />日常环境: https://u8c3ec-daily.yyuap.com/<br />
@@ -388,41 +264,95 @@ LANG_SERVERS_CENTRE:lang_servers_centre
 }
 ```
 
- 
+ <br />12. 删除项目中的  node_modules 重新执行 ynpm i 
+
+12. 代码中文提取。[如有疑问请参考详细步骤](http://tinper.org/mdf/%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7%E5%85%A5%E9%97%A8%E7%AF%87)
+
+```jsx
+$ cd lang-tool
+```
+
+mac 系统可执行 cli 工具，一次可以跑多个文件夹，命令如下:
+> java_path="xx/lang-tool"  // 工具目录
+> resource_path="xx/src"    //需要提取的代码目录
+> cli 可以复制多次，批量执行多个目录和不同代码(自由发挥)
 
 
+```jsx
+$ sh cli.sh
+```
 
-8. 删除项目中的  node_modules 重新执行 ynpm i <br />
-<br />~~ over ~~ 
+其他系统<br />
 
-<a name="zlhgG"></a>
-#### 上线部署《打开运营管理平台》
+```jsx
+java -jar  D:/lang-tool/ucf-multilang-1.0.5-SNAPSHOT.jar -path E:xx/project -configpath  D:/lang-tool
+```
 
-需要在节点注册的url上加如下代码。<br />
+
+13. 此时会在/lang-tool/resource 生成提取后的json文件。
+
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1573196324185-fb2ac7ac-1c3d-457a-bcb9-1e21d7337025.png#align=left&display=inline&height=81&name=image.png&originHeight=81&originWidth=289&size=11264&status=done&style=none&width=289)
+
+14. 拷贝当前json(可先拿出去格式化一下)的内容，放置到pack.js(步骤4)文件中，替换zhcn 后面的json，作为内容。如图
+
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1573196507205-6f88b22b-f064-43e8-983d-075f98952b25.png#align=left&display=inline&height=322&name=image.png&originHeight=322&originWidth=595&size=99440&status=done&style=none&width=595)<br />
+
+15. 检查步骤5中的的 jsonp 是否设置正确
+
+> cb.lang.jsonp(0, 'YS_FED_FW,UCFSTAFE'); //第二个参数是我们需要修改的。
+> 第二个参数是 lang-tool/config/config.properties中的groupCode的值),并且确认已经把资源抽取到服务中心。
+> 更多请参考步骤5
+
+
+16. 启动测试 url上加 ?locale=zh-CN , 进行测试
+
+**【未配json 忽略】**如果配置了json，会有如下接口请求，而且再次刷新后，资源会直接缓存。
+
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1573197087876-ef6d424c-fa92-47da-9e78-0d90ab4ba268.png#align=left&display=inline&height=350&name=image.png&originHeight=350&originWidth=1512&size=135455&status=done&style=none&width=1512)
+
+17. 上线测试环境时需要
+
+
 <br />$YHT_APPTENANT/****.html?locale={locale}
 
 ![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1572322486344-d764515c-0f14-4e3f-9c83-5ea5cc32e6bf.png#align=left&display=inline&height=849&name=image.png&originHeight=849&originWidth=1142&size=82870&status=done&style=none&width=1142)
 
 
-<a name="PQ82f"></a>
-#### MDF 2.0 使用多语录入控件
+<br />~~ over ~~ 
 
+以下步骤是可选步骤，为本地文档翻译步骤，如果想走服务中心可以直接去服务中心修改词条。<br />[多语服务中心](http://workbench.yyuap.com/multilang-fe/#/dev)
+
+18. **把pack.js 导出为excel**
+
+**
+
+- 安装导出工具[lang-cl](https://package.yonyoucloud.com/#/package/bGFuZy1jbGk=)i
+
+```
+$ ynpm install lang-cli -g
+```
+
+-   把pack.js文件改成pack.json 文件，去掉文件内的**module.exports =** 即可。
+-    在当前目录执行
 ```javascript
-cControlType 类型为 InputMultiLang 即可
+$ lang excel --json xx/lang/resource
+```
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1571732021277-01979d04-5143-4b56-a563-bf6fe45bd71f.png#align=left&display=inline&height=207&name=image.png&originHeight=207&originWidth=244&size=16561&status=done&style=none&width=244)
+
+> 就会在resource目录下生成excel文件。
+> 发给翻译人员，进行翻译。 
+
+- 把翻译后的文件在换回来 
+```javascript
+ $ lang excel --excel  /Users/jony/workspaces/yonyou/project/new/imp-iot-alarm-fe/lang/resource/1571710782275.xlsx
 ```
 
-<a name="kBzAd"></a>
-#### 普通项目中使用多语录入控件 [ac-input-locale](https://package.yonyoucloud.com/#/package/YWMtaW5wdXQtbG9jYWxl)
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1571732830698-d0e30f9c-d797-4609-927f-043b0a56f7c5.png#align=left&display=inline&height=160&name=image.png&originHeight=160&originWidth=997&size=43318&status=done&style=none&width=997)<br />
+<br />![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1571734218477-91f46d1b-035e-4fd5-8b1f-4101afc29e30.png#align=left&display=inline&height=144&name=image.png&originHeight=144&originWidth=250&size=13785&status=done&style=none&width=250)
 
-```json
-$ ynpm install ac-input-locale --save-dev
+excel 格式如下
 
-引入
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/319615/1571819361461-51c0fbeb-4b8f-4d59-9d83-4272cda7ecee.png#align=left&display=inline&height=173&name=image.png&originHeight=173&originWidth=785&size=43754&status=done&style=none&width=785)
 
-import AcInputLocale from 'ac-input-locale';
 
-样式引入
-
-import 'ac-input-locale/dist/index.css';
-
-```
+<br />~~ over ~~

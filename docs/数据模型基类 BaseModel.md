@@ -67,7 +67,7 @@ cb.models.register('ReportModel', function (modelType) {
 }
 ```
 
-![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557283307991-e20d71e7-fcc9-4102-803c-b9a35ae4e8f8.png#align=left&display=inline&height=1228&name=image.png&originHeight=2456&originWidth=2512&search=&size=1841829&status=done&width=1256)
+![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/85184/1557283307991-e20d71e7-fcc9-4102-803c-b9a35ae4e8f8.png#align=left&display=inline&height=1228&name=image.png&originHeight=2456&originWidth=2512&size=1841829&status=done&width=1256)
 <a name="tIa1B"></a>
 ## 
 <a name="9bnwY"></a>

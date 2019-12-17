@@ -9,7 +9,7 @@
 可以通过在cStyle属性增加新的属性来实现UI组件属性级扩展。
 <a name="zovE5"></a>
 ## 1 UI元数据配置
-以InputNumber为例<br />方法一：在设计器的属性栏配置样式及扩展属性的值为{"placeholder":"采购单位换算率"}，如下：<br />![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271337/1571209402799-df3c628e-49b3-4834-b074-df520e62eaef.png#align=left&display=inline&height=72&name=image.png&originHeight=144&originWidth=566&search=&size=15681&status=done&width=283)
+以InputNumber为例<br />方法一：在设计器的属性栏配置样式及扩展属性的值为{"placeholder":"采购单位换算率"}，如下：<br />![image.png](http://design.yonyoucloud.com/static/yuque/0/2019/png/271337/1571209402799-df3c628e-49b3-4834-b074-df520e62eaef.png#align=left&display=inline&height=72&name=image.png&originHeight=144&originWidth=566&size=15681&status=done&width=283)
 
 方法二：在excel中配置billitem_base的cStyle属性为{"placeholder":"采购单位换算率"}<br />
 
