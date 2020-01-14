@@ -13,7 +13,7 @@ app.use(cors());
 
 render(app, {
     root: path.join(__dirname, 'views'),
-    layout: 'index',
+    layout: false,
     viewExt: 'html',
     cache: false,
     debug: false,

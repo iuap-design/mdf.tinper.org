@@ -56,7 +56,10 @@ function getFirstKey (nodes) {
 
 
 module.exports = {
-  index: async (ctx, next) => {
+  guide: async ctx => {
+    await ctx.render('../views/guide')
+  },
+  docs: async (ctx, next) => {
     const component = ctx.params.component || getFirstKey(sidebar)
     let rightMenu = [];
     if(menu[component])rightMenu=menu[component];
