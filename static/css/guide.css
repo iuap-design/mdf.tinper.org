@@ -1,0 +1,161 @@
+.guide-container {
+    min-width: 1100px;
+}
+
+.guide-container section {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+}
+
+.guide-container a {
+    text-decoration: none;
+    color: #444;
+}
+
+.guide-container a:hover {
+    color: #777;
+}
+
+.guide-container section .title {
+    margin: 40px auto 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.guide-container section:not(.doc-guide-item) {
+    padding: 0 100px;
+    height: 600px;
+    background: linear-gradient(to bottom, #87CEFA,#fff);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.guide-container section.doc-guide-item .services-inner {
+    flex: 1;
+    margin: 20px auto;
+    height: 300px;
+}
+
+.guide-container section.doc-guide-item .services-inner a {
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    background: #1E90FF;
+    color: #fff;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.guide-container section.doc-guide-item .services-inner a:hover {
+    opacity: 0.7;
+}
+
+.guide-container section.doc-guide-item .services-inner > div {
+    display: inline-block;
+    width: 32%;
+    height: 50%;
+    text-align: center;
+}
+
+.guide-container section .buttons a {
+    width: 80px;
+    margin: 0 10px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.guide-container section .buttons a:hover {
+    opacity: 0.8;
+}
+
+.guide-container section .introduction {
+    margin-bottom: 40px;
+    line-height: 2;
+    font-size: 22px;
+}
+
+.guide-container section.gray  {
+    background: #fafbfc;
+}
+
+.guide-container .gray .wrapper > div:hover {
+    box-shadow: 0px 2px 25px rgba(194,215,229,.5);
+}
+
+.guide-container .doc-guide-item .wrapper {
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.guide-container .doc-guide-item .wrapper > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+    width: 300px;
+    height: 240px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+}
+
+.guide-container .gray .wrapper > div {
+    border: 0;
+    background: #fff;
+}
+
+.guide-container .doc-guide-item .wrapper > div p {
+    font-size: 20px;
+}
+
+.guide-container .doc-guide-item .wrapper > div ul {
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 0;
+    list-style: none;
+}
+
+.guide-container .doc-guide-item .wrapper > div ul li {
+    margin: 6px 0;
+    padding: 3px 0;
+}
+
+.guide-container .doc-guide-item .wrapper > div ul.api-list li {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+}
+
+.guide-container section h1  {
+    margin: 0;
+    font-size: 60px;
+}
+
+.guide-container .services {
+    height: 400px;
+}
+
+.guide-container .services .title {
+    margin-bottom: 15px;
+}
+
+.u-row {
+    margin: 0 !important;
+}

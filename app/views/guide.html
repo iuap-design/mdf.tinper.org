@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="//design.yonyoucloud.com/static/tinper-bee/images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./css/guide.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/footer.css" type="text/css"/>
+    <link href="//design.yonyoucloud.com/static/tinper-bee/2.0.9/assets/tinper-bee.css" rel="stylesheet" media="screen" />
+    <title>MDF 基于元数据的模型驱动开发框架</title>
+</head>
+<body>
+    <div class="guide-container">
+        <section>
+            <h1>Model-Driven Framework (MDF)</h1>
+            <p class="introduction">
+                MDF框架是一个基于元数据的模型驱动开发框架。它支持通过模式化的配置自动生成并渲染页面，
+                集成了bpaas业务中台的支撑服务和能力中心相关能力，支持YonSuite和NCCloud两种模板风格。
+                Web开发和Mobile移动开发共用一套开发框架，共用一套扩展脚本，并支持不同维度的扩展开发。具有分层架构，分包解耦，架构灵活的特点。
+            </p>
+            <div class="buttons">
+                <a href='日志更新说明'>
+                    日志
+                </a>
+                <a href='http://git.yonyou.com/yonyou-mdf/yonyou-mdf-framework' target="_blank">
+                    Gitlab
+                </a>
+            </div>
+        </section>
+        <section class="doc-guide-item" style="height: 700px">
+            <p class="title">快速入门</p>
+            <div class="wrapper">
+                <div>
+                    <p>认识MDF</p>
+                    <ul>
+                        <li><a href="关键特性及应用场景">特性与应用场景</a></li>
+                        <li><a href="前端技术应用情况">前端技术栈</a></li>
+                        <li><a href="MDF框架生态介绍">框架生态介绍</a></li>
+                        <li><a href="模式化单据场景支持情况">模式化单据场景支持情况</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>环境搭建与项目初始化</p>
+                    <ul>
+                        <li><a href="环境安装">环境安装</a></li>
+                        <li><a href="前端工程安装与启动">前端工程安装与启动</a></li>
+                        <li><a href="后端工程安装与启动">后端工程安装与启动</a></li>
+                        <li><a href="元数据配置说明">元数据配置说明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div>
+                    <p>框架运行时渲染原理</p>
+                    <ul>
+                        <li><a href="整体架构说明">整体架构说明</a></li>
+                        <li><a href="基于统一协议的模式化渲染">基于统一协议的模式化渲染</a></li>
+                        <li><a href="对通用逻辑的抽象和自动生成">对通用逻辑的抽象和自动生成</a></li>
+                        <li><a href="基于统一协议的UI组件化集成">基于统一协议的UI组件化集成</a></li>
+                        <li><a href="运行时MetaUI组件解析">运行时MetaUI组件解析</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>开发规范</p>
+                    <ul>
+                        <li><a href="脚手架规范说明">脚手架规范说明</a></li>
+                        <li><a href="theme%20主题维护规范">主题维护规范</a></li>
+                        <li><a href="字体图标使用规范（待评审）">字体图标使用规范</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>其他</p>
+                    <ul>
+                        <li><a href="部署与集成对接">部署与集成对接</a></li>
+                        <li><a href="渗透性测试—URL中移除Token">渗透性测试—URL中移除Token</a></li>
+                        <li><a href="React&JS代码调试">React&JS代码调试</a></li>
+                        <li><a href="Node代码调试">Node代码调试</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="doc-guide-item gray">
+            <p class="title">可视化开发</p>
+            <div class="wrapper">
+                <div>
+                    <p>组件配置</p>
+                    <ul>
+                        <li><a href="组件解析流程">组件解析流程</a></li>
+                        <li><a href="公共属性">表单组件</a></li>
+                        <li><a href="公共属性2">容器组件</a></li>
+                        <li><a href="公共属性3">操作按钮组件</a></li>
+                        <li><a href="过滤器项">过滤器</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>协议说明</p>
+                    <ul>
+                        <li><a href="多端协议-示例接口数据">接口示例</a></li>
+                        <li><a href="单据%20Bill">单据</a></li>
+                        <li><a href="模板%20Template">模板</a></li>
+                        <li><a href="实体%20Entity">实体</a></li>
+                        <li><a href="命令%20Command">命令</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="doc-guide-item">
+            <p class="title">数据模型</p>
+            <div class="wrapper">
+                <div>
+                    <p>模型手册</p>
+                    <ul>
+                        <li><a href="前端数据模型概念定义">理解数据模型</a></li>
+                        <li><a href="如何新增ViewModel实现对通用业务的抽象实现">ViewModel的新增和扩展</a></li>
+                        <li><a href="父子页面间的数据通讯">ViewModel的父子间通讯</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>ViewModel APIs</p>
+                    <ul class='api-list'>
+                        <li><a href="数据模型基类%20BaseModel">BaseModel</a></li>
+                        <li><a href="SimpleModel%20简单">SimpleModel</a></li>
+                        <li><a href="TagModel%20标签">TagModel</a></li>
+                        <li><a href="ListModel%20列表">ListModel</a></li>
+                        <li><a href="GridModel%20表格">GridModel</a></li>
+                        <li><a href="TagModel%20标签">TagModel</a></li>
+                        <li><a href="TreeModel%20树">TreeModel</a></li>
+                        <li><a href="FilterModel%20过滤">FilterModel</a></li>
+                        <li><a href="ReferModel%20参照">ReferModel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="doc-guide-item gray">
+            <p class="title">多维扩展</p>
+            <div class="wrapper">
+                <div>
+                    <p>页面逻辑扩展</p>
+                    <ul>
+                        <li><a href="原理：扩展脚本的命名规则及加载流程">理解扩展脚本</a></li>
+                        <li><a href="模板级扩展">模板级扩展</a></li>
+                        <li><a href="运行时扩展">运行时扩展</a></li>
+                        <li><a href="FreeView扩展">FreeView扩展</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>公共服务扩展</p>
+                    <ul>
+                        <li><a href="公共服务扩展-查询方案">查询方案扩展</a></li>
+                        <li><a href="参照扩展">参照扩展</a></li>
+                        <li><a href="扩展开发-级联参照开发">扩展开发-级联参照开发</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>页面组件扩展</p>
+                    <ul>
+                        <li><a href="页面布局扩展-新增UI组件">新增UI组件</a></li>
+                        <li><a href="页面布局扩展-UI组件个性化配置">UI组件个性化配置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="doc-guide-item">
+            <p class="title">高级特性</p>
+            <div class="wrapper">
+                <div>
+                    <p>全球化</p>
+                    <ul>
+                        <li><a href="提取工具">提取工具</a></li>
+                        <li><a href="前端-国际化方案">国际化方案</a></li>
+                        <li><a href="前端MDF%202.x%20项目国际化demo">MDF 2.x项目国际化demo</a></li>
+                        <li><a href="lang%20转换工具(pack.json、excel%20相互)">lang转换工具</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>风格交互</p>
+                    <ul>
+                        <li><a href="交互风格切换机制说明">交互风格切换机制</a></li>
+                        <li><a href="NCCloud交互风格实现详情">NCCloud交互风格实现</a></li>
+                        <li><a href="图标字体文件汇总">图标字体文件汇总</a></li>
+                        <li><a href="MDF%20BASEUI%20切换升级指导文档">MDF/BASEUI切换升级指导</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="doc-guide-item services gray">
+            <p class="title">服务接入</p>
+            <div class="services-inner">
+                <div>
+                    <a href="参照设计说明">参照</a>
+                </div>
+                <div>
+                    <a href="7.打印使用">打印</a>
+                </div>
+                <div>
+                    <a href="计算公式配置">公式</a>
+                </div>
+                <div>
+                    <a href="附件管理">附件</a>
+                </div>
+                <div>
+                    <a href="8.流程使用">流程</a>
+                </div>
+                <div>
+                    <a href="页面状态规则配置使用及示例">页面状态</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer-out">
+        <% include footer.html %>
+    </div>
+</body>
+</html>
