@@ -57,7 +57,9 @@ function getFirstKey (nodes) {
 
 module.exports = {
   guide: async ctx => {
-    await ctx.render('../views/guide')
+    await ctx.render('../views/guide', {
+      sidebar: sidebar
+    })
   },
   docs: async (ctx, next) => {
     const component = ctx.params.component || getFirstKey(sidebar)
