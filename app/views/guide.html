@@ -23,9 +23,6 @@
                 <a href='日志更新说明'>
                     日志
                 </a>
-                <a href='http://git.yonyou.com/yonyou-mdf/yonyou-mdf-framework' target="_blank">
-                    Gitlab
-                </a>
             </div>
         </section>
         <section class="doc-guide-item" style="height: 700px">
@@ -211,5 +208,40 @@
     <div class="footer-out">
         <% include footer.html %>
     </div>
+    <script>
+        let linkList = document.querySelectorAll('a')
+        var sidebarJson = JSON.parse('<%- JSON.stringify(sidebar) %>')
+        let openKeys = []
+        function getOpenKeys (key, arr) { // 获取应该展开的key项
+            for (let item of arr) {
+                if (!item.children) {
+                    if(item.key === key) {
+                        return true
+                    }
+                } else {
+                    let res = getOpenKeys(key, item.children)
+                    if (res) {
+                        openKeys.push(item.name)
+                        return true
+                    }
+                }
+            }
+        }
+        linkList.forEach((item, index) => {
+            item.onclick = (e) => {
+                e.preventDefault()
+                let href = decodeURI(item.getAttribute('href'));
+                let target = item.getAttribute('target') || '_self'
+                getOpenKeys(href, sidebarJson)
+                if (openKeys.length) {
+                    sessionStorage.clear()
+                    for (let name of openKeys) {
+                        sessionStorage.setItem(`${name}Open`, 'true');
+                    }
+                }
+                window.open(href, target)
+            }
+        })
+    </script>
 </body>
 </html>
