@@ -16,7 +16,7 @@ header {
 
 header h1 {
     width: 758px;
-    margin: 0 0 11px 0;
+    margin: 0 0 14px 0;
     font-size: 50px;
     font-weight: 400;
 }
@@ -27,11 +27,11 @@ header p {
     font-size: 16px;
     font-family: PingFangSC-Regular,PingFang SC;
     color: rgba(255,255,255,1);
-    line-height: 22px;
+    line-height: 24px;
 }
 
 header .buttons {
-    margin-top: 22px;
+    margin-top: 38px;
 }
 
 header .buttons a {
@@ -57,7 +57,7 @@ header .buttons a:hover {
     color: #E45F59;
 }
 
-.with-1200 {
+.width-1200 {
     width: 1200px;
     margin: 0 auto;
 }
@@ -131,32 +131,32 @@ header .buttons a:hover {
     padding: 38px 0 42px;
 }
 
-.doc-guide-item .with-1200 {
+.doc-guide-item .width-1200 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-.doc-guide-item .with-1200 > div {
+.doc-guide-item .width-1200 > div {
     position: relative;
     flex: 1;
     padding-top: 71px;
 }
 
-.doc-guide-item .with-1200 img {
+.doc-guide-item .width-1200 img {
     width: 528px;
     height: 330px;
 }
 
-.doc-guide-item.gray .with-1200 {
+.doc-guide-item.gray .width-1200 {
     flex-direction: row;
 }
 
-.doc-guide-item .with-1200 .wrapper {
+.doc-guide-item .width-1200 .wrapper {
     width: 550px;
 }
 
-.doc-guide-item .with-1200 .wrapper p {
+.doc-guide-item .width-1200 .wrapper p {
     margin: 6px 0;
     height: 20px;
     font-size: 14px;
@@ -166,26 +166,26 @@ header .buttons a:hover {
     line-height: 20px;
 }
 
-.doc-guide-item.gray .with-1200 > div {
+.doc-guide-item.gray .width-1200 > div {
     margin: 0;
     width: 660px;
 }
 
-.doc-guide-item .with-1200 > div .title {
+.doc-guide-item .width-1200 > div .title {
     margin-bottom: 16px;
 }
 
-.doc-guide-item .with-1200 ul {
+.doc-guide-item .width-1200 ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-.doc-guide-item .with-1200 ul li {
+.doc-guide-item .width-1200 ul li {
     display: inline-block;
     margin: 8px 30px 8px 0;
 }
 
-.doc-guide-item .with-1200 ul li a {
+.doc-guide-item .width-1200 ul li a {
     height: 20px;
     font-size: 14px;
     font-family: PingFangSC-Regular,PingFang SC;
@@ -194,7 +194,7 @@ header .buttons a:hover {
     line-height: 20px;
 }
 
-.doc-guide-item .with-1200 ul li a:hover {
+.doc-guide-item .width-1200 ul li a:hover {
     color: #E45D56;
 }
 
@@ -220,6 +220,10 @@ header .buttons a:hover {
     background-position: 135px 41px;
 }
 
+.mdx .width-1200 img {
+    height: 350px;
+}
+
 .advanced-features {
     padding-bottom: 180px;
 }
@@ -230,7 +234,7 @@ header .buttons a:hover {
     background-position: 0px 31px;
 }
 
-.doc-guide-item .with-1200 .background {
+.doc-guide-item .width-1200 .background {
     position: absolute;
     top: 0;
     left: 0;
@@ -250,7 +254,7 @@ header .buttons a:hover {
     height: 180px;
     padding: 0;
     left: calc(50% - 600px);
-    top: 2569px;
+    top: 2580px;
     background: #fff;
 }
 
@@ -311,7 +315,7 @@ header .buttons a:hover {
 }
 
 .services-inner a .content .description {
-    max-width: 204px;
+    max-width: 240px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
