@@ -1,161 +1,324 @@
-.guide-container {
-    min-width: 1100px;
+.u-row {
+    margin: 0 !important;
 }
 
-.guide-container section {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    overflow: hidden;
+p {
+    margin: 0;
 }
 
-.guide-container a {
-    text-decoration: none;
-    color: #444;
-}
-
-.guide-container a:hover {
-    color: #777;
-}
-
-.guide-container section .title {
-    margin: 40px auto 0;
-    font-size: 30px;
-    text-align: center;
-}
-
-.guide-container section:not(.doc-guide-item) {
-    padding: 0 100px;
-    height: 600px;
-    background: linear-gradient(to bottom, #87CEFA,#fff);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.guide-container section.doc-guide-item .services-inner {
-    flex: 1;
-    margin: 20px auto;
-    height: 300px;
-}
-
-.guide-container section.doc-guide-item .services-inner a {
-    display: inline-block;
-    width: 88px;
-    height: 88px;
-    background: #1E90FF;
+header {
+    padding-top: 106px;
+    height: 463px;
     color: #fff;
-    border-radius: 99px;
-    text-align: center;
-    line-height: 88px;
-    font-size: 18px;
-    text-decoration: none;
+    background-image: url('../images/banner.png');
+    font-weight: 400;
 }
 
-.guide-container section.doc-guide-item .services-inner a:hover {
-    opacity: 0.7;
+header h1 {
+    width: 758px;
+    margin: 0 0 11px 0;
+    font-size: 50px;
+    font-weight: 400;
 }
 
-.guide-container section.doc-guide-item .services-inner > div {
+header p {
+    width: 754px;
+    height: 88px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular,PingFang SC;
+    color: rgba(255,255,255,1);
+    line-height: 22px;
+}
+
+header .buttons {
+    margin-top: 22px;
+}
+
+header .buttons a {
     display: inline-block;
-    width: 32%;
-    height: 50%;
+    width: 100px;
+    height: 40px;
+    line-height: 38px;
     text-align: center;
-}
-
-.guide-container section .buttons a {
-    width: 80px;
-    margin: 0 10px;
-    padding: 3px;
-    display: inline-block;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,1);
+    color: #fff;
+    border-radius: 28px;
     font-size: 20px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    text-align: center;
 }
 
-.guide-container section .buttons a:hover {
-    opacity: 0.8;
+header .buttons a:first-of-type {
+    margin-right: 20px;
 }
 
-.guide-container section .introduction {
-    margin-bottom: 40px;
-    line-height: 2;
-    font-size: 22px;
+header .buttons a:hover {
+    background: rgba(255,255,255,1);
+    border: none;
+    color: #E45F59;
 }
 
-.guide-container section.gray  {
-    background: #fafbfc;
-}
-
-.guide-container .gray .wrapper > div:hover {
-    box-shadow: 0px 2px 25px rgba(194,215,229,.5);
-}
-
-.guide-container .doc-guide-item .wrapper {
-    flex: 1;
+.with-1200 {
+    width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.guide-container .doc-guide-item .wrapper > div {
-    display: flex;
-    flex-direction: column;
-    margin: 0 25px;
-    width: 300px;
-    height: 240px;
-    border-radius: 6px;
-    border: 1px solid #dcdcdc;
+.quick-start {
+    height: 410px;
+    padding-top: 61px;
+    background-image: url('../images/quick-start.png');
 }
 
-.guide-container .gray .wrapper > div {
-    border: 0;
+.title {
+    font-size: 26px;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    color: rgba(59,59,59,1);
+    line-height: 37px;
+}
+
+.title .line {
+    margin-top: 16px;
+    width: 26px;
+    display: block;
+    height: 2px;
+    background: rgba(229,57,53,1);
+}
+
+.quick-start .title {
+    margin-bottom: 34px;
+}
+
+.quick-start .wrapper {
+    display: flex;
+}
+
+.quick-start .wrapper > div {
+    display: inline-block;
+    width: 180px;
+    margin-right: 70px;
+}
+
+.quick-start .wrapper > div:last-of-type {
+    margin: 0;
+}
+
+.quick-start .wrapper > div > p {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D8D8D8;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quick-start .wrapper li {
+    margin-top: 15px;
+}
+
+.quick-start .wrapper a {
+    margin-top: 15px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    color: rgba(83,83,83,1);
+    line-height: 20px;
+}
+
+.quick-start .wrapper a:hover {
+    color: #E45D56;
+}
+
+.doc-guide-item {
+    padding: 38px 0 42px;
+}
+
+.doc-guide-item .with-1200 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.doc-guide-item .with-1200 > div {
+    position: relative;
+    flex: 1;
+    padding-top: 71px;
+}
+
+.doc-guide-item .with-1200 img {
+    width: 528px;
+    height: 330px;
+}
+
+.doc-guide-item.gray .with-1200 {
+    flex-direction: row;
+}
+
+.doc-guide-item .with-1200 .wrapper {
+    width: 550px;
+}
+
+.doc-guide-item .with-1200 .wrapper p {
+    margin: 6px 0;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    color: rgba(67,67,67,1);
+    line-height: 20px;
+}
+
+.doc-guide-item.gray .with-1200 > div {
+    margin: 0;
+    width: 660px;
+}
+
+.doc-guide-item .with-1200 > div .title {
+    margin-bottom: 16px;
+}
+
+.doc-guide-item .with-1200 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doc-guide-item .with-1200 ul li {
+    display: inline-block;
+    margin: 8px 30px 8px 0;
+}
+
+.doc-guide-item .with-1200 ul li a {
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    color: rgba(83,83,83,1);
+    line-height: 20px;
+}
+
+.doc-guide-item .with-1200 ul li a:hover {
+    color: #E45D56;
+}
+
+.gray {
+    background: #F9F9F9;
+}
+
+.visible-development .inner {
+    padding-left: 122px;
+    background-image: url('../images/visual-development-background.png');
+    background-position: 110px 41px;
+}
+
+.viewmodel .inner {
+    padding-right: 96px;
+    background-image: url('../images/data-model-background.png');
+    background-position: 0px 41px;
+}
+
+.mdx .inner {
+    padding-left: 133px;
+    background-image: url('../images/mdx-background.png');
+    background-position: 135px 41px;
+}
+
+.advanced-features {
+    padding-bottom: 180px;
+}
+
+.advanced-features .inner {
+    padding-right: 132px;
+    background-image: url('../images/advanced-features-background.png');
+    background-position: 0px 31px;
+}
+
+.doc-guide-item .with-1200 .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inner {
+    background-repeat: no-repeat;
+}
+
+.footer .footer-top {
+    padding-top: 128px !important;
+}
+
+.services {
+    position: absolute;
+    width: 1200px;
+    height: 180px;
+    padding: 0;
+    left: calc(50% - 600px);
+    top: 2569px;
     background: #fff;
 }
 
-.guide-container .doc-guide-item .wrapper > div p {
-    font-size: 20px;
-}
-
-.guide-container .doc-guide-item .wrapper > div ul {
+.services-inner a {
     display: inline-block;
-    padding: 0 20px;
-    margin-top: 0;
-    list-style: none;
+    width: 33%;
+    color: #747474;
+    margin-bottom: 17px;
 }
 
-.guide-container .doc-guide-item .wrapper > div ul li {
-    margin: 6px 0;
-    padding: 3px 0;
+.services-inner {
+    float: left;
+    width: 75%;
+    background: #fff;
+    height: 100%;
+    padding: 30px 55px 30px 40px;
 }
 
-.guide-container .doc-guide-item .wrapper > div ul.api-list li {
-    display: inline-block;
-    padding: 4px 8px;
-    border: 1px solid #dcdcdc;
-    border-radius: 6px;
+.services .title-left {
+    width: 24%;
+    height: 100%;
+    float: left;
+    background: #E45F59;
+    padding: 30px;
+    font-size: 24px;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+    line-height: 33px;
 }
 
-.guide-container section h1  {
-    margin: 0;
-    font-size: 60px;
+.services .title-left .line {
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    width: 40px;
+    height: 2px;
+    background: rgba(255,255,255,1);
 }
 
-.guide-container .services {
-    height: 400px;
+.services-inner a .content {
+    
 }
 
-.guide-container .services .title {
-    margin-bottom: 15px;
+.services-inner a .title-main {
+    margin-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    color: rgba(67,67,67,1);
+    line-height:20px;
 }
 
-.u-row {
-    margin: 0 !important;
+.doc-guide-item.services .services-inner a:hover .title-main,
+.doc-guide-item.services .services-inner a:hover .description {
+    color: #E45F59;
+}
+
+.services-inner a .content .description {
+    max-width: 204px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.footer-out .footer .footer-top {
+    width: 1200px;
+    margin: 0 auto !important;
+    padding: 0 50px 40px 0;
 }
