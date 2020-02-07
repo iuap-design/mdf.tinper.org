@@ -27,7 +27,7 @@ header p {
     font-size: 16px;
     font-family: PingFangSC-Regular,PingFang SC;
     color: rgba(255,255,255,1);
-    line-height: 24px;
+    line-height: 22px;
 }
 
 header .buttons {
@@ -128,6 +128,7 @@ header .buttons a:hover {
 }
 
 .doc-guide-item {
+    position: relative;
     padding: 38px 0 42px;
 }
 
@@ -143,9 +144,26 @@ header .buttons a:hover {
     padding-top: 71px;
 }
 
-.doc-guide-item .width-1200 img {
+.doc-guide-item .width-1200 img:not(.dot) {
     width: 528px;
     height: 330px;
+    z-index: 4;
+}
+
+.doc-guide-item .width-1200 img.dot {
+    position: absolute;
+}
+
+.doc-guide-item.mdx .width-1200 img.dot {
+    left: 59px;
+    bottom: -28px;
+    z-index: 3;
+}
+
+.doc-guide-item.advanced-features .width-1200 img.dot {
+    right: 69px;
+    top: 0;
+    z-index: 3;
 }
 
 .doc-guide-item.gray .width-1200 {
@@ -220,7 +238,7 @@ header .buttons a:hover {
     background-position: 135px 41px;
 }
 
-.mdx .width-1200 img {
+.mdx .width-1200 img:not(.dot) {
     height: 350px;
 }
 
