@@ -12,6 +12,7 @@ header {
     color: #fff;
     background-image: url('../images/banner.png');
     font-weight: 400;
+    overflow-x: scroll;
 }
 
 header h1 {
@@ -106,7 +107,9 @@ header .buttons a:hover {
     padding-bottom: 8px;
     border-bottom: 1px solid #D8D8D8;
     font-size: 16px;
+    font-family: PingFangSC-Semibold,PingFang SC;
     font-weight: 600;
+    color: rgba(67,67,67,1);
 }
 
 .quick-start .wrapper li {
@@ -130,9 +133,11 @@ header .buttons a:hover {
 .doc-guide-item {
     position: relative;
     padding: 38px 0 42px;
+    overflow-x: scroll;
 }
 
 .doc-guide-item .width-1200 {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -155,14 +160,14 @@ header .buttons a:hover {
 }
 
 .doc-guide-item.mdx .width-1200 img.dot {
-    left: 59px;
+    left: -59px;
     bottom: -28px;
     z-index: 3;
 }
 
 .doc-guide-item.advanced-features .width-1200 img.dot {
-    right: 69px;
-    top: 0;
+    right: -48px;
+    top: -20px;
     z-index: 3;
 }
 
