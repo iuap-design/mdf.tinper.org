@@ -7,10 +7,10 @@ p {
 }
 
 header {
-    padding-top: 106px;
     height: 463px;
     color: #fff;
     background-image: url('../images/banner.png');
+    background-size: 100% 100%;
     font-weight: 400;
     overflow-x: scroll;
 }
@@ -39,7 +39,7 @@ header .buttons a {
     display: inline-block;
     width: 100px;
     height: 40px;
-    line-height: 38px;
+    line-height: 40px;
     text-align: center;
     background: transparent;
     border: 1px solid rgba(255,255,255,1);
@@ -56,6 +56,10 @@ header .buttons a:hover {
     background: rgba(255,255,255,1);
     border: none;
     color: #E45F59;
+}
+
+header .width-1200 {
+    margin-top: 106px;
 }
 
 .width-1200 {
@@ -150,7 +154,7 @@ header .buttons a:hover {
 }
 
 .doc-guide-item .width-1200 img:not(.dot) {
-    width: 528px;
+    width: 541px;
     height: 330px;
     z-index: 4;
 }
@@ -159,15 +163,27 @@ header .buttons a:hover {
     position: absolute;
 }
 
+.doc-guide-item.visible-development .width-1200 img.dot {
+    top: -28px;
+    left: -53px;
+    z-index: 3;
+}
+
+.doc-guide-item.viewmodel .width-1200 img.dot {
+    right: 348px;
+    top: -38px;
+    z-index: 3;
+}
+
 .doc-guide-item.mdx .width-1200 img.dot {
     left: -59px;
-    bottom: -28px;
+    bottom: -38px;
     z-index: 3;
 }
 
 .doc-guide-item.advanced-features .width-1200 img.dot {
-    right: -48px;
-    top: -20px;
+    right: 347px;
+    top: -36px;
     z-index: 3;
 }
 
@@ -176,7 +192,12 @@ header .buttons a:hover {
 }
 
 .doc-guide-item .width-1200 .wrapper {
-    width: 550px;
+    width: 575px;
+}
+
+.doc-guide-item.visible-development .width-1200 .wrapper,
+.doc-guide-item.mdx .width-1200 .wrapper {
+    width: 540px;
 }
 
 .doc-guide-item .width-1200 .wrapper p {
@@ -205,7 +226,11 @@ header .buttons a:hover {
 
 .doc-guide-item .width-1200 ul li {
     display: inline-block;
-    margin: 8px 30px 8px 0;
+    margin: 8px 50px 8px 0;
+}
+
+.doc-guide-item.viewmodel .width-1200 div:nth-of-type(2) ul li {
+    margin-right: 65px;
 }
 
 .doc-guide-item .width-1200 ul li a {
@@ -226,9 +251,9 @@ header .buttons a:hover {
 }
 
 .visible-development .inner {
-    padding-left: 122px;
+    padding-left: 120px;
     background-image: url('../images/visual-development-background.png');
-    background-position: 110px 41px;
+    background-position: 111px 41px;
 }
 
 .viewmodel .inner {
@@ -238,13 +263,9 @@ header .buttons a:hover {
 }
 
 .mdx .inner {
-    padding-left: 133px;
+    padding-left: 120px;
     background-image: url('../images/mdx-background.png');
-    background-position: 135px 41px;
-}
-
-.mdx .width-1200 img:not(.dot) {
-    height: 350px;
+    background-position: 120px 41px;
 }
 
 .advanced-features {
@@ -277,7 +298,7 @@ header .buttons a:hover {
     height: 180px;
     padding: 0;
     left: calc(50% - 600px);
-    top: 2580px;
+    top: 2570px;
     background: #fff;
 }
 
