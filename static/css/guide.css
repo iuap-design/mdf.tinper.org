@@ -71,6 +71,7 @@ header .width-1200 {
     height: 410px;
     padding-top: 61px;
     background-image: url('../images/quick-start.png');
+    overflow-x: scroll;
 }
 
 .title {
