@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --inspect app/app.js",
     "start": "node app/app.js",
-    "sync": "yuque-sync -n 221784 -d ./docs -b ud8q1m,ikpq0g,mgdczx,vgedv5,grnfzw,vy3fxr,gv7x9x,fd13bt,rgw5r0,hpyvca && cp ./docs/sidebar.json ./static/"
+    "sync": "yuque-sync -n 1090339 -d ./docs -b ud8q1m,ikpq0g,mgdczx,vgedv5,grnfzw,vy3fxr,gv7x9x,fd13bt,rgw5r0,hpyvca && cp ./docs/sidebar.json ./static/"
   },
   "repository": {
     "type": "git",
