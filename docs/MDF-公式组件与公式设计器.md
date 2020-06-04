@@ -1,1 +1,0 @@
-common/components/formula-designer
