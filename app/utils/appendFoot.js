@@ -15,7 +15,7 @@ async function cpDocs(item){
                     console.log(`❌❌❌❌❌❌❌❌  cp第二步出错了！`)
                     console.log(error);
                 }else{
-                    let cmd3 = 'cp -r ./static/tinper_gbimbg/data ./static/data'
+                    let cmd3 = 'cp -r ./tinper_gbimbg/data ./static/data'
                     exec(cmd3,(error)=>{
                         if(error){
                             console.log(`❌❌❌❌❌❌❌❌  cp第三步出错了！`)

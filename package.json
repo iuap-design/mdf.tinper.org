@@ -34,10 +34,8 @@
   "homepage": "https://github.com/iuap-design/ucf.tinper.org#readme",
   "devDependencies": {},
   "dependencies": {
-    "@yonyou/yuque-sync": "^0.2.1",
     "all": "0.0.0",
     "fs-extra": "^7.0.1",
-    "http-server": "^0.12.3",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-cors": "0.0.16",
