@@ -62,21 +62,8 @@ module.exports = {
     })
   },
   docs: async (ctx, next) => {
-    const component = ctx.params.component || getFirstKey(sidebar)
-    let rightMenu = [];
-    if(menu[component])rightMenu=menu[component];
-    let filePath = path.join(__dirname, `../../docs/${component}.md`);
-    let data = await fs.readFileSync(filePath, 'utf-8');
-    data = marked(data);
-    data = data
-      .replace(/\<table/gi, '<div class="table-container">\n<table')
-      .replace(/<\/table>/gi, "</table>\n</div>\n");
-    
-    await ctx.render('index', {
-      sidebar: sidebar,
-      docs: data,
-      active: component,
-      rightMenu: rightMenu
-    });
+    let indexData = fs.readFileSync('./static/tinper_gbimbg/index.html','utf-8')
+    ctx.type = 'text/html'
+    ctx.response.body = indexData;
   }
 }

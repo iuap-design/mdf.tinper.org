@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node --inspect app/app.js",
     "start": "node app/app.js",
-    "book":"yuque2book -t xxx -l https://www.yuque.com/tinper/gbimbg",
+    "appendFoot": "node app/utils/appendFoot.js",
+    "book": "yuque2book -t xxx  -l https://www.yuque.com/tinper/gbimbg",
     "sync": "yuque-sync -n 1090339 -d ./docs -b ud8q1m,ikpq0g,mgdczx,vgedv5,grnfzw,vy3fxr,gv7x9x,fd13bt,rgw5r0,hpyvca && cp ./docs/sidebar.json ./static/"
   },
   "repository": {
@@ -36,6 +37,7 @@
     "@yonyou/yuque-sync": "^0.2.1",
     "all": "0.0.0",
     "fs-extra": "^7.0.1",
+    "http-server": "^0.12.3",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-cors": "0.0.16",

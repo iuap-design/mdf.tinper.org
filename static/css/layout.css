@@ -33,14 +33,7 @@ body{
     overflow: scroll; 
     height: 100%;
 }
-.footer-out {
-    background: #424242;
-    margin-top: 60px;
-    position: relative;
-    margin-left: 300px;
-    z-index: 2;
-    bottom: 0;
-}
+
 .u-row{
     margin: 0!important;
 }
