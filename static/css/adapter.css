@@ -1,10 +1,18 @@
 #yuque-book-container{
-    max-width: unset;
+    /* max-width: unset; */
+    max-width: calc(100% - 210px);
     padding-right: 0;
 }
 #yuque-book-container .doc-toc___1croK{
     background-color: #fff;
-    display: none;
+    /* display: none; */
+}
+.doc-toc___1croK .doc-item-active___1ECGH{
+    color:#E14C46;
+    border-color: #E14C46;
+}
+.doc-toc___1croK .doc-item-active___1ECGH:hover{
+    color:#E14C46;
 }
 .doc___1nCBn{
     font-size: 14px;
@@ -23,7 +31,7 @@
     white-space: break-spaces;
 }
 #yuque-book-container .lake-codeblock-content{
-    max-width: 90%!important;
+    max-width: 99%!important;
 }
 
 .footer>.u-row{
