@@ -19,6 +19,12 @@
     padding-left: 40px;
 }
 
+#yuque-book-container .lake-engine-view pre, .lake-engine pre{
+    white-space: break-spaces;
+}
+#yuque-book-container .lake-codeblock-content{
+    max-width: 90%!important;
+}
 
 .footer>.u-row{
     margin: 0;
